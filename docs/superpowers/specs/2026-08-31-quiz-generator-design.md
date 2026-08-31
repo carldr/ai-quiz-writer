@@ -13,8 +13,9 @@ either pub.
 
 Components:
 
-- `quizzes/YYYY-MM-DD.md` — one markdown file per quiz (the source of truth).
-- `quizzes/YYYY-MM-DD-images/` — picture-round images for that quiz.
+- `quizzes/YYYY-MM-DD/` — one directory per quiz holding everything for that
+  night: `quiz.md` (the source of truth), `images/` (picture-round images), and
+  `out/` (rendered sheets).
 - `render.rb` — stdlib-only Ruby script; quiz file in, three HTML + three PDF out.
 - `.claude/skills/new-quiz/` — the generation skill.
 - `OLD-QUIZZES.md` — the 11 transcribed past quizzes (2024-05-19 to 2026-08-04),
@@ -31,9 +32,10 @@ proposed.
 
 ## Quiz file format
 
-Markdown, not YAML — long questions wrap badly in YAML. The format is the
-existing OLD-QUIZZES.md layout plus per-round `Format:` and `Instructions:`
-lines and per-question image paths in picture rounds:
+Markdown, not YAML — long questions wrap badly in YAML. Each quiz lives at
+`quizzes/YYYY-MM-DD/quiz.md`. The format is the existing OLD-QUIZZES.md layout
+plus per-round `Format:` and `Instructions:` lines and per-question image paths
+in picture rounds:
 
 ```markdown
 # Pub Quiz — 2026-09-07
@@ -70,13 +72,13 @@ Rules:
 - `Instructions:` is printed on the team sheet. Optional.
 - The answer is always the bold segment after the em dash; team sheets are
   produced by stripping it.
-- Picture-round image references are written `images/r{round}-{question}.png`;
-  the renderer resolves the `images/` prefix to the quiz's
-  `quizzes/YYYY-MM-DD-images/` directory.
+- Picture-round image references are written `images/r{round}-{question}.png`,
+  relative to `quiz.md` — i.e. the quiz's own `images/` directory.
 
 ## Renderer
 
-`ruby render.rb quizzes/YYYY-MM-DD.md` writes to `quizzes/YYYY-MM-DD-out/`:
+`ruby render.rb quizzes/YYYY-MM-DD` (the directory; `quiz.md` is implied)
+writes to `quizzes/YYYY-MM-DD/out/`:
 
 - `answers.html` / `answers.pdf` — quizmaster sheet: everything, answers bold,
   per-round score boxes.
@@ -101,12 +103,12 @@ Run as `/new-quiz <date>`. Round by round:
 1. Propose 2–3 round themes; Carl picks one.
 2. Draft the full round.
 3. Web-verify every answer; flag any that cannot be confirmed.
-4. Check every question against history (OLD-QUIZZES.md plus every file in
-   `quizzes/`); replace repeats before presenting.
+4. Check every question against history (OLD-QUIZZES.md plus every `quiz.md`
+   under `quizzes/`); replace repeats before presenting.
 5. Carl approves the round or requests swaps; only then move to the next round.
 
 Picture round: after the 15 items are approved, fetch 2–3 candidate images per
-item into `quizzes/YYYY-MM-DD-images/` and build an HTML contact sheet for Carl
+item into `quizzes/YYYY-MM-DD/images/` and build an HTML contact sheet for Carl
 to pick from; each pick is renamed to the `r{round}-{question}` path the quiz
 file references. Image rights clearance is manual — candidates vary in quality
 and rights.
