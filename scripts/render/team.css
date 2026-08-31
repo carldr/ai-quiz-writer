@@ -1,0 +1,45 @@
+/* Team sheet. Carries no question text, and each round starts a new page, so
+   round headings need no space above them. */
+
+@page { size: A4; margin: 20mm; }
+
+body { font-family: -apple-system, "SF Pro Text", Helvetica, Arial, sans-serif;
+       font-size: 11pt; line-height: 1.5; margin: 0; }
+
+/* Team name and total. */
+h1 { font-size: 24pt; font-weight: 700; margin: 0 0 9mm;
+     display: flex; justify-content: space-between; align-items: baseline; }
+
+/* Round title and score box. */
+h2 { font-size: 16pt; font-weight: 700; margin: 0 0 2mm;
+     display: flex; justify-content: space-between; align-items: baseline; }
+
+.instructions { font-size: 10pt; margin: 0 0 5mm; }
+
+.write-in { border-bottom: 1px solid #333; display: inline-block; height: 1.1em; }
+.team-name { width: 85mm; }
+
+/* Every round but the last carries this. */
+.page-break { break-after: page; page-break-after: always; }
+
+/* Picture round: a numbered box to write each answer in. */
+.answer-boxes { display: grid; grid-template-columns: repeat(3, 1fr); }
+.answer-boxes .answer-box { border: 1px solid #333; height: 38mm; padding: 1mm 2mm;
+                            font-size: 9pt; line-height: 1.2; }
+
+/* Multiple-choice round: the options with no question, for teams to circle.
+   Alternate rows are shaded so the eye keeps its place across the width. */
+.options-table { width: 100%; border-collapse: collapse; margin-top: 2mm;
+                 border-top: 1px solid #333; border-bottom: 1px solid #333; }
+.options-table td { padding: 3.2mm 2mm; text-align: center; }
+.options-table td.number { width: 9mm; text-align: left; font-size: 9pt; }
+.options-table tr:nth-child(even) td { background: #f2f2f2; }
+
+/* Open and true-false rounds: a numbered ruled line each. The 4.2mm gap is what
+   fits twenty lines of a general knowledge round on one page. */
+.answer-lines { list-style: none; counter-reset: question; margin: 4mm 0 0; padding: 0; }
+.answer-lines li { counter-increment: question; display: flex; align-items: baseline;
+                   gap: 3mm; margin: 0 0 4.2mm; line-height: 1.3; }
+.answer-lines li::before { content: counter(question) "."; width: 8mm; text-align: right; }
+.answer-lines .answer-line { flex: 1; border-bottom: 1px solid #333; height: 1.3em; }
+.answer-lines .true-false { white-space: nowrap; }
