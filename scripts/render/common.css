@@ -27,14 +27,14 @@ body {
   align-items: baseline;
 }
 
-/* The round title, with its score box on the right. It carries space above it
-   for the two sheets whose rounds run on down the page; the team sheet takes
-   that space back, because every round there starts a new page. A round title
-   never sits at the foot of a page with its questions overleaf. */
+/* Each round starts a new page on the answer sheet and the team sheet, so a
+   round title needs no space above it. The picture sheet, which is the one sheet
+   that runs its rounds on down the page, adds its own. A round title never sits
+   at the foot of a page with its questions overleaf. */
 .round-header {
   font-size: 16pt;
   font-weight: 700;
-  margin: 9mm 0 2mm;
+  margin: 0 0 2mm;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -45,6 +45,13 @@ body {
 .instructions {
   font-size: 10pt;
   margin: 0 0 5mm;
+}
+
+/* Carried by every round but the last, on the two sheets that give a round a
+   page each. */
+.page-break {
+  break-after: page;
+  page-break-after: always;
 }
 
 /* A picture round is laid out identically on all three sheets: the same grid, the
@@ -75,7 +82,11 @@ body {
 
 /* The label sits over the top-left corner of the cell. It is white on a dark
    panel because on two of the three sheets there is a photograph behind it, of
-   any colour. */
+   any colour. The number is always its first line; the answer sheet puts the
+   answer on the line below. */
+.picture figcaption span {
+  display: block;
+}
 .picture figcaption {
   position: absolute;
   top: 1.5mm;

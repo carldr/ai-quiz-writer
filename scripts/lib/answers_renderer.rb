@@ -13,13 +13,12 @@ module AnswersRenderer
 
   def self.render(quiz)
     body = +sheet_header("Pub Quiz — #{esc(quiz.date)}", "____ / #{quiz.total}")
-    quiz.rounds.each do |r|
-      body << round_header(r)
-      body << case r.format
-              when "picture" then pictures(r)
-              when "multiple-choice" then choices(r)
-              else plain(r)
-              end
+    body << paged_rounds(quiz.rounds) do |r|
+      case r.format
+      when "picture" then pictures(r)
+      when "multiple-choice" then choices(r)
+      else plain(r)
+      end
     end
     page("Pub Quiz — #{quiz.date} — Answers", "answers", body)
   end
@@ -27,7 +26,7 @@ module AnswersRenderer
   # The picture sheet's grid with the answer captioned over each image, so this
   # can be laid beside a team sheet and marked against what the teams saw.
   def self.pictures(round)
-    picture_grid(round) { |q| picture_cell(esc(q.answer), image: q.image) }
+    picture_grid(round) { |q| picture_cell(q.number, answer: esc(q.answer), image: q.image) }
   end
 
   # The question, then its options indented below with the correct one bold.

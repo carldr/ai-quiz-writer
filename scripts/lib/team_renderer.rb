@@ -13,22 +13,16 @@ require_relative "sheet_renderer"
 module TeamRenderer
   extend SheetRenderer
 
-  # Every round but the last carries the page-break class, so each starts a new
-  # page without leaving a blank one at the end.
   def self.render(quiz)
     body = +sheet_header("Team <span class=\"write-in team-name\"></span>",
                          "____ / #{quiz.total}")
-    last = quiz.rounds.length - 1
-    quiz.rounds.each_with_index do |r, i|
-      body << "<section#{i == last ? "" : " class=\"page-break\""}>"
-      body << round_header(r)
-      body << case r.format
-              when "picture" then boxes(r)
-              when "multiple-choice" then choices(r)
-              when "true-false" then lines(r, true_false: true)
-              else lines(r)
-              end
-      body << "</section>"
+    body << paged_rounds(quiz.rounds) do |r|
+      case r.format
+      when "picture" then boxes(r)
+      when "multiple-choice" then choices(r)
+      when "true-false" then lines(r, true_false: true)
+      else lines(r)
+      end
     end
     page("Pub Quiz — #{quiz.date} — Team Sheet", "team", body)
   end

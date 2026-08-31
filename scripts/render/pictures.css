@@ -1,8 +1,11 @@
 /* Picture sheet. The numbered grid teams look at, with no answers and no sheet
    title. A 15-image round fits one A4 page. Loaded after common.css. */
 
-/* A quiz with two picture rounds prints them one after another, so every round
-   title but the first keeps the space common.css puts above it. */
+/* This is the one sheet whose rounds run on down the page rather than taking one
+   each, so a second picture round's title needs space above it. */
+.round-header {
+  margin-top: 9mm;
+}
 .round-header:first-child {
   margin-top: 0;
 }

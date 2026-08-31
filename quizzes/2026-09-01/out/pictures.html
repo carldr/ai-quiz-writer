@@ -29,14 +29,14 @@ body {
   align-items: baseline;
 }
 
-/* The round title, with its score box on the right. It carries space above it
-   for the two sheets whose rounds run on down the page; the team sheet takes
-   that space back, because every round there starts a new page. A round title
-   never sits at the foot of a page with its questions overleaf. */
+/* Each round starts a new page on the answer sheet and the team sheet, so a
+   round title needs no space above it. The picture sheet, which is the one sheet
+   that runs its rounds on down the page, adds its own. A round title never sits
+   at the foot of a page with its questions overleaf. */
 .round-header {
   font-size: 16pt;
   font-weight: 700;
-  margin: 9mm 0 2mm;
+  margin: 0 0 2mm;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -47,6 +47,13 @@ body {
 .instructions {
   font-size: 10pt;
   margin: 0 0 5mm;
+}
+
+/* Carried by every round but the last, on the two sheets that give a round a
+   page each. */
+.page-break {
+  break-after: page;
+  page-break-after: always;
 }
 
 /* A picture round is laid out identically on all three sheets: the same grid, the
@@ -77,7 +84,11 @@ body {
 
 /* The label sits over the top-left corner of the cell. It is white on a dark
    panel because on two of the three sheets there is a photograph behind it, of
-   any colour. */
+   any colour. The number is always its first line; the answer sheet puts the
+   answer on the line below. */
+.picture figcaption span {
+  display: block;
+}
 .picture figcaption {
   position: absolute;
   top: 1.5mm;
@@ -111,11 +122,14 @@ body {
 /* Picture sheet. The numbered grid teams look at, with no answers and no sheet
    title. A 15-image round fits one A4 page. Loaded after common.css. */
 
-/* A quiz with two picture rounds prints them one after another, so every round
-   title but the first keeps the space common.css puts above it. */
+/* This is the one sheet whose rounds run on down the page rather than taking one
+   each, so a second picture round's title needs space above it. */
+.round-header {
+  margin-top: 9mm;
+}
 .round-header:first-child {
   margin-top: 0;
 }
 
 </style></head>
-<body><h2 class="round-header"><span>Round 1 - Teacher, Teacher</span><span>__ / 15</span></h2><p class="instructions">Name the show or film each teacher is from. One point each. Character names score nothing.</p><div class="picture-grid"><figure class="picture"><img src="../images/r1-01.jpg"><figcaption>1</figcaption></figure><figure class="picture"><img src="../images/r1-02.jpg"><figcaption>2</figcaption></figure><figure class="picture"><img src="../images/r1-03.jpg"><figcaption>3</figcaption></figure><figure class="picture"><img src="../images/r1-04.png"><figcaption>4</figcaption></figure><figure class="picture"><img src="../images/r1-05.jpg"><figcaption>5</figcaption></figure><figure class="picture"><img src="../images/r1-06.jpg"><figcaption>6</figcaption></figure><figure class="picture"><img src="../images/r1-07.jpg"><figcaption>7</figcaption></figure><figure class="picture"><img src="../images/r1-08.jpg"><figcaption>8</figcaption></figure><figure class="picture"><img src="../images/r1-09.jpg"><figcaption>9</figcaption></figure><figure class="picture"><img src="../images/r1-10.jpg"><figcaption>10</figcaption></figure><figure class="picture"><img src="../images/r1-11.png"><figcaption>11</figcaption></figure><figure class="picture"><img src="../images/r1-12.jpg"><figcaption>12</figcaption></figure><figure class="picture"><img src="../images/r1-13.png"><figcaption>13</figcaption></figure><figure class="picture"><img src="../images/r1-14.jpg"><figcaption>14</figcaption></figure><figure class="picture"><img src="../images/r1-15.jpg"><figcaption>15</figcaption></figure></div></body></html>
+<body><h2 class="round-header"><span>Round 1 - Teacher, Teacher</span><span>__ / 15</span></h2><p class="instructions">Name the show or film each teacher is from. One point each. Character names score nothing.</p><div class="picture-grid"><figure class="picture"><img src="../images/r1-01.jpg"><figcaption><span>1</span></figcaption></figure><figure class="picture"><img src="../images/r1-02.jpg"><figcaption><span>2</span></figcaption></figure><figure class="picture"><img src="../images/r1-03.jpg"><figcaption><span>3</span></figcaption></figure><figure class="picture"><img src="../images/r1-04.png"><figcaption><span>4</span></figcaption></figure><figure class="picture"><img src="../images/r1-05.jpg"><figcaption><span>5</span></figcaption></figure><figure class="picture"><img src="../images/r1-06.jpg"><figcaption><span>6</span></figcaption></figure><figure class="picture"><img src="../images/r1-07.jpg"><figcaption><span>7</span></figcaption></figure><figure class="picture"><img src="../images/r1-08.jpg"><figcaption><span>8</span></figcaption></figure><figure class="picture"><img src="../images/r1-09.jpg"><figcaption><span>9</span></figcaption></figure><figure class="picture"><img src="../images/r1-10.jpg"><figcaption><span>10</span></figcaption></figure><figure class="picture"><img src="../images/r1-11.png"><figcaption><span>11</span></figcaption></figure><figure class="picture"><img src="../images/r1-12.jpg"><figcaption><span>12</span></figcaption></figure><figure class="picture"><img src="../images/r1-13.png"><figcaption><span>13</span></figcaption></figure><figure class="picture"><img src="../images/r1-14.jpg"><figcaption><span>14</span></figcaption></figure><figure class="picture"><img src="../images/r1-15.jpg"><figcaption><span>15</span></figcaption></figure></div></body></html>

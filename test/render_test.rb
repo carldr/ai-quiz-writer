@@ -138,7 +138,7 @@ class AnswersRendererTest < Minitest::Test
   end
 
   def test_picture_round_answers_label_the_images
-    assert_includes html, "<figcaption>Dunlop</figcaption>"
+    assert_includes html, "<figcaption><span>1</span><span>Dunlop</span></figcaption>"
     assert_includes html, %(src="../images/r1-01.png")
   end
 
@@ -192,7 +192,7 @@ class TeamRendererTest < Minitest::Test
   def test_picture_round_is_numbered_empty_boxes_without_images
     refute_includes html, "r1-01.png"
     assert_includes html, "Round 1 - Logos"
-    assert_includes html, "<figure class=\"picture\"><figcaption>1</figcaption></figure>"
+    assert_includes html, "<figure class=\"picture\"><figcaption><span>1</span></figcaption></figure>"
   end
 
   # The fixture has four rounds, so the first three break and the last does not.
@@ -209,7 +209,7 @@ class PicturesRendererTest < Minitest::Test
   def test_grid_of_numbered_images_without_labels
     html = PicturesRenderer.render(quiz)
     assert_includes html, %(src="../images/r1-01.png")
-    assert_includes html, "<figcaption>1</figcaption>"
+    assert_includes html, "<figcaption><span>1</span></figcaption>"
     refute_includes html, "Dunlop"
   end
 

@@ -39,6 +39,18 @@ module SheetRenderer
     "<h1 class=\"sheet-header\"><span>#{left}</span><span>#{right}</span></h1>"
   end
 
+  # The answer sheet and the team sheet both put each round on its own page, so
+  # the quizmaster reads from one sheet while a table works on the matching one.
+  # Every round but the last carries the break, so neither sheet ends on a blank
+  # page. The block fills one round.
+  def paged_rounds(rounds)
+    last = rounds.length - 1
+    rounds.each_with_index.map do |round, i|
+      "<section#{i == last ? "" : " class=\"page-break\""}>" \
+        "#{round_header(round)}#{yield round}</section>"
+    end.join
+  end
+
   # A picture round is the same grid on all three sheets — three cells across the
   # page, every cell 4:3 — so the numbers fall in the same places on the sheet
   # teams look at and the sheet they write on. The block fills one cell per
@@ -48,12 +60,15 @@ module SheetRenderer
     "<div class=\"picture-grid\">#{cells.join}</div>"
   end
 
-  # One cell of that grid: a label, and the round's image behind it when the sheet
-  # shows the images. An empty cell is the same element as a filled one, so the
-  # cells line up across the three sheets.
-  def picture_cell(caption, image: nil)
+  # One cell of that grid. Every cell is labelled with its number, wherever it is
+  # printed; the answer sheet adds the answer on the line below. The image goes
+  # behind the label on the two sheets that show the images, and an empty cell is
+  # the same element as a filled one, so the cells line up across all three.
+  def picture_cell(number, answer: nil, image: nil)
     img = image ? "<img src=\"../#{esc(image)}\">" : ""
-    "<figure class=\"picture\">#{img}<figcaption>#{caption}</figcaption></figure>"
+    label = +"<span>#{number}</span>"
+    label << "<span>#{answer}</span>" if answer
+    "<figure class=\"picture\">#{img}<figcaption>#{label}</figcaption></figure>"
   end
 
   # The round title and its score box. The instructions line is printed on the

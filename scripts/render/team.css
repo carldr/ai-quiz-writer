@@ -1,10 +1,5 @@
-/* Team sheet. Carries no question text, and each round starts a new page, so
-   round titles give back the space common.css puts above them. Loaded after
-   common.css. */
-
-.round-header {
-  margin-top: 0;
-}
+/* Team sheet. Carries no question text, and gives each round a page. Loaded
+   after common.css. */
 
 .write-in {
   border-bottom: 1px solid #333;
@@ -13,12 +8,6 @@
 }
 .team-name {
   width: 85mm;
-}
-
-/* Every round but the last carries this. */
-.page-break {
-  break-after: page;
-  page-break-after: always;
 }
 
 /* Multiple-choice round: the options with no question, for teams to circle.
