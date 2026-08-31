@@ -145,4 +145,20 @@ module SheetRenderer
     end
     page("Pub Quiz — #{quiz.date} — Team Sheet", body)
   end
+
+  def self.pictures_html(quiz)
+    picture_rounds = quiz.rounds.select { |r| r.format == "picture" }
+    return nil if picture_rounds.empty?
+
+    body = +""
+    picture_rounds.each do |r|
+      body << round_header(r)
+      body << "<div class=\"grid\">"
+      r.questions.each do |q|
+        body << "<figure><img src=\"../#{esc(q.image)}\"><figcaption>#{q.number}</figcaption></figure>"
+      end
+      body << "</div>"
+    end
+    page("Pub Quiz — #{quiz.date} — Pictures", body)
+  end
 end

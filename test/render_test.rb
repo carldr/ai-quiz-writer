@@ -164,3 +164,22 @@ class TeamSheetTest < Minitest::Test
     assert_includes html, "Round 1: Logos"
   end
 end
+
+class PictureSheetTest < Minitest::Test
+  def quiz
+    QuizParser.parse(File.read(File.join(FIXTURE_DIR, "quiz.md")), quiz_dir: FIXTURE_DIR)
+  end
+
+  def test_grid_of_numbered_images_without_labels
+    html = SheetRenderer.pictures_html(quiz)
+    assert_includes html, %(src="../images/r1-01.png")
+    assert_includes html, "<figcaption>1</figcaption>"
+    refute_includes html, "Dunlop"
+  end
+
+  def test_nil_when_no_picture_round
+    q = quiz
+    q.rounds.reject! { |r| r.format == "picture" }
+    assert_nil SheetRenderer.pictures_html(q)
+  end
+end
