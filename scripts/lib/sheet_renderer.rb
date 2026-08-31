@@ -65,10 +65,11 @@ module SheetRenderer
   # behind the label on the two sheets that show the images, and an empty cell is
   # the same element as a filled one, so the cells line up across all three.
   def picture_cell(number, answer: nil, image: nil)
-    img = image ? "<img src=\"../#{esc(image)}\">" : ""
-    label = +"<span>#{number}</span>"
-    label << "<span>#{answer}</span>" if answer
-    "<figure class=\"picture\">#{img}<figcaption>#{label}</figcaption></figure>"
+    cell = +"<figure class=\"picture\">"
+    cell << "<img src=\"../#{esc(image)}\">" if image
+    cell << "<span class=\"picture-number\">#{number}</span>"
+    cell << "<span class=\"picture-answer\">#{answer}</span>" if answer
+    cell << "</figure>"
   end
 
   # The round title and its score box. The instructions line is printed on the

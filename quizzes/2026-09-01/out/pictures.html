@@ -82,16 +82,13 @@ body {
   display: block;
 }
 
-/* The label sits over the top-left corner of the cell. It is white on a dark
-   panel because on two of the three sheets there is a photograph behind it, of
-   any colour. The number is always its first line; the answer sheet puts the
-   answer on the line below. */
-.picture figcaption span {
-  display: block;
-}
-.picture figcaption {
+/* Labels sit in boxes over the cell, white on a dark panel because on two of the
+   three sheets there is a photograph behind them, of any colour. Every cell is
+   numbered in its top corner. Only the answer sheet carries the second box, and
+   that one sits on the bottom edge of the picture. */
+.picture-number,
+.picture-answer {
   position: absolute;
-  top: 1.5mm;
   left: 1.5mm;
   max-width: calc(100% - 3mm);
   font-size: 9pt;
@@ -100,6 +97,12 @@ body {
   background: rgba(0, 0, 0, 0.55);
   padding: 0.6mm 1.5mm;
   border-radius: 1mm;
+}
+.picture-number {
+  top: 1.5mm;
+}
+.picture-answer {
+  bottom: 1.5mm;
 }
 
 /* Both numbered lists count with a CSS counter rather than the browser's own
@@ -132,4 +135,4 @@ body {
 }
 
 </style></head>
-<body><h2 class="round-header"><span>Round 1 - Teacher, Teacher</span><span>__ / 15</span></h2><p class="instructions">Name the show or film each teacher is from. One point each. Character names score nothing.</p><div class="picture-grid"><figure class="picture"><img src="../images/r1-01.jpg"><figcaption><span>1</span></figcaption></figure><figure class="picture"><img src="../images/r1-02.jpg"><figcaption><span>2</span></figcaption></figure><figure class="picture"><img src="../images/r1-03.jpg"><figcaption><span>3</span></figcaption></figure><figure class="picture"><img src="../images/r1-04.png"><figcaption><span>4</span></figcaption></figure><figure class="picture"><img src="../images/r1-05.jpg"><figcaption><span>5</span></figcaption></figure><figure class="picture"><img src="../images/r1-06.jpg"><figcaption><span>6</span></figcaption></figure><figure class="picture"><img src="../images/r1-07.jpg"><figcaption><span>7</span></figcaption></figure><figure class="picture"><img src="../images/r1-08.jpg"><figcaption><span>8</span></figcaption></figure><figure class="picture"><img src="../images/r1-09.jpg"><figcaption><span>9</span></figcaption></figure><figure class="picture"><img src="../images/r1-10.jpg"><figcaption><span>10</span></figcaption></figure><figure class="picture"><img src="../images/r1-11.png"><figcaption><span>11</span></figcaption></figure><figure class="picture"><img src="../images/r1-12.jpg"><figcaption><span>12</span></figcaption></figure><figure class="picture"><img src="../images/r1-13.png"><figcaption><span>13</span></figcaption></figure><figure class="picture"><img src="../images/r1-14.jpg"><figcaption><span>14</span></figcaption></figure><figure class="picture"><img src="../images/r1-15.jpg"><figcaption><span>15</span></figcaption></figure></div></body></html>
+<body><h2 class="round-header"><span>Round 1 - Teacher, Teacher</span><span>__ / 15</span></h2><p class="instructions">Name the show or film each teacher is from. One point each. Character names score nothing.</p><div class="picture-grid"><figure class="picture"><img src="../images/r1-01.jpg"><span class="picture-number">1</span></figure><figure class="picture"><img src="../images/r1-02.jpg"><span class="picture-number">2</span></figure><figure class="picture"><img src="../images/r1-03.jpg"><span class="picture-number">3</span></figure><figure class="picture"><img src="../images/r1-04.png"><span class="picture-number">4</span></figure><figure class="picture"><img src="../images/r1-05.jpg"><span class="picture-number">5</span></figure><figure class="picture"><img src="../images/r1-06.jpg"><span class="picture-number">6</span></figure><figure class="picture"><img src="../images/r1-07.jpg"><span class="picture-number">7</span></figure><figure class="picture"><img src="../images/r1-08.jpg"><span class="picture-number">8</span></figure><figure class="picture"><img src="../images/r1-09.jpg"><span class="picture-number">9</span></figure><figure class="picture"><img src="../images/r1-10.jpg"><span class="picture-number">10</span></figure><figure class="picture"><img src="../images/r1-11.png"><span class="picture-number">11</span></figure><figure class="picture"><img src="../images/r1-12.jpg"><span class="picture-number">12</span></figure><figure class="picture"><img src="../images/r1-13.png"><span class="picture-number">13</span></figure><figure class="picture"><img src="../images/r1-14.jpg"><span class="picture-number">14</span></figure><figure class="picture"><img src="../images/r1-15.jpg"><span class="picture-number">15</span></figure></div></body></html>

@@ -80,16 +80,13 @@ body {
   display: block;
 }
 
-/* The label sits over the top-left corner of the cell. It is white on a dark
-   panel because on two of the three sheets there is a photograph behind it, of
-   any colour. The number is always its first line; the answer sheet puts the
-   answer on the line below. */
-.picture figcaption span {
-  display: block;
-}
-.picture figcaption {
+/* Labels sit in boxes over the cell, white on a dark panel because on two of the
+   three sheets there is a photograph behind them, of any colour. Every cell is
+   numbered in its top corner. Only the answer sheet carries the second box, and
+   that one sits on the bottom edge of the picture. */
+.picture-number,
+.picture-answer {
   position: absolute;
-  top: 1.5mm;
   left: 1.5mm;
   max-width: calc(100% - 3mm);
   font-size: 9pt;
@@ -98,6 +95,12 @@ body {
   background: rgba(0, 0, 0, 0.55);
   padding: 0.6mm 1.5mm;
   border-radius: 1mm;
+}
+.picture-number {
+  top: 1.5mm;
+}
+.picture-answer {
+  bottom: 1.5mm;
 }
 
 /* Both numbered lists count with a CSS counter rather than the browser's own

@@ -6,7 +6,6 @@
    general knowledge round has to hold its page. */
 .question-list {
   margin: 0;
-  line-height: 1.2;
 }
 .question-list > li {
   position: relative;
