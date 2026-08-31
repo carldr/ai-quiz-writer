@@ -125,6 +125,22 @@ class AnswersRendererTest < Minitest::Test
     assert_includes html, "<strong>Bologna</strong>"
   end
 
+  # The answer often adds a date or a reason to the option it repeats. That
+  # detail is what the quizmaster reads out, so it has to survive onto this
+  # sheet, and it must not reach the team sheet.
+  def test_multiple_choice_correct_option_keeps_the_detail_on_the_answer
+    quiz = Quiz.new(date: "2099-01-01", total: 1, rounds: [
+      Round.new(number: 1, name: "X", points: 1, format: "multiple-choice", questions: [
+        Question.new(number: 1, text: "Which came first?",
+                     options: ["Blue Peter", "Doctor Who"],
+                     answer: "a) Blue Peter (1958, five years before Doctor Who)", line: 1)
+      ])
+    ])
+    out = AnswersRenderer.render(quiz)
+    assert_includes out, "<strong>Blue Peter (1958, five years before Doctor Who)</strong>"
+    refute_includes TeamRenderer.render(quiz), "1958"
+  end
+
   def test_multiple_choice_bolds_the_correct_option_only
     assert_includes html, "<strong>Midas (30 litres)</strong>"
     refute_includes html, "<strong>Magnum</strong>"

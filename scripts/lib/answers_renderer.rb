@@ -30,12 +30,17 @@ module AnswersRenderer
   end
 
   # The question, then its options indented below with the correct one bold.
+  #
+  # The correct option is printed from the answer rather than from the option
+  # list, so it carries whatever the answer added to it — the dates behind a
+  # "which came first", the reason behind a wrong-sounding right answer. That is
+  # the part the quizmaster reads out when a table argues, and the team sheet
+  # never shows it.
   def self.choices(round)
     items = round.questions.map do |q|
       correct = answer_index(q)
       opts = (q.options || []).each_with_index.map do |opt, i|
-        text = esc(opt)
-        text = "<strong>#{text}</strong>" if i == correct
+        text = i == correct ? "<strong>#{esc(answer_text(q))}</strong>" : esc(opt)
         "<span>#{(i + "a".ord).chr})&nbsp; #{text}</span>"
       end
       body = +esc(q.text)
@@ -59,5 +64,11 @@ module AnswersRenderer
   def self.answer_index(question)
     m = /\A([a-d])\)/.match(question.answer.to_s)
     m ? m[1].ord - "a".ord : nil
+  end
+
+  # The answer without the letter that marked which option it is, since the
+  # letter is already printed beside it.
+  def self.answer_text(question)
+    question.answer.to_s.sub(/\A[a-d]\)\s*/, "")
   end
 end
