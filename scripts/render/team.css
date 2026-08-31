@@ -26,7 +26,7 @@
 .options-table td.number {
   width: 9mm;
   text-align: left;
-  font-size: 9pt;
+  /* font-size: 9pt; */
 }
 .options-table tr:nth-child(even) td {
   background: #f2f2f2;

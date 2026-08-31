@@ -2,8 +2,9 @@
    than one sheet belongs here; anything used by only one belongs in that
    sheet's file.
 
-   Five type sizes, each with one job: 24pt sheet title, 16pt round title, 11pt
-   body, 10pt instructions, 9pt small labels. The 9pt is set where it is used. */
+   Three type sizes: 24pt sheet title, 16pt round title, 10.5pt for everything
+   else. The answer sheet sets its questions smaller again, which is the only
+   exception, and is what holds its longest round to one page. */
 
 @page {
   size: A4;
@@ -12,7 +13,7 @@
 
 body {
   font-family: -apple-system, 'SF Pro Text', Helvetica, Arial, sans-serif;
-  font-size: 11pt;
+  font-size: 10.5pt;
   line-height: 1.5;
   margin: 0;
 }
@@ -43,7 +44,7 @@ body {
 }
 
 .instructions {
-  font-size: 10pt;
+  /* font-size: 10pt; */
   margin: 0 0 5mm;
 }
 
@@ -89,7 +90,7 @@ body {
   position: absolute;
   left: 1.5mm;
   max-width: calc(100% - 3mm);
-  font-size: 9pt;
+  /* font-size: 9pt; */
   line-height: 1.25;
   color: #fff;
   background: rgba(0, 0, 0, 0.55);
