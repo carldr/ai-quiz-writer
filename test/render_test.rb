@@ -125,20 +125,48 @@ class AnswersRendererTest < Minitest::Test
     assert_includes html, "<strong>Bologna</strong>"
   end
 
-  # The answer often adds a date or a reason to the option it repeats. That
-  # detail is what the quizmaster reads out, so it has to survive onto this
-  # sheet, and it must not reach the team sheet.
-  def test_multiple_choice_correct_option_keeps_the_detail_on_the_answer
-    quiz = Quiz.new(date: "2099-01-01", total: 1, rounds: [
+  # A one-question multiple-choice quiz, for the answer-detail tests below.
+  def choices_quiz(answer, options: ["Blue Peter", "Doctor Who"])
+    Quiz.new(date: "2099-01-01", total: 1, rounds: [
       Round.new(number: 1, name: "X", points: 1, format: "multiple-choice", questions: [
-        Question.new(number: 1, text: "Which came first?",
-                     options: ["Blue Peter", "Doctor Who"],
-                     answer: "a) Blue Peter (1958, five years before Doctor Who)", line: 1)
+        Question.new(number: 1, text: "Which came first?", options: options,
+                     answer: answer, line: 1)
       ])
     ])
-    out = AnswersRenderer.render(quiz)
-    assert_includes out, "<strong>Blue Peter (1958, five years before Doctor Who)</strong>"
+  end
+
+  # The answer usually adds a date or a reason to the option it repeats. That
+  # detail is the thing the quizmaster reads out when a table argues, so it has
+  # to reach this sheet.
+  def test_multiple_choice_correct_option_carries_the_answer_detail
+    out = AnswersRenderer.render(choices_quiz("a) Blue Peter (1958, before Doctor Who)"))
+    assert_includes out, "<strong>Blue Peter (1958, before Doctor Who)</strong>"
+  end
+
+  # ...and it must not reach the sheet the teams are looking at.
+  def test_multiple_choice_answer_detail_stays_off_the_team_sheet
+    quiz = choices_quiz("a) Blue Peter (1958, before Doctor Who)")
     refute_includes TeamRenderer.render(quiz), "1958"
+    assert_includes TeamRenderer.render(quiz), "<td>Blue Peter</td>"
+  end
+
+  # The letter is printed beside the option already.
+  def test_multiple_choice_answer_letter_is_not_printed_twice
+    out = AnswersRenderer.render(choices_quiz("a) Blue Peter (1958)"))
+    assert_includes out, "a)&nbsp; <strong>Blue Peter (1958)</strong>"
+    refute_includes out, "<strong>a) Blue Peter"
+  end
+
+  # Only the lettered option is emboldened, so an answer written without a letter
+  # leaves the options as they are rather than guessing at one.
+  def test_multiple_choice_answer_without_a_letter_bolds_nothing
+    out = AnswersRenderer.render(choices_quiz("Blue Peter"))
+    refute_includes out, "<strong>"
+  end
+
+  def test_multiple_choice_answer_detail_is_escaped
+    out = AnswersRenderer.render(choices_quiz("a) Blue Peter <b> & Co"))
+    assert_includes out, "Blue Peter &lt;b&gt; &amp; Co"
   end
 
   def test_multiple_choice_bolds_the_correct_option_only
