@@ -10,11 +10,7 @@ round by round; never move to the next round without approval.
 
 ## Structure
 
-Default: Round 1 picture (15 questions, / 15), one or two multiple-choice
-rounds (/ 10 each), one or two novelty rounds (/ 10 each), final round
-general knowledge (20 questions, / 20). Total 75. Ask up front if Carl wants
-a different shape or a theme (seasonal, event-based). NEVER propose music or
-audio rounds.
+Default: Round 1 picture (15 questions, / 15), then four rounds of 10 (one or two multiple-choice, the rest novelty), final round general knowledge (20 questions, / 20). Total 75. Ask up front if Carl wants a different shape or a theme (seasonal, event-based). NEVER propose music or audio rounds.
 
 Study `OLD-QUIZZES.md` for tone, difficulty, and the kinds of novelty rounds
 used before (connections, anagrams, true/false, "X or Y?", single-letter
@@ -37,11 +33,11 @@ answers, headlines...). Novelty round formats may be reused; questions may not.
 
 After the 15 items are approved:
 1. Fetch 2–3 candidate images per item into quizzes/YYYY-MM-DD/images/ as
-   candidate-NN-a.jpg, candidate-NN-b.jpg, ...
+   candidate-NN-a.jpg/png (keep each image's real extension), candidate-NN-b..., ...
 2. Write quizzes/YYYY-MM-DD/images/contact-sheet.html showing all candidates
    with their filenames; tell Carl to open it and pick.
-3. Copy each pick to the final name r1-NN.png/jpg matching the quiz file, and
-   delete the unused candidates and the contact sheet.
+3. Rename each pick to the final name r1-NN.png/jpg matching the quiz file, then
+   delete the remaining candidates and the contact sheet, so only the r1-NN files remain in images/.
 Image rights are Carl's call — prefer official logos/promotional images and
 say where each came from.
 
