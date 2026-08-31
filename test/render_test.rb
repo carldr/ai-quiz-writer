@@ -88,3 +88,46 @@ class ParserErrorTest < Minitest::Test
     assert_equal 2, err.message.lines.size
   end
 end
+
+class AnswersSheetTest < Minitest::Test
+  def html
+    quiz = QuizParser.parse(File.read(File.join(FIXTURE_DIR, "quiz.md")), quiz_dir: FIXTURE_DIR)
+    SheetRenderer.answers_html(quiz)
+  end
+
+  def test_is_a_complete_html_document
+    assert_match(/\A<!DOCTYPE html>/i, html)
+    assert_includes html, "</html>"
+  end
+
+  def test_has_title_and_total
+    assert_includes html, "Pub Quiz — 2099-01-01"
+    assert_includes html, "/ 27"
+  end
+
+  def test_round_headings_with_score_boxes
+    assert_includes html, "Round 2: Size Matters"
+    assert_includes html, "/ 2"
+  end
+
+  def test_answers_are_present_and_marked
+    assert_includes html, "<strong>Bologna</strong>"
+    assert_includes html, "<strong>b) Midas (30 litres)</strong>"
+  end
+
+  def test_picture_round_answers_listed_with_thumbnails
+    assert_includes html, "<strong>Dunlop</strong>"
+    assert_includes html, %(src="../images/r1-01.png")
+  end
+
+  def test_escapes_html_in_questions
+    quiz = Quiz.new(date: "2099-01-01", total: 1, rounds: [
+      Round.new(number: 1, name: "X", points: 1, format: "open", questions: [
+        Question.new(number: 1, text: "What is <b>?", answer: "a & b", line: 1)
+      ])
+    ])
+    out = SheetRenderer.answers_html(quiz)
+    assert_includes out, "What is &lt;b&gt;?"
+    assert_includes out, "a &amp; b"
+  end
+end
