@@ -131,3 +131,36 @@ class AnswersSheetTest < Minitest::Test
     assert_includes out, "a &amp; b"
   end
 end
+
+class TeamSheetTest < Minitest::Test
+  def html
+    quiz = QuizParser.parse(File.read(File.join(FIXTURE_DIR, "quiz.md")), quiz_dir: FIXTURE_DIR)
+    SheetRenderer.team_html(quiz)
+  end
+
+  def test_has_team_name_line_and_no_answers
+    assert_includes html, "Team"
+    refute_includes html, "Bologna"
+    refute_includes html, "Dunlop"
+    refute_includes html, "<strong>"
+  end
+
+  def test_multiple_choice_keeps_options
+    assert_includes html, "c) Nebuchadnezzar"
+  end
+
+  def test_true_false_offers_circling
+    assert_includes html, "True / False"
+    assert_includes html, "Mr Monopoly wears a monocle?"
+  end
+
+  def test_open_questions_get_write_in_lines
+    assert_includes html, "How many dots are on a standard six-sided dice?"
+    assert_includes html, "writein"
+  end
+
+  def test_picture_round_is_numbered_write_in_lines_without_images
+    refute_includes html, "r1-01.png"
+    assert_includes html, "Round 1: Logos"
+  end
+end

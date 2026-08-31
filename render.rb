@@ -122,4 +122,23 @@ module SheetRenderer
     end
     page("Pub Quiz — #{quiz.date} — Answers", body)
   end
+
+  def self.team_html(quiz)
+    body = +"<h1><span>Team <span class=\"writein\"></span></span><span>____ / #{quiz.total}</span></h1>"
+    quiz.rounds.each do |r|
+      body << "<h2><span>Round #{r.number}: #{esc(r.name)}</span><span class=\"score\">__ / #{r.points}</span></h2>"
+      body << "<p class=\"instructions\">#{esc(r.instructions)}</p>" if r.instructions
+      body << "<ol>"
+      r.questions.each do |q|
+        body << case r.format
+                when "picture" then "<li><span class=\"writein\"></span></li>"
+                when "multiple-choice" then "<li>#{esc(q.text)}</li>"
+                when "true-false" then "<li>#{esc(q.text)} &nbsp; True / False</li>"
+                else "<li>#{esc(q.text)}<br><span class=\"writein\"></span></li>"
+                end
+      end
+      body << "</ol>"
+    end
+    page("Pub Quiz — #{quiz.date} — Team Sheet", body)
+  end
 end
