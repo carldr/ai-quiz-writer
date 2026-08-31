@@ -4,6 +4,12 @@ One row per past round, newest quiz first. Full questions are in OLD-QUIZZES.md 
 
 | Date | R | Round | Format | Theme / gimmick |
 |---|---|---|---|---|
+| 2026-09-01 | 1 | Teacher, Teacher | picture | fictional teachers from film and TV stills |
+| 2026-09-01 | 2 | Which Came First? | mc | pick the earliest of three |
+| 2026-09-01 | 3 | Hidden Body Parts | novelty | every answer conceals a body part |
+| 2026-09-01 | 4 | Nicknames | open | name the person, place or thing from its nickname |
+| 2026-09-01 | 5 | Food and Drink | open | food and drink |
+| 2026-09-01 | 6 | General Knowledge | open | — (/20) |
 | 2026-08-04 | 1 | Brands | picture | cropped brand logos |
 | 2026-08-04 | 2 | Size Matters | mc | sizes, distances, quantities |
 | 2026-08-04 | 3 | Anagrams | novelty | anagrams of European capitals (/5) |

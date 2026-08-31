@@ -1,0 +1,12 @@
+# Paths the prose judge skips, one per line, each starting with a slash and
+# read as relative to the repository root.
+#
+# A quiz sheet is not documentation. Its readers are a pub quiz team, sitting at
+# a table mid-round with a pen, deciding what to write in the gap; and the
+# quizmaster, reading questions and answers aloud to a room. They are playing a
+# game, not learning how something works. The lines are questions, answers and
+# playing instructions, so the prose rules for exposition do not apply to them:
+# a question withholds its answer on purpose, and an instruction repeats itself
+# on purpose, because it is heard once across a noisy room.
+/quizzes
+/FUTURE-QUIZ-ROUNDS.md

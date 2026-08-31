@@ -5,6 +5,9 @@ description: Generate a new pub quiz round by round, with web-verified answers, 
 
 # New quiz
 
+Claude reads this file while generating a quiz for Carl, and follows it as
+instructions; Carl reads it when changing the process.
+
 Generate a pub quiz for the date given as argument (ask if missing). Work
 round by round; never move to the next round without approval.
 
@@ -22,9 +25,15 @@ Questions in every round must work for a mix of ages.
 
 ## Per round
 
-1. Read ROUND-HISTORY.md and propose 3–4 round themes with a one-line
-   description each, as a checklist — Carl can pick more than one. Do not
-   propose a theme used in a recent quiz.
+1. Read ROUND-HISTORY.md and FUTURE-QUIZ-ROUNDS.md, then propose 3–4 round
+   themes with a one-line description each, as a checklist — Carl can pick more
+   than one. Do not propose a theme used in a recent quiz. FUTURE-QUIZ-ROUNDS.md
+   holds rounds and questions drafted for earlier quizzes and not used; draw on
+   it rather than starting from nothing, and say in the proposal which themes
+   come from it. Everything in that file is a first draft: it still goes through
+   steps 4 to 8 in full, and its answers are re-verified and re-deduped from
+   scratch. Each entry records its own known faults; read those before
+   proposing it.
 2. Start a sub-agent per picked theme, in parallel, each generating example
    questions for its theme. Give each sub-agent ROUND-HISTORY.md to read for
    tone and to avoid recent overlaps. For a picture round, the examples
@@ -38,27 +47,54 @@ Questions in every round must work for a mix of ages.
    answer cannot be confirmed; if kept despite doubt, flag it to Carl.
 7. Dedupe: grep OLD-QUIZZES.md and every quizzes/*/quiz.md for each question's
    key fact (search for the answer and for distinctive question words, not the
-   whole sentence). Replace any repeat — a question counts as repeated if it
-   asks for the same fact, even worded differently.
+   whole sentence). The grep only finds candidates. A question is a repeat
+   only if it asks for the same fact as an old one, even worded differently.
+   A new question that merely shares its answer with an old one is fine.
+   Replace any repeat. Within the quiz being generated, though, no answer
+   may appear twice — check the round against the rounds already approved.
 8. Show the round to Carl. Apply requested swaps (re-verify and re-dedupe
    replacements) until approved.
 
 ## Picture round
 
 After the 15 items are approved:
+
+1. Images on the picture sheet are 4/3, so prefer images that are approximately that aspect ratio, or ensure that if cropped to 4/3, the subject remains identifable.
 1. Fetch 2–3 candidate images per item into quizzes/YYYY-MM-DD/images/ as
    candidate-NN-a.jpg/png (keep each image's real extension), candidate-NN-b..., ...
+   Dispatch the fetching to parallel sub-agents, one item each. The
+   Wikipedia summary API is the first source. Its JSON, at
+   en.wikipedia.org/api/rest_v1/page/summary/<Article_Title>, carries a
+   direct upload.wikimedia.org file URL in originalimage.source, and the
+   Commons search API lists further candidates with their licences.
+   Wikimedia rejects requests that lack a browser User-Agent, so send one.
+   Fetch every other site with curl_chrome150, from curl-impersonate, which
+   passes the bot checks that block plain curl. Check
+   every download with the file command. A download that is not an image
+   gets one retry from a different source, and the item then keeps whatever
+   candidates it has. Scrape image URLs from fetched web pages only for
+   items no API source covers.
 2. Write quizzes/YYYY-MM-DD/images/contact-sheet.html showing all candidates
    with their filenames; tell Carl to open it and pick.
-3. Rename each pick to the final name r1-NN.png/jpg matching the quiz file, then
-   delete the remaining candidates and the contact sheet, so only the r1-NN files remain in images/.
-Image rights are Carl's call — prefer official logos/promotional images and
-say where each came from.
+3. Copy each pick to the final name r1-NN.png/jpg matching the quiz file. Keep
+   the candidates that were not picked, and keep the contact sheet.
+4. Re-aspect each final image to 4:3, the shape of the rendered grid cell.
+   The renderer cuts off any part of an image outside that shape, so center the subject in the crop, and ensure that clues which are required to identify the image are not lost. Crop with
+   sips when the edges are only background; pad with white when content
+   reaches the edges, as it does in a logo or a flag.
+
+Image rights are not a concern.
 
 ## Finish
 
 1. Write quizzes/YYYY-MM-DD/quiz.md (format: docs/quiz-format.md).
-2. Run: ruby render.rb quizzes/YYYY-MM-DD
+2. Run: ruby scripts/render.rb quizzes/YYYY-MM-DD
 3. Fix any parse errors, and report the three PDF paths.
 4. Add the new quiz's rounds to the top of the ROUND-HISTORY.md table, which
    runs newest first.
+5. Move the unused rounds into FUTURE-QUIZ-ROUNDS.md, under the heading for the
+   round type, keeping the questions and answers verbatim and recording the
+   drafting date. Record only a round Carl passed over in favour of a different
+   round. Leave out anything dropped because its questions gave away their
+   answers, its images could not be sourced, or its facts would not verify.
+   Delete from FUTURE-QUIZ-ROUNDS.md anything this quiz used.
