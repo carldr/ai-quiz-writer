@@ -3,13 +3,11 @@
 
 # Renders a quiz into printable sheets.
 #
-#   ruby scripts/render.rb quizzes/2026-09-01 [--no-pdf]
+#   ruby scripts/render.rb quizzes/2026-09-01
 #
 # The argument is the quiz directory; quiz.md inside it is implied. Three sheets
 # are written to its out/ subdirectory — answers, team and pictures — as both
 # HTML and PDF, and the PDFs are copied to iCloud Drive under the quiz date.
-# --no-pdf stops after the HTML, which is much faster, needs no Chrome, and
-# copies nothing.
 #
 # The work is in scripts/lib/:
 #
@@ -29,16 +27,11 @@
 require_relative "lib/cli"
 
 if __FILE__ == $PROGRAM_NAME
-  args = ARGV.dup
-  pdf = !args.delete("--no-pdf")
-  dir = args[0] or abort "usage: ruby scripts/render.rb quizzes/YYYY-MM-DD [--no-pdf]"
+  dir = ARGV[0] or abort "usage: ruby scripts/render.rb quizzes/YYYY-MM-DD"
   begin
-    paths = Cli.run(dir, pdf: pdf)
-    if pdf
-      *pdfs, copied = paths
-      pdfs.each { |p| puts p }
-      puts "copied to #{copied}"
-    end
+    *pdfs, copied = Cli.run(dir)
+    pdfs.each { |p| puts p }
+    puts "copied to #{copied}"
   rescue ParseError => e
     abort "#{dir}/quiz.md:\n#{e.message}"
   rescue RenderError => e

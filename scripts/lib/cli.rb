@@ -16,16 +16,19 @@ module Cli
   # so they reach the phone and the printer without being fetched off the laptop.
   ICLOUD_QUIZ_DIR = File.join(Dir.home, "Library/Mobile Documents/com~apple~CloudDocs/Quiz")
 
-  # Renders quizzes/YYYY-MM-DD. Writes an .html for each sheet, then prints each
-  # to PDF and copies the PDFs to iCloud Drive, both unless `pdf` is false.
-  # Returns the PDF paths in out/, followed by the iCloud directory they were
-  # copied to.
-  #
-  # The HTML is written first and the PDF made from the file on disk, rather than
-  # piped, because Chrome must resolve the ../images/ paths relative to the
-  # rendered file. That is also why the HTML files stay behind afterwards: a
-  # one-off tweak can be made by hand and reprinted.
-  def self.run(dir, pdf: true, icloud_dir: ICLOUD_QUIZ_DIR)
+  # Renders quizzes/YYYY-MM-DD: an .html and a .pdf for each sheet in out/, and a
+  # copy of the PDFs in iCloud Drive. Returns the PDF paths in out/, followed by
+  # the iCloud directory they were copied to.
+  def self.run(dir)
+    out, names, quiz = write_sheets(dir)
+    print_pdfs(out, names)
+    paths = names.map { |name| File.join(out, "#{name}.pdf") }
+    [*paths, copy_to_icloud(paths, quiz.date, ICLOUD_QUIZ_DIR)]
+  end
+
+  # Parses the quiz and writes an .html for each sheet. Returns the out
+  # directory, the sheet names, and the quiz.
+  def self.write_sheets(dir)
     quiz_md = File.join(dir, "quiz.md")
     raise RenderError, "no quiz file at #{quiz_md}" unless File.exist?(quiz_md)
 
@@ -42,12 +45,7 @@ module Cli
     }.compact
 
     sheets.each { |name, html| File.write(File.join(out, "#{name}.html"), html) }
-
-    paths = sheets.keys.map { |name| File.join(out, "#{name}.pdf") }
-    return paths unless pdf
-
-    print_pdfs(out, sheets.keys)
-    [*paths, copy_to_icloud(paths, quiz.date, icloud_dir)]
+    [out, sheets.keys, quiz]
   end
 
   # Copies the finished PDFs into a directory named for the quiz date, replacing
@@ -67,7 +65,10 @@ module Cli
   end
 
   # Headless Chrome is the only PDF step: it is already on the machine, and it is
-  # the same engine the HTML was designed against.
+  # the same engine the HTML was designed against. The PDF is made from the file
+  # on disk rather than piped, because Chrome must resolve the ../images/ paths
+  # relative to the rendered file. That is also why the HTML files stay behind: a
+  # one-off tweak can be made by hand and reprinted.
   def self.print_pdfs(out, names)
     raise RenderError, "Chrome not found at #{CHROME}" unless File.exist?(CHROME)
 

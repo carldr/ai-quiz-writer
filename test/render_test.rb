@@ -287,7 +287,7 @@ class CliTest < Minitest::Test
     Dir.mktmpdir do |tmp|
       dir = File.join(tmp, "2099-01-01")
       FileUtils.cp_r(FIXTURE_DIR, dir)
-      Cli.run(dir, pdf: false)
+      Cli.write_sheets(dir)
       %w[answers.html team.html pictures.html].each do |f|
         assert File.exist?(File.join(dir, "out", f)), "missing #{f}"
       end
@@ -299,14 +299,14 @@ class CliTest < Minitest::Test
       dir = File.join(tmp, "2099-01-01")
       FileUtils.mkdir_p(dir)
       File.write(File.join(dir, "quiz.md"), "# Pub Quiz — 2099-01-01\n\nTotal: / 1\n\n## Round 1: X (/ 1)\n\nFormat: open\n\n1. broken\n")
-      err = assert_raises(ParseError) { Cli.run(dir, pdf: false) }
+      err = assert_raises(ParseError) { Cli.write_sheets(dir) }
       assert_includes err.message, "line 9"
     end
   end
 
   def test_missing_quiz_file_raises_render_error
     Dir.mktmpdir do |tmp|
-      err = assert_raises(RenderError) { Cli.run(File.join(tmp, "nope"), pdf: false) }
+      err = assert_raises(RenderError) { Cli.write_sheets(File.join(tmp, "nope")) }
       assert_includes err.message, "quiz.md"
     end
   end
