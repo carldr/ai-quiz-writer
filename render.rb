@@ -40,6 +40,10 @@ module QuizParser
         round.instructions = Regexp.last_match(1) if round
       when /\A\d+\. /
         parse_question(line, lineno, round, quiz_dir, errors)
+      when /\A\s*\z/
+        # blank line, ignore
+      else
+        errors << "line #{lineno}: unrecognized line: #{line.inspect}"
       end
     end
 
@@ -89,9 +93,10 @@ module SheetRenderer
     li { margin: 0.35em 0; }
     .instructions { font-style: italic; margin: 0.2em 0; }
     .writein { border-bottom: 1px solid #666; display: inline-block; width: 60%; height: 1.1em; }
+    .team-name { width: 80mm; }
     .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4mm; }
     .grid figure { margin: 0; text-align: center; }
-    .grid img { width: 100%; height: 45mm; object-fit: cover; border: 1px solid #333; }
+    .grid img { width: 100%; height: 40mm; object-fit: cover; border: 1px solid #333; }
     .thumb { height: 12mm; vertical-align: middle; margin-left: 4px; }
   CSS
 
@@ -130,7 +135,7 @@ module SheetRenderer
   end
 
   def self.team_html(quiz)
-    body = +"<h1><span>Team <span class=\"writein\"></span></span><span>____ / #{quiz.total}</span></h1>"
+    body = +"<h1><span>Team <span class=\"writein team-name\"></span></span><span>____ / #{quiz.total}</span></h1>"
     quiz.rounds.each do |r|
       body << round_header(r)
       body << "<ol>"

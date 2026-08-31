@@ -82,6 +82,11 @@ class ParserErrorTest < Minitest::Test
     assert_parse_error("Total: / 5\n", "missing '# Pub Quiz")
   end
 
+  def test_malformed_round_heading_is_an_error_not_silently_dropped
+    text = HEADER + "## Round 1: X\n\nFormat: open\n\n1. Q? — **A**\n"
+    assert_parse_error(text, "line 5: unrecognized line:")
+  end
+
   def test_all_errors_reported_together
     text = HEADER + "## Round 1: X (/ 5)\n\nFormat: musical\n\n1. no answer here\n"
     err = assert_raises(ParseError) { QuizParser.parse(text) }
