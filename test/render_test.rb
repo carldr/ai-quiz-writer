@@ -183,3 +183,29 @@ class PictureSheetTest < Minitest::Test
     assert_nil SheetRenderer.pictures_html(q)
   end
 end
+
+require "tmpdir"
+require "fileutils"
+
+class CliTest < Minitest::Test
+  def test_writes_html_files_to_out
+    Dir.mktmpdir do |tmp|
+      dir = File.join(tmp, "2099-01-01")
+      FileUtils.cp_r(FIXTURE_DIR, dir)
+      Cli.run(dir, pdf: false)
+      %w[answers.html team.html pictures.html].each do |f|
+        assert File.exist?(File.join(dir, "out", f)), "missing #{f}"
+      end
+    end
+  end
+
+  def test_parse_failure_aborts_with_line_numbers
+    Dir.mktmpdir do |tmp|
+      dir = File.join(tmp, "2099-01-01")
+      FileUtils.mkdir_p(dir)
+      File.write(File.join(dir, "quiz.md"), "# Pub Quiz — 2099-01-01\n\nTotal: / 1\n\n## Round 1: X (/ 1)\n\nFormat: open\n\n1. broken\n")
+      err = assert_raises(ParseError) { Cli.run(dir, pdf: false) }
+      assert_includes err.message, "line 9"
+    end
+  end
+end

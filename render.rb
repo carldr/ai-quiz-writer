@@ -162,3 +162,49 @@ module SheetRenderer
     page("Pub Quiz — #{quiz.date} — Pictures", body)
   end
 end
+
+module Cli
+  CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+
+  def self.run(dir, pdf: true)
+    quiz_md = File.join(dir, "quiz.md")
+    abort "no quiz file at #{quiz_md}" unless File.exist?(quiz_md)
+    quiz = QuizParser.parse(File.read(quiz_md), quiz_dir: dir)
+
+    out = File.join(dir, "out")
+    Dir.mkdir(out) unless Dir.exist?(out)
+
+    sheets = {
+      "answers" => SheetRenderer.answers_html(quiz),
+      "team" => SheetRenderer.team_html(quiz),
+      "pictures" => SheetRenderer.pictures_html(quiz)
+    }.compact
+
+    sheets.each { |name, html| File.write(File.join(out, "#{name}.html"), html) }
+
+    if pdf
+      raise "Chrome not found at #{CHROME}" unless File.exist?(CHROME)
+      sheets.each_key do |name|
+        html = File.join(out, "#{name}.html")
+        target = File.join(out, "#{name}.pdf")
+        ok = system(CHROME, "--headless", "--disable-gpu", "--no-pdf-header-footer",
+                    "--print-to-pdf=#{target}", "file://#{File.expand_path(html)}",
+                    out: File::NULL, err: File::NULL)
+        raise "Chrome failed to print #{name}.pdf" unless ok && File.exist?(target)
+      end
+    end
+    sheets.keys.map { |name| File.join(out, "#{name}.pdf") }
+  end
+end
+
+if __FILE__ == $PROGRAM_NAME
+  args = ARGV.dup
+  pdf = !args.delete("--no-pdf")
+  dir = args[0] or abort "usage: ruby render.rb quizzes/YYYY-MM-DD [--no-pdf]"
+  begin
+    paths = Cli.run(dir, pdf: pdf)
+    paths.each { |p| puts p } if pdf
+  rescue ParseError => e
+    abort "#{dir}/quiz.md:\n#{e.message}"
+  end
+end
