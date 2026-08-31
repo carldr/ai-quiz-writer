@@ -4,7 +4,7 @@
 class ParseError < StandardError; end
 
 Question = Struct.new(:number, :text, :answer, :image, :line, keyword_init: true)
-Round = Struct.new(:number, :name, :points, :format, :instructions, :questions, keyword_init: true)
+Round = Struct.new(:number, :name, :points, :format, :instructions, :questions, :line, keyword_init: true)
 Quiz = Struct.new(:date, :total, :rounds, keyword_init: true)
 
 module QuizParser
@@ -29,7 +29,7 @@ module QuizParser
         total = Regexp.last_match(1).to_i
       when ROUND_RE
         round = Round.new(number: Regexp.last_match(1).to_i, name: Regexp.last_match(2),
-                          points: Regexp.last_match(3).to_i, questions: [])
+                          points: Regexp.last_match(3).to_i, questions: [], line: lineno)
         rounds << round
       when /\AFormat: (.+)\z/
         value = Regexp.last_match(1).strip
@@ -44,7 +44,7 @@ module QuizParser
 
     errors << "line 1: missing '# Pub Quiz — YYYY-MM-DD' header" unless date
     rounds.each do |r|
-      errors << "Round #{r.number}: missing Format: line" unless r.format
+      errors << "line #{r.line}: Round #{r.number} is missing its Format: line" unless r.format
     end
     raise ParseError, errors.join("\n") unless errors.empty?
 
