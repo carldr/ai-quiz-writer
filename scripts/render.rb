@@ -7,8 +7,9 @@
 #
 # The argument is the quiz directory; quiz.md inside it is implied. Three sheets
 # are written to its out/ subdirectory — answers, team and pictures — as both
-# HTML and PDF. --no-pdf stops after the HTML, which is much faster and needs no
-# Chrome.
+# HTML and PDF, and the PDFs are copied to iCloud Drive under the quiz date.
+# --no-pdf stops after the HTML, which is much faster, needs no Chrome, and
+# copies nothing.
 #
 # The work is in scripts/lib/:
 #
@@ -33,7 +34,11 @@ if __FILE__ == $PROGRAM_NAME
   dir = args[0] or abort "usage: ruby scripts/render.rb quizzes/YYYY-MM-DD [--no-pdf]"
   begin
     paths = Cli.run(dir, pdf: pdf)
-    paths.each { |p| puts p } if pdf
+    if pdf
+      *pdfs, copied = paths
+      pdfs.each { |p| puts p }
+      puts "copied to #{copied}"
+    end
   rescue ParseError => e
     abort "#{dir}/quiz.md:\n#{e.message}"
   rescue RenderError => e

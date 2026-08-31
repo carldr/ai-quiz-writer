@@ -310,4 +310,55 @@ class CliTest < Minitest::Test
       assert_includes err.message, "quiz.md"
     end
   end
+
+  # The copy is driven from the quiz's own date, not the directory it was
+  # rendered from.
+  def test_copies_the_pdfs_to_a_directory_named_for_the_quiz_date
+    Dir.mktmpdir do |tmp|
+      out = File.join(tmp, "out")
+      FileUtils.mkdir_p(out)
+      pdfs = %w[answers team pictures].map do |name|
+        File.join(out, "#{name}.pdf").tap { |p| File.write(p, name) }
+      end
+
+      icloud = File.join(tmp, "Drive", "Quiz")
+      FileUtils.mkdir_p(File.dirname(icloud))
+      target = Cli.copy_to_icloud(pdfs, "2099-01-01", icloud)
+
+      assert_equal File.join(icloud, "2099-01-01"), target
+      %w[answers.pdf team.pdf pictures.pdf].each do |f|
+        assert File.exist?(File.join(target, f)), "missing #{f}"
+      end
+    end
+  end
+
+  # A second render of the same quiz overwrites the first.
+  def test_copying_twice_replaces_the_earlier_pdfs
+    Dir.mktmpdir do |tmp|
+      out = File.join(tmp, "out")
+      FileUtils.mkdir_p(out)
+      pdf = File.join(out, "answers.pdf")
+      icloud = File.join(tmp, "Drive", "Quiz")
+      FileUtils.mkdir_p(File.dirname(icloud))
+
+      File.write(pdf, "first")
+      Cli.copy_to_icloud([pdf], "2099-01-01", icloud)
+      File.write(pdf, "second")
+      target = Cli.copy_to_icloud([pdf], "2099-01-01", icloud)
+
+      assert_equal "second", File.read(File.join(target, "answers.pdf"))
+    end
+  end
+
+  # Writing a directory tree nobody will look in is worse than failing.
+  def test_missing_icloud_drive_raises_render_error
+    Dir.mktmpdir do |tmp|
+      pdf = File.join(tmp, "answers.pdf")
+      File.write(pdf, "x")
+      icloud = File.join(tmp, "nowhere", "Quiz")
+      err = assert_raises(RenderError) { Cli.copy_to_icloud([pdf], "2099-01-01", icloud) }
+      assert_includes err.message, "iCloud Drive"
+      refute Dir.exist?(icloud), "created a directory under a missing iCloud Drive"
+    end
+  end
 end

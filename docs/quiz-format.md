@@ -53,7 +53,7 @@ Run `ruby scripts/render.rb quizzes/YYYY-MM-DD`. The argument is the directory; 
 
 `pictures.html` and `pictures.pdf` are only produced when the quiz has a picture round. The picture grid is 3 columns. A 15-image round is the standard shape and fits on one A4 page. Every grid cell is 4:3. An image with a different aspect ratio is scaled to fill the cell and cropped equally at the two overflowing edges.
 
-PDFs come from the HTML via headless Chrome, A4. `--no-pdf` skips the Chrome step. The HTML files stay in `out/` so a one-off manual tweak can be re-printed.
+PDFs come from the HTML via headless Chrome, A4. The three PDFs are then copied to `~/Library/Mobile Documents/com~apple~CloudDocs/Quiz/YYYY-MM-DD/`, taking the date from the quiz's own header. A second render of the same quiz overwrites them. `--no-pdf` skips both the Chrome step and the copy. The HTML files stay in `out/` so a one-off manual tweak can be re-printed.
 
 ## Example
 
