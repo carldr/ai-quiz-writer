@@ -6,7 +6,7 @@
 - The quiz's images live in `quizzes/YYYY-MM-DD/images/`, named `r{round}-{question}.png`.
 - Rendered sheets go to `quizzes/YYYY-MM-DD/out/`.
 
-`render.rb` lives at the repo root. It needs only stock Ruby, and expects Google Chrome at `/Applications/Google Chrome.app`.
+`scripts/render.rb` needs only stock Ruby, and expects Google Chrome at `/Applications/Google Chrome.app`. The stylesheets are in `scripts/render/`. `common.css` holds what all three sheets use and is inlined first; `answers.css`, `team.css` and `pictures.css` follow, each holding only what its own sheet needs.
 
 ## Header
 
@@ -20,18 +20,18 @@ Each round has a `Format:` line, one of `picture`, `multiple-choice`, `open`, `t
 
 `Instructions:` is printed on the team sheet. The `Instructions:` line is optional.
 
-On the team sheet:
+The team sheet prints no question text. Teams hear the questions read out, and each round starts a new page. What a round prints depends on its format:
 
-- A `true-false` round prints each question with "True / False" to circle.
-- An `open` round prints a write-in line.
-- A `multiple-choice` round prints the options.
-- A `picture` round prints numbered write-in lines.
+- A `picture` round prints a 3-column grid of numbered empty boxes.
+- A `multiple-choice` round prints a table of the options, one row per question, for teams to circle. The `a)` labels are dropped.
+- A `true-false` round prints "True / False" beside a numbered ruled line.
+- An `open` round prints a numbered ruled line.
 
 ## Questions
 
-Question lines are numbered `N. `, and the separator on every question line is an em dash (U+2014). In an `open`, `true-false` or `multiple-choice` round, the answer is the bold segment after the em dash, and team sheets are produced by stripping it.
+Question lines are numbered `N. `, and the separator on every question line is an em dash (U+2014). In an `open`, `true-false` or `multiple-choice` round, the answer is the bold segment after the em dash.
 
-Multiple-choice options are written inline in the question text as `a) ... b) ... c) ...`, and the bold answer repeats the correct option.
+Multiple-choice options are written inline in the question text as `a) ... b) ... c) ...`, and the bold answer repeats the correct option. The renderer splits the options off the question text.
 
 ```markdown
 1. Which is the largest wine bottle size? a) Magnum b) Midas (30 litres) c) Nebuchadnezzar — **b) Midas (30 litres)**
@@ -45,13 +45,13 @@ Parsing is strict. An unknown `Format:` value, a question without a bold answer,
 
 ## Rendering
 
-Run `ruby render.rb quizzes/YYYY-MM-DD`. The argument is the directory; `quiz.md` is implied. The command writes to `quizzes/YYYY-MM-DD/out/`:
+Run `ruby scripts/render.rb quizzes/YYYY-MM-DD`. The argument is the directory; `quiz.md` is implied. The command writes to `quizzes/YYYY-MM-DD/out/`:
 
-- `answers.html` and `answers.pdf` — the quizmaster sheet: everything, answers bold, per-round score boxes.
-- `team.html` and `team.pdf` — what teams write on, with no answers.
+- `answers.html` and `answers.pdf` — the quizmaster sheet: every question with its answer bold, and per-round score boxes. Rounds flow on from one another rather than starting a new page. A picture round prints its images with the answer captioned on each.
+- `team.html` and `team.pdf` — what teams write on. The team sheet carries no question text, and each round starts a new page.
 - `pictures.html` and `pictures.pdf` — the image grid, numbered, no labels, one page.
 
-`pictures.html` and `pictures.pdf` are only produced when the quiz has a picture round. The picture grid is 3 columns; a 15-image round, the standard shape, fits on one A4 page.
+`pictures.html` and `pictures.pdf` are only produced when the quiz has a picture round. The picture grid is 3 columns. A 15-image round is the standard shape and fits on one A4 page. Every grid cell is 4:3. An image with a different aspect ratio is scaled to fill the cell and cropped equally at the two overflowing edges.
 
 PDFs come from the HTML via headless Chrome, A4. `--no-pdf` skips the Chrome step. The HTML files stay in `out/` so a one-off manual tweak can be re-printed.
 

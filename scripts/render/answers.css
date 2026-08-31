@@ -1,43 +1,75 @@
 /* Quizmaster sheet. Every question with its answer in bold. Rounds run on from
-   one another down the page. */
+   one another down the page. Loaded after common.css. */
 
-@page { size: A4; margin: 20mm; }
-
-body { font-family: -apple-system, "SF Pro Text", Helvetica, Arial, sans-serif;
-       font-size: 11pt; line-height: 1.5; margin: 0; }
-
-/* Quiz title and total. */
-h1 { font-size: 24pt; font-weight: 700; margin: 0 0 9mm;
-     display: flex; justify-content: space-between; align-items: baseline; }
-
-/* Round title and score box. A heading never ends a page. */
-h2 { font-size: 16pt; font-weight: 700; margin: 9mm 0 2mm;
-     display: flex; justify-content: space-between; align-items: baseline;
-     break-after: avoid; page-break-after: avoid; }
-h1 + h2 { margin-top: 0; }
-
-.instructions { font-size: 10pt; margin: 0 0 5mm; }
+/* Rounds run on, so a round title needs space above it, and never sits at the
+   foot of a page with its questions overleaf. */
+.round-header {
+  margin-top: 9mm;
+  break-after: avoid;
+  page-break-after: avoid;
+}
+.sheet-header + .round-header {
+  margin-top: 0;
+}
 
 /* Questions are numbered with a hanging indent, and none is split over a page
    boundary. */
-.question-list { list-style: none; counter-reset: question; margin: 0; padding: 0; }
-.question-list > li { counter-increment: question; position: relative;
-                      padding-left: 9mm; margin: 0 0 1.5mm;
-                      break-inside: avoid; page-break-inside: avoid; }
-.question-list > li::before { content: counter(question) "."; position: absolute;
-                              left: 0; width: 7mm; text-align: right; }
+.question-list {
+  list-style: none;
+  counter-reset: question;
+  margin: 0;
+  padding: 0;
+}
+.question-list > li {
+  counter-increment: question;
+  position: relative;
+  padding-left: 9mm;
+  margin: 0 0 1.5mm;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+.question-list > li::before {
+  content: counter(question) '.';
+  position: absolute;
+  left: 0;
+  width: 7mm;
+  text-align: right;
+}
 
 /* Multiple-choice options sit under their question. The correct one is bold. */
-.options span { margin-right: 5mm; }
+.options span {
+  margin-right: 5mm;
+}
 
 /* Picture round: the answer is captioned over each image. The caption is white
    on a dark panel because the images behind it are any colour. */
-.answer-images { display: grid; grid-template-columns: repeat(3, 1fr);
-                 max-width: 158mm; break-inside: avoid; page-break-inside: avoid; }
-.answer-images figure { position: relative; margin: 0; }
-.answer-images img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover;
-                     display: block; border: 1px solid #333; }
-.answer-images figcaption { position: absolute; top: 1.5mm; left: 1.5mm; right: 1.5mm;
-                            font-size: 9pt; line-height: 1.25; color: #fff;
-                            background: rgba(0, 0, 0, 0.55); padding: 0.6mm 1.5mm;
-                            border-radius: 1mm; }
+.answer-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 158mm;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+.answer-images figure {
+  position: relative;
+  margin: 0;
+}
+.answer-images img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  border: 1px solid #333;
+}
+.answer-images figcaption {
+  position: absolute;
+  top: 1.5mm;
+  left: 1.5mm;
+  right: 1.5mm;
+  font-size: 9pt;
+  line-height: 1.25;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.55);
+  padding: 0.6mm 1.5mm;
+  border-radius: 1mm;
+}

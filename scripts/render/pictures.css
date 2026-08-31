@@ -1,26 +1,38 @@
-/* Picture sheet. The numbered grid teams look at, with no answers and no quiz
-   title. A 15-image round fits one A4 page. */
+/* Picture sheet. The numbered grid teams look at, with no answers and no sheet
+   title. A 15-image round fits one A4 page. Loaded after common.css. */
 
-@page { size: A4; margin: 20mm; }
-
-body { font-family: -apple-system, "SF Pro Text", Helvetica, Arial, sans-serif;
-       font-size: 11pt; line-height: 1.5; margin: 0; }
-
-/* Round title and score box. A quiz with two picture rounds prints them one
-   after another, so every heading but the first needs space above it. */
-h2 { font-size: 16pt; font-weight: 700; margin: 9mm 0 2mm;
-     display: flex; justify-content: space-between; align-items: baseline;
-     break-after: avoid; page-break-after: avoid; }
-body > h2:first-child { margin-top: 0; }
-
-.instructions { font-size: 10pt; margin: 0 0 5mm; }
+/* A quiz with two picture rounds prints them one after another, so every round
+   title but the first needs space above it. */
+.round-header {
+  margin-top: 9mm;
+  break-after: avoid;
+  page-break-after: avoid;
+}
+.round-header:first-child {
+  margin-top: 0;
+}
 
 /* The grid is capped at 152mm wide so five rows clear the page depth. Every
    cell is 4:3; an image of another shape is cropped equally at both overflowing
    edges. */
-.picture-grid { display: grid; grid-template-columns: repeat(3, 1fr);
-                gap: 1.5mm 3mm; max-width: 152mm; }
-.picture-grid figure { margin: 0; text-align: center; }
-.picture-grid img { width: 100%; aspect-ratio: 4 / 3; height: auto;
-                    object-fit: cover; border: 1px solid #333; }
-.picture-grid figcaption { font-size: 9pt; line-height: 1.1; }
+.picture-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5mm 3mm;
+  max-width: 152mm;
+}
+.picture-grid figure {
+  margin: 0;
+  text-align: center;
+}
+.picture-grid img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  height: auto;
+  object-fit: cover;
+  border: 1px solid #333;
+}
+.picture-grid figcaption {
+  font-size: 9pt;
+  line-height: 1.1;
+}

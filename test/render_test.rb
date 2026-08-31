@@ -1,5 +1,5 @@
 require "minitest/autorun"
-require_relative "../render"
+require_relative "../scripts/render"
 
 FIXTURE_DIR = File.expand_path("fixture", __dir__)
 
@@ -36,10 +36,16 @@ class ParserTest < Minitest::Test
     assert_nil q.image
   end
 
-  def test_parses_multiple_choice_question_keeping_options_in_text
+  def test_parses_multiple_choice_question_splitting_the_options_off
     q = parse_fixture.rounds[1].questions[0]
-    assert_includes q.text, "c) Nebuchadnezzar"
+    assert_equal "Which is the largest wine bottle size?", q.text
+    assert_equal ["Magnum", "Midas (30 litres)", "Nebuchadnezzar"], q.options
     assert_equal "b) Midas (30 litres)", q.answer
+  end
+
+  def test_a_question_outside_a_multiple_choice_round_gets_no_options
+    q = parse_fixture.rounds[3].questions[0]
+    assert_nil q.options
   end
 
   def test_parses_picture_question
@@ -94,10 +100,10 @@ class ParserErrorTest < Minitest::Test
   end
 end
 
-class AnswersSheetTest < Minitest::Test
+class AnswersRendererTest < Minitest::Test
   def html
     quiz = QuizParser.parse(File.read(File.join(FIXTURE_DIR, "quiz.md")), quiz_dir: FIXTURE_DIR)
-    SheetRenderer.answers_html(quiz)
+    AnswersRenderer.render(quiz)
   end
 
   def test_is_a_complete_html_document
@@ -111,17 +117,28 @@ class AnswersSheetTest < Minitest::Test
   end
 
   def test_round_headings_with_score_boxes
-    assert_includes html, "Round 2: Size Matters"
+    assert_includes html, "Round 2 - Size Matters"
     assert_includes html, "/ 2"
   end
 
   def test_answers_are_present_and_marked
     assert_includes html, "<strong>Bologna</strong>"
-    assert_includes html, "<strong>b) Midas (30 litres)</strong>"
   end
 
-  def test_picture_round_answers_listed_with_thumbnails
-    assert_includes html, "<strong>Dunlop</strong>"
+  def test_multiple_choice_bolds_the_correct_option_only
+    assert_includes html, "<strong>Midas (30 litres)</strong>"
+    refute_includes html, "<strong>Magnum</strong>"
+    refute_includes html, "<strong>Nebuchadnezzar</strong>"
+  end
+
+  def test_multiple_choice_options_are_lettered_and_split_from_the_stem
+    assert_includes html, "a)&nbsp; Magnum"
+    assert_includes html, "c)&nbsp; Nebuchadnezzar"
+    assert_includes html, "<li>Which is the largest wine bottle size?<div class=\"options\">"
+  end
+
+  def test_picture_round_answers_label_the_images
+    assert_includes html, "<figcaption>Dunlop</figcaption>"
     assert_includes html, %(src="../images/r1-01.png")
   end
 
@@ -131,16 +148,16 @@ class AnswersSheetTest < Minitest::Test
         Question.new(number: 1, text: "What is <b>?", answer: "a & b", line: 1)
       ])
     ])
-    out = SheetRenderer.answers_html(quiz)
+    out = AnswersRenderer.render(quiz)
     assert_includes out, "What is &lt;b&gt;?"
     assert_includes out, "a &amp; b"
   end
 end
 
-class TeamSheetTest < Minitest::Test
+class TeamRendererTest < Minitest::Test
   def html
     quiz = QuizParser.parse(File.read(File.join(FIXTURE_DIR, "quiz.md")), quiz_dir: FIXTURE_DIR)
-    SheetRenderer.team_html(quiz)
+    TeamRenderer.render(quiz)
   end
 
   def test_has_team_name_line_and_no_answers
@@ -150,33 +167,47 @@ class TeamSheetTest < Minitest::Test
     refute_includes html, "<strong>"
   end
 
-  def test_multiple_choice_keeps_options
-    assert_includes html, "c) Nebuchadnezzar"
+  # Teams hear the questions read out.
+  def test_carries_no_question_text
+    refute_includes html, "Which is the largest wine bottle size?"
+    refute_includes html, "Mr Monopoly wears a monocle?"
+    refute_includes html, "How many dots are on a standard six-sided dice?"
+  end
+
+  def test_multiple_choice_is_a_table_of_bare_options_to_circle
+    assert_includes html, "<table class=\"options-table\">"
+    assert_includes html, "<td>Nebuchadnezzar</td>"
+    refute_includes html, "c) Nebuchadnezzar"
   end
 
   def test_true_false_offers_circling
     assert_includes html, "True / False"
-    assert_includes html, "Mr Monopoly wears a monocle?"
   end
 
-  def test_open_questions_get_write_in_lines
-    assert_includes html, "How many dots are on a standard six-sided dice?"
-    assert_includes html, "writein"
+  def test_open_questions_get_numbered_ruled_lines
+    assert_includes html, "<ol class=\"answer-lines\">"
+    assert_includes html, "<span class=\"answer-line\"></span>"
   end
 
-  def test_picture_round_is_numbered_write_in_lines_without_images
+  def test_picture_round_is_numbered_empty_boxes_without_images
     refute_includes html, "r1-01.png"
-    assert_includes html, "Round 1: Logos"
+    assert_includes html, "Round 1 - Logos"
+    assert_includes html, "<div class=\"answer-box\">1</div>"
+  end
+
+  # The fixture has four rounds, so the first three break and the last does not.
+  def test_every_round_but_the_last_starts_a_new_page
+    assert_equal 3, html.scan("class=\"page-break\"").length
   end
 end
 
-class PictureSheetTest < Minitest::Test
+class PicturesRendererTest < Minitest::Test
   def quiz
     QuizParser.parse(File.read(File.join(FIXTURE_DIR, "quiz.md")), quiz_dir: FIXTURE_DIR)
   end
 
   def test_grid_of_numbered_images_without_labels
-    html = SheetRenderer.pictures_html(quiz)
+    html = PicturesRenderer.render(quiz)
     assert_includes html, %(src="../images/r1-01.png")
     assert_includes html, "<figcaption>1</figcaption>"
     refute_includes html, "Dunlop"
@@ -185,7 +216,7 @@ class PictureSheetTest < Minitest::Test
   def test_nil_when_no_picture_round
     q = quiz
     q.rounds.reject! { |r| r.format == "picture" }
-    assert_nil SheetRenderer.pictures_html(q)
+    assert_nil PicturesRenderer.render(q)
   end
 end
 
