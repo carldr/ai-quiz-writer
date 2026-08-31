@@ -21,16 +21,6 @@
   page-break-after: always;
 }
 
-/* Picture round: the same grid as the other two sheets, with an empty numbered
-   box in place of each image. */
-.picture {
-  border: 1px solid #333;
-  height: 38mm;
-  padding: 1mm 2mm;
-  font-size: 9pt;
-  line-height: 1.2;
-}
-
 /* Multiple-choice round: the options with no question, for teams to circle.
    Alternate rows are shaded so the eye keeps its place across the width. */
 .options-table {

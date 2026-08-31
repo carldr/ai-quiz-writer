@@ -27,7 +27,7 @@ module AnswersRenderer
   # The picture sheet's grid with the answer captioned over each image, so this
   # can be laid beside a team sheet and marked against what the teams saw.
   def self.pictures(round)
-    picture_grid(round) { |q| picture_cell(q.image, esc(q.answer)) }
+    picture_grid(round) { |q| picture_cell(esc(q.answer), image: q.image) }
   end
 
   # The question, then its options indented below with the correct one bold.

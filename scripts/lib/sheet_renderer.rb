@@ -48,11 +48,12 @@ module SheetRenderer
     "<div class=\"picture-grid\">#{cells.join}</div>"
   end
 
-  # A cell holding one of the round's images. What the caption says is the only
-  # thing that differs between the picture sheet and the answer sheet.
-  def picture_cell(image, caption)
-    "<figure class=\"picture\"><img src=\"../#{esc(image)}\">" \
-      "<figcaption>#{caption}</figcaption></figure>"
+  # One cell of that grid: a label, and the round's image behind it when the sheet
+  # shows the images. An empty cell is the same element as a filled one, so the
+  # cells line up across the three sheets.
+  def picture_cell(caption, image: nil)
+    img = image ? "<img src=\"../#{esc(image)}\">" : ""
+    "<figure class=\"picture\">#{img}<figcaption>#{caption}</figcaption></figure>"
   end
 
   # The round title and its score box. The instructions line is printed on the

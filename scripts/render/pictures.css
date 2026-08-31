@@ -7,15 +7,3 @@
   margin-top: 0;
 }
 
-/* Capped at 152mm wide so five rows clear the page depth. */
-.picture-grid {
-  gap: 1.5mm 3mm;
-  max-width: 152mm;
-}
-.picture {
-  text-align: center;
-}
-.picture figcaption {
-  font-size: 9pt;
-  line-height: 1.1;
-}

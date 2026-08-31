@@ -28,26 +28,9 @@
   margin-right: 5mm;
 }
 
-/* The same grid the teams saw, with the answer captioned over each image. The
-   caption is white on a dark panel because the images behind it are any
-   colour. */
+/* Rounds run on down this sheet, so the picture grid is the one thing held off a
+   page break. */
 .picture-grid {
-  max-width: 158mm;
   break-inside: avoid;
   page-break-inside: avoid;
-}
-.picture {
-  position: relative;
-}
-.picture figcaption {
-  position: absolute;
-  top: 1.5mm;
-  left: 1.5mm;
-  right: 1.5mm;
-  font-size: 9pt;
-  line-height: 1.25;
-  color: #fff;
-  background: rgba(0, 0, 0, 0.55);
-  padding: 0.6mm 1.5mm;
-  border-radius: 1mm;
 }

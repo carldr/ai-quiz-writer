@@ -19,7 +19,7 @@ module PicturesRenderer
     body = +""
     picture_rounds.each do |r|
       body << round_header(r)
-      body << picture_grid(r) { |q| picture_cell(q.image, q.number) }
+      body << picture_grid(r) { |q| picture_cell(q.number, image: q.image) }
     end
     page("Pub Quiz — #{quiz.date} — Pictures", "pictures", body)
   end

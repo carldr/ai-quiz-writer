@@ -192,7 +192,7 @@ class TeamRendererTest < Minitest::Test
   def test_picture_round_is_numbered_empty_boxes_without_images
     refute_includes html, "r1-01.png"
     assert_includes html, "Round 1 - Logos"
-    assert_includes html, "<div class=\"picture\">1</div>"
+    assert_includes html, "<figure class=\"picture\"><figcaption>1</figcaption></figure>"
   end
 
   # The fixture has four rounds, so the first three break and the last does not.
