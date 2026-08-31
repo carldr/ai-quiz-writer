@@ -208,4 +208,11 @@ class CliTest < Minitest::Test
       assert_includes err.message, "line 9"
     end
   end
+
+  def test_missing_quiz_file_raises_render_error
+    Dir.mktmpdir do |tmp|
+      err = assert_raises(RenderError) { Cli.run(File.join(tmp, "nope"), pdf: false) }
+      assert_includes err.message, "quiz.md"
+    end
+  end
 end

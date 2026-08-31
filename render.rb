@@ -2,6 +2,7 @@
 # frozen_string_literal: true
 
 class ParseError < StandardError; end
+class RenderError < StandardError; end
 
 Question = Struct.new(:number, :text, :answer, :image, :line, keyword_init: true)
 Round = Struct.new(:number, :name, :points, :format, :instructions, :questions, :line, keyword_init: true)
@@ -168,7 +169,7 @@ module Cli
 
   def self.run(dir, pdf: true)
     quiz_md = File.join(dir, "quiz.md")
-    abort "no quiz file at #{quiz_md}" unless File.exist?(quiz_md)
+    raise RenderError, "no quiz file at #{quiz_md}" unless File.exist?(quiz_md)
     quiz = QuizParser.parse(File.read(quiz_md), quiz_dir: dir)
 
     out = File.join(dir, "out")
@@ -183,14 +184,14 @@ module Cli
     sheets.each { |name, html| File.write(File.join(out, "#{name}.html"), html) }
 
     if pdf
-      raise "Chrome not found at #{CHROME}" unless File.exist?(CHROME)
+      raise RenderError, "Chrome not found at #{CHROME}" unless File.exist?(CHROME)
       sheets.each_key do |name|
         html = File.join(out, "#{name}.html")
         target = File.join(out, "#{name}.pdf")
         ok = system(CHROME, "--headless", "--disable-gpu", "--no-pdf-header-footer",
                     "--print-to-pdf=#{target}", "file://#{File.expand_path(html)}",
                     out: File::NULL, err: File::NULL)
-        raise "Chrome failed to print #{name}.pdf" unless ok && File.exist?(target)
+        raise RenderError, "Chrome failed to print #{name}.pdf" unless ok && File.exist?(target)
       end
     end
     sheets.keys.map { |name| File.join(out, "#{name}.pdf") }
@@ -206,5 +207,7 @@ if __FILE__ == $PROGRAM_NAME
     paths.each { |p| puts p } if pdf
   rescue ParseError => e
     abort "#{dir}/quiz.md:\n#{e.message}"
+  rescue RenderError => e
+    abort e.message
   end
 end
