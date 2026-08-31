@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html><head><meta charset="utf-8"><title>Pub Quiz — 2026-09-01 — Team Sheet</title>
-<style>/* Shared by all three sheets, and inlined ahead of the sheet's own stylesheet.
-   Everything here is used by every sheet; anything used by only one belongs in
-   that sheet's file.
+<style>/* Shared, and inlined ahead of the sheet's own stylesheet. Anything used by more
+   than one sheet belongs here; anything used by only one belongs in that
+   sheet's file.
 
    Five type sizes, each with one job: 24pt sheet title, 16pt round title, 11pt
    body, 10pt instructions, 9pt small labels. The 9pt is set where it is used. */
@@ -29,25 +29,70 @@ body {
   align-items: baseline;
 }
 
-/* The round title, with its score box on the right. No space above it by
-   default, which is what the team sheet wants because every round there starts
-   a new page. The two sheets whose rounds run on set their own top margin. */
+/* The round title, with its score box on the right. It carries space above it
+   for the two sheets whose rounds run on down the page; the team sheet takes
+   that space back, because every round there starts a new page. A round title
+   never sits at the foot of a page with its questions overleaf. */
 .round-header {
   font-size: 16pt;
   font-weight: 700;
-  margin: 0 0 2mm;
+  margin: 9mm 0 2mm;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  break-after: avoid;
+  page-break-after: avoid;
 }
 
 .instructions {
   font-size: 10pt;
   margin: 0 0 5mm;
 }
+
+/* A picture round is laid out the same way on all three sheets: three cells
+   across the page, every cell 4:3, and the numbers in the same places. The
+   picture sheet and the answer sheet fill a cell with the image; the team sheet
+   leaves it empty to write in. */
+.picture-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.picture {
+  margin: 0;
+}
+.picture img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  border: 1px solid #333;
+}
+
+/* Both numbered lists count with a CSS counter rather than the browser's own
+   numbering, so the number sits in a fixed-width column. */
+.question-list,
+.answer-lines {
+  list-style: none;
+  counter-reset: question;
+  padding: 0;
+}
+.question-list > li,
+.answer-lines li {
+  counter-increment: question;
+}
+.question-list > li::before,
+.answer-lines li::before {
+  content: counter(question) '.';
+  text-align: right;
+}
 /* Team sheet. Carries no question text, and each round starts a new page, so
-   round titles keep the zero top margin common.css gives them. Loaded after
+   round titles give back the space common.css puts above them. Loaded after
    common.css. */
+
+.round-header {
+  margin-top: 0;
+}
 
 .write-in {
   border-bottom: 1px solid #333;
@@ -64,12 +109,9 @@ body {
   page-break-after: always;
 }
 
-/* Picture round: a numbered box to write each answer in. */
-.answer-boxes {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-.answer-boxes .answer-box {
+/* Picture round: the same grid as the other two sheets, with an empty numbered
+   box in place of each image. */
+.picture {
   border: 1px solid #333;
   height: 38mm;
   padding: 1mm 2mm;
@@ -102,13 +144,9 @@ body {
 /* Open and true-false rounds: a numbered ruled line each. The 4.2mm gap is what
    fits twenty lines of a general knowledge round on one page. */
 .answer-lines {
-  list-style: none;
-  counter-reset: question;
   margin: 4mm 0 0;
-  padding: 0;
 }
 .answer-lines li {
-  counter-increment: question;
   display: flex;
   align-items: baseline;
   gap: 3mm;
@@ -116,9 +154,7 @@ body {
   line-height: 1.3;
 }
 .answer-lines li::before {
-  content: counter(question) '.';
   width: 8mm;
-  text-align: right;
 }
 .answer-lines .answer-line {
   flex: 1;
@@ -129,4 +165,4 @@ body {
   white-space: nowrap;
 }
 </style></head>
-<body><h1 class="sheet-header"><span>Team <span class="write-in team-name"></span></span><span>____ / 75</span></h1><section class="page-break"><h2 class="round-header"><span>Round 1 - Teacher, Teacher</span><span>__ / 15</span></h2><p class="instructions">Name the show or film each teacher is from. One point each. Character names score nothing.</p><div class="answer-boxes"><div class="answer-box">1</div><div class="answer-box">2</div><div class="answer-box">3</div><div class="answer-box">4</div><div class="answer-box">5</div><div class="answer-box">6</div><div class="answer-box">7</div><div class="answer-box">8</div><div class="answer-box">9</div><div class="answer-box">10</div><div class="answer-box">11</div><div class="answer-box">12</div><div class="answer-box">13</div><div class="answer-box">14</div><div class="answer-box">15</div></div></section><section class="page-break"><h2 class="round-header"><span>Round 2 - Which Came First?</span><span>__ / 10</span></h2><p class="instructions">Circle the option that came FIRST. One point each.</p><table class="options-table"><tr><td class="number">1</td><td>Doctor Who</td><td>Blue Peter</td><td>Coronation Street</td></tr><tr><td class="number">2</td><td>Decimal Day</td><td>The first Moon landing</td><td>The first colour TV broadcast in Britain</td></tr><tr><td class="number">3</td><td>Cadbury&#39;s Dairy Milk</td><td>The Mars bar</td><td>The Kit Kat</td></tr><tr><td class="number">4</td><td>The first text message being sent</td><td>The first camera phone going on sale</td><td>The first website going online</td></tr><tr><td class="number">5</td><td>The Ford Model T</td><td>The world&#39;s first traffic signal</td><td>Commercially sliced bread</td></tr><tr><td class="number">6</td><td>Coca-Cola</td><td>Nintendo</td><td>The opening of the Eiffel Tower</td></tr><tr><td class="number">7</td><td>Britain&#39;s first fish and chip shop</td><td>Britain&#39;s first Indian restaurant</td><td>The opening of the London Underground</td></tr><tr><td class="number">8</td><td>Marks &amp; Spencer</td><td>Sainsbury&#39;s</td><td>Tesco</td></tr><tr><td class="number">9</td><td>The Great Pyramid of Giza</td><td>The last woolly mammoths dying out</td><td>The invention of writing</td></tr><tr><td class="number">10</td><td>YouTube</td><td>Montenegro splitting from Serbia</td><td>The iPhone</td></tr></table></section><section class="page-break"><h2 class="round-header"><span>Round 3 - Hidden Body Parts</span><span>__ / 10</span></h2><p class="instructions">Every answer hides the name of a body part inside a longer word or phrase — CHINa, EARwig, KNEEcap, GUMboot. The questions are ordinary general knowledge. Ten different body parts. You score for the answer, not for spotting the body part.</p><ol class="answer-lines"><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li></ol></section><section class="page-break"><h2 class="round-header"><span>Round 4 - Nicknames</span><span>__ / 10</span></h2><p class="instructions">Each question gives a nickname. Name the person, place, building or thing. One point each.</p><ol class="answer-lines"><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li></ol></section><section class="page-break"><h2 class="round-header"><span>Round 5 - Food and Drink</span><span>__ / 10</span></h2><p class="instructions">One point per question.</p><ol class="answer-lines"><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li></ol></section><section><h2 class="round-header"><span>Round 6 - General Knowledge</span><span>__ / 20</span></h2><p class="instructions">One point per question.</p><ol class="answer-lines"><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li></ol></section></body></html>
+<body><h1 class="sheet-header"><span>Team <span class="write-in team-name"></span></span><span>____ / 75</span></h1><section class="page-break"><h2 class="round-header"><span>Round 1 - Teacher, Teacher</span><span>__ / 15</span></h2><p class="instructions">Name the show or film each teacher is from. One point each. Character names score nothing.</p><div class="picture-grid"><div class="picture">1</div><div class="picture">2</div><div class="picture">3</div><div class="picture">4</div><div class="picture">5</div><div class="picture">6</div><div class="picture">7</div><div class="picture">8</div><div class="picture">9</div><div class="picture">10</div><div class="picture">11</div><div class="picture">12</div><div class="picture">13</div><div class="picture">14</div><div class="picture">15</div></div></section><section class="page-break"><h2 class="round-header"><span>Round 2 - Which Came First?</span><span>__ / 10</span></h2><p class="instructions">Circle the option that came FIRST. One point each.</p><table class="options-table"><tr><td class="number">1</td><td>Doctor Who</td><td>Blue Peter</td><td>Coronation Street</td></tr><tr><td class="number">2</td><td>Decimal Day</td><td>The first Moon landing</td><td>The first colour TV broadcast in Britain</td></tr><tr><td class="number">3</td><td>Cadbury&#39;s Dairy Milk</td><td>The Mars bar</td><td>The Kit Kat</td></tr><tr><td class="number">4</td><td>The first text message being sent</td><td>The first camera phone going on sale</td><td>The first website going online</td></tr><tr><td class="number">5</td><td>The Ford Model T</td><td>The world&#39;s first traffic signal</td><td>Commercially sliced bread</td></tr><tr><td class="number">6</td><td>Coca-Cola</td><td>Nintendo</td><td>The opening of the Eiffel Tower</td></tr><tr><td class="number">7</td><td>Britain&#39;s first fish and chip shop</td><td>Britain&#39;s first Indian restaurant</td><td>The opening of the London Underground</td></tr><tr><td class="number">8</td><td>Marks &amp; Spencer</td><td>Sainsbury&#39;s</td><td>Tesco</td></tr><tr><td class="number">9</td><td>The Great Pyramid of Giza</td><td>The last woolly mammoths dying out</td><td>The invention of writing</td></tr><tr><td class="number">10</td><td>YouTube</td><td>Montenegro splitting from Serbia</td><td>The iPhone</td></tr></table></section><section class="page-break"><h2 class="round-header"><span>Round 3 - Hidden Body Parts</span><span>__ / 10</span></h2><p class="instructions">Every answer hides the name of a body part inside a longer word or phrase — CHINa, EARwig, KNEEcap, GUMboot. The questions are ordinary general knowledge. Ten different body parts. You score for the answer, not for spotting the body part.</p><ol class="answer-lines"><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li></ol></section><section class="page-break"><h2 class="round-header"><span>Round 4 - Nicknames</span><span>__ / 10</span></h2><p class="instructions">Each question gives a nickname. Name the person, place, building or thing. One point each.</p><ol class="answer-lines"><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li></ol></section><section class="page-break"><h2 class="round-header"><span>Round 5 - Food and Drink</span><span>__ / 10</span></h2><p class="instructions">One point per question.</p><ol class="answer-lines"><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li></ol></section><section><h2 class="round-header"><span>Round 6 - General Knowledge</span><span>__ / 20</span></h2><p class="instructions">One point per question.</p><ol class="answer-lines"><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li></ol></section></body></html>

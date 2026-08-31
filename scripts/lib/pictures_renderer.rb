@@ -19,12 +19,7 @@ module PicturesRenderer
     body = +""
     picture_rounds.each do |r|
       body << round_header(r)
-      body << "<div class=\"picture-grid\">"
-      r.questions.each do |q|
-        body << "<figure><img src=\"../#{esc(q.image)}\">" \
-                "<figcaption>#{q.number}</figcaption></figure>"
-      end
-      body << "</div>"
+      body << picture_grid(r) { |q| picture_cell(q.image, q.number) }
     end
     page("Pub Quiz — #{quiz.date} — Pictures", "pictures", body)
   end

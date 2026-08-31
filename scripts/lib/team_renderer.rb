@@ -33,10 +33,10 @@ module TeamRenderer
     page("Pub Quiz — #{quiz.date} — Team Sheet", "team", body)
   end
 
-  # A numbered box per picture, matching the numbers on the picture sheet.
+  # The picture sheet's grid with an empty box in place of each image, so a box
+  # sits where its picture was.
   def self.boxes(round)
-    cells = round.questions.map { |q| "<div class=\"answer-box\">#{q.number}</div>" }
-    "<div class=\"answer-boxes\">#{cells.join}</div>"
+    picture_grid(round) { |q| "<div class=\"picture\">#{q.number}</div>" }
   end
 
   # The options with no question and no a)/b)/c) letters, for teams to circle.

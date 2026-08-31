@@ -39,6 +39,22 @@ module SheetRenderer
     "<h1 class=\"sheet-header\"><span>#{left}</span><span>#{right}</span></h1>"
   end
 
+  # A picture round is the same grid on all three sheets — three cells across the
+  # page, every cell 4:3 — so the numbers fall in the same places on the sheet
+  # teams look at and the sheet they write on. The block fills one cell per
+  # question.
+  def picture_grid(round)
+    cells = round.questions.map { |q| yield q }
+    "<div class=\"picture-grid\">#{cells.join}</div>"
+  end
+
+  # A cell holding one of the round's images. What the caption says is the only
+  # thing that differs between the picture sheet and the answer sheet.
+  def picture_cell(image, caption)
+    "<figure class=\"picture\"><img src=\"../#{esc(image)}\">" \
+      "<figcaption>#{caption}</figcaption></figure>"
+  end
+
   # The round title and its score box. The instructions line is printed on the
   # team sheet so teams know what to write, and on the answer sheet so the
   # quizmaster reads out the same thing.

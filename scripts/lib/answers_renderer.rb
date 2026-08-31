@@ -24,13 +24,10 @@ module AnswersRenderer
     page("Pub Quiz — #{quiz.date} — Answers", "answers", body)
   end
 
-  # The images with the answer captioned over each, so this grid can be laid
-  # beside a team sheet and marked against the grid the teams saw.
+  # The picture sheet's grid with the answer captioned over each image, so this
+  # can be laid beside a team sheet and marked against what the teams saw.
   def self.pictures(round)
-    cells = round.questions.map do |q|
-      "<figure><img src=\"../#{esc(q.image)}\"><figcaption>#{esc(q.answer)}</figcaption></figure>"
-    end
-    "<div class=\"answer-images\">#{cells.join}</div>"
+    picture_grid(round) { |q| picture_cell(q.image, esc(q.answer)) }
   end
 
   # The question, then its options indented below with the correct one bold.

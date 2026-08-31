@@ -1,13 +1,6 @@
 /* Quizmaster sheet. Every question with its answer in bold. Rounds run on from
    one another down the page. Loaded after common.css. */
 
-/* Rounds run on, so a round title needs space above it, and never sits at the
-   foot of a page with its questions overleaf. */
-.round-header {
-  margin-top: 9mm;
-  break-after: avoid;
-  page-break-after: avoid;
-}
 .sheet-header + .round-header {
   margin-top: 0;
 }
@@ -15,13 +8,9 @@
 /* Questions are numbered with a hanging indent, and none is split over a page
    boundary. */
 .question-list {
-  list-style: none;
-  counter-reset: question;
   margin: 0;
-  padding: 0;
 }
 .question-list > li {
-  counter-increment: question;
   position: relative;
   padding-left: 9mm;
   margin: 0 0 1.5mm;
@@ -29,11 +18,9 @@
   page-break-inside: avoid;
 }
 .question-list > li::before {
-  content: counter(question) '.';
   position: absolute;
   left: 0;
   width: 7mm;
-  text-align: right;
 }
 
 /* Multiple-choice options sit under their question. The correct one is bold. */
@@ -41,27 +28,18 @@
   margin-right: 5mm;
 }
 
-/* Picture round: the answer is captioned over each image. The caption is white
-   on a dark panel because the images behind it are any colour. */
-.answer-images {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+/* The same grid the teams saw, with the answer captioned over each image. The
+   caption is white on a dark panel because the images behind it are any
+   colour. */
+.picture-grid {
   max-width: 158mm;
   break-inside: avoid;
   page-break-inside: avoid;
 }
-.answer-images figure {
+.picture {
   position: relative;
-  margin: 0;
 }
-.answer-images img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  display: block;
-  border: 1px solid #333;
-}
-.answer-images figcaption {
+.picture figcaption {
   position: absolute;
   top: 1.5mm;
   left: 1.5mm;

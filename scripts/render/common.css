@@ -1,6 +1,6 @@
-/* Shared by all three sheets, and inlined ahead of the sheet's own stylesheet.
-   Everything here is used by every sheet; anything used by only one belongs in
-   that sheet's file.
+/* Shared, and inlined ahead of the sheet's own stylesheet. Anything used by more
+   than one sheet belongs here; anything used by only one belongs in that
+   sheet's file.
 
    Five type sizes, each with one job: 24pt sheet title, 16pt round title, 11pt
    body, 10pt instructions, 9pt small labels. The 9pt is set where it is used. */
@@ -27,19 +27,60 @@ body {
   align-items: baseline;
 }
 
-/* The round title, with its score box on the right. No space above it by
-   default, which is what the team sheet wants because every round there starts
-   a new page. The two sheets whose rounds run on set their own top margin. */
+/* The round title, with its score box on the right. It carries space above it
+   for the two sheets whose rounds run on down the page; the team sheet takes
+   that space back, because every round there starts a new page. A round title
+   never sits at the foot of a page with its questions overleaf. */
 .round-header {
   font-size: 16pt;
   font-weight: 700;
-  margin: 0 0 2mm;
+  margin: 9mm 0 2mm;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  break-after: avoid;
+  page-break-after: avoid;
 }
 
 .instructions {
   font-size: 10pt;
   margin: 0 0 5mm;
+}
+
+/* A picture round is laid out the same way on all three sheets: three cells
+   across the page, every cell 4:3, and the numbers in the same places. The
+   picture sheet and the answer sheet fill a cell with the image; the team sheet
+   leaves it empty to write in. */
+.picture-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.picture {
+  margin: 0;
+}
+.picture img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  border: 1px solid #333;
+}
+
+/* Both numbered lists count with a CSS counter rather than the browser's own
+   numbering, so the number sits in a fixed-width column. */
+.question-list,
+.answer-lines {
+  list-style: none;
+  counter-reset: question;
+  padding: 0;
+}
+.question-list > li,
+.answer-lines li {
+  counter-increment: question;
+}
+.question-list > li::before,
+.answer-lines li::before {
+  content: counter(question) '.';
+  text-align: right;
 }
