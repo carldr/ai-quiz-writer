@@ -27,3 +27,11 @@ body {
   margin-right: 5mm;
 }
 
+/* What the answer adds to the correct option, on its own line under the options
+   and smaller again, because it is read out rather than scanned. */
+.answer-note {
+  font-size: 7.5pt;
+  font-weight: 700;
+  margin: 0;
+}
+

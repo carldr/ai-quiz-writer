@@ -135,12 +135,26 @@ class AnswersRendererTest < Minitest::Test
     ])
   end
 
-  # The answer usually adds a date or a reason to the option it repeats. That
-  # detail is the thing the quizmaster reads out when a table argues, so it has
-  # to reach this sheet.
-  def test_multiple_choice_correct_option_carries_the_answer_detail
+  # The answer usually adds a date or a reason to the option it repeats. The
+  # answer sheet prints the date or reason on a line of its own, and the option
+  # alone in the options row.
+  def test_multiple_choice_answer_detail_goes_below_the_options
     out = AnswersRenderer.render(choices_quiz("a) Blue Peter (1958, before Doctor Who)"))
-    assert_includes out, "<strong>Blue Peter (1958, before Doctor Who)</strong>"
+    assert_includes out, "<strong>Blue Peter</strong>"
+    assert_includes out, "<p class=\"answer-note\">1958, before Doctor Who</p>"
+  end
+
+  # An answer that adds nothing gets no note.
+  def test_multiple_choice_answer_without_detail_gets_no_note
+    out = AnswersRenderer.render(choices_quiz("a) Blue Peter"))
+    assert_includes out, "<strong>Blue Peter</strong>"
+    refute_includes out, "<p class=\"answer-note\">"
+  end
+
+  def test_multiple_choice_answer_adding_unbracketed_text_is_kept_whole
+    out = AnswersRenderer.render(choices_quiz("a) Blue Peter, 1958"))
+    assert_includes out, "<strong>Blue Peter, 1958</strong>"
+    refute_includes out, "<p class=\"answer-note\">"
   end
 
   # ...and it must not reach the sheet the teams are looking at.
@@ -153,7 +167,7 @@ class AnswersRendererTest < Minitest::Test
   # The letter is printed beside the option already.
   def test_multiple_choice_answer_letter_is_not_printed_twice
     out = AnswersRenderer.render(choices_quiz("a) Blue Peter (1958)"))
-    assert_includes out, "a)&nbsp; <strong>Blue Peter (1958)</strong>"
+    assert_includes out, "a)&nbsp; <strong>Blue Peter</strong>"
     refute_includes out, "<strong>a) Blue Peter"
   end
 

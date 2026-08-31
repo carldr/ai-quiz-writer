@@ -54,6 +54,14 @@ Questions in every round must work for a mix of ages.
    may appear twice — check the round against the rounds already approved.
 8. Show the round to Carl. Apply requested swaps (re-verify and re-dedupe
    replacements) until approved.
+9. Once Carl approves the round, start a fresh sub-agent to verify the final
+   text of every question, from the round as it now reads rather than as it was
+   drafted. The sub-agent in step 4 reviewed an earlier version of the round,
+   and every question written or reworded since then has been checked only by
+   whoever wrote it. Give the new sub-agent the round and nothing else. Its
+   report covers every question: the confirmed answer, the source, and any
+   answer that could not be confirmed or that is wrong. Act on the report before
+   moving to the next round.
 
 ## Picture round
 

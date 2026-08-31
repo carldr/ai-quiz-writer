@@ -29,22 +29,20 @@ module AnswersRenderer
     picture_grid(round) { |q| picture_cell(q.number, answer: esc(q.answer), image: q.image) }
   end
 
-  # The question, then its options indented below with the correct one bold.
-  #
-  # The correct option is printed from the answer rather than from the option
-  # list, so it carries whatever the answer added to it — the dates behind a
-  # "which came first", the reason behind a wrong-sounding right answer. That is
-  # the part the quizmaster reads out when a table argues, and the team sheet
-  # never shows it.
+  # The question, then its options with the correct one bold, then whatever the
+  # answer added to that option, on a line of its own. The team sheet prints
+  # neither the answer nor the note.
   def self.choices(round)
     items = round.questions.map do |q|
       correct = answer_index(q)
+      option, note = answer_parts(q, (q.options || [])[correct.to_i])
       opts = (q.options || []).each_with_index.map do |opt, i|
-        text = i == correct ? "<strong>#{esc(answer_text(q))}</strong>" : esc(opt)
+        text = i == correct ? "<strong>#{esc(option)}</strong>" : esc(opt)
         "<span>#{(i + "a".ord).chr})&nbsp; #{text}</span>"
       end
       body = +esc(q.text)
       body << "<div class=\"options\">#{opts.join}</div>" unless opts.empty?
+      body << "<p class=\"answer-note\">#{esc(note)}</p>" if note
       "<li>#{body}</li>"
     end
     "<ol class=\"question-list\">#{items.join}</ol>"
@@ -66,9 +64,22 @@ module AnswersRenderer
     m ? m[1].ord - "a".ord : nil
   end
 
-  # The answer without the letter that marked which option it is, since the
-  # letter is already printed beside it.
-  def self.answer_text(question)
-    question.answer.to_s.sub(/\A[a-d]\)\s*/, "")
+  # The answer repeats the correct option and usually adds a bracketed aside.
+  # Returns the text to embolden in the options row, and the note for the line
+  # below, or nil.
+  #
+  # Neither returned value carries the option's letter, which is printed beside
+  # the option already. A note is a bracketed aside, returned without its
+  # brackets. An answer that adds anything else, or that does not begin with its
+  # option, is returned whole with no note.
+  def self.answer_parts(question, option)
+    text = question.answer.to_s.sub(/\A[a-d]\)\s*/, "")
+    return [text, nil] if option.nil? || !text.start_with?(option)
+
+    note = text[option.length..].strip
+    return [option, nil] if note.empty?
+    return [text, nil] unless note.start_with?("(") && note.end_with?(")")
+
+    [option, note[1..-2].strip]
   end
 end

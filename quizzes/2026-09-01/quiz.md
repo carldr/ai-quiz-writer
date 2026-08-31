@@ -32,11 +32,11 @@ Instructions: Circle the option that came FIRST. One point each.
 
 1. Which came first? a) Doctor Who b) Blue Peter c) Coronation Street — **b) Blue Peter (16 October 1958; Coronation Street December 1960; Doctor Who November 1963)**
 2. Which came first? a) Decimal Day b) The first Moon landing c) The first colour TV broadcast in Britain — **c) The first colour TV broadcast in Britain (BBC2, 1 July 1967, with Wimbledon; Moon landing 20 July 1969; Decimal Day 15 February 1971)**
-3. Which came first? a) Cadbury's Dairy Milk b) The Mars bar c) The Kit Kat — **a) Cadbury's Dairy Milk (June 1905; the British Mars bar August 1932, made in Slough; the Kit Kat September 1935, but launched as Rowntree's Chocolate Crisp and not renamed until 1937)**
-4. Which came first? a) The first text message being sent b) The first camera phone going on sale c) The first website going online — **c) The first website going online (CERN, 6 August 1991; first text message 3 December 1992; first camera phone May 1999)**
-5. Which came first? a) The Ford Model T b) The world's first traffic signal c) Commercially sliced bread — **b) The world's first traffic signal (gas-lit and hand-worked, outside Parliament, December 1868; Model T October 1908; first machine-sliced loaf July 1928. It exploded a month later and badly burned the constable working it, and Britain had no traffic lights again until 1929. If a team says Cleveland 1914, that was the first electric signal)**
+3. Which came first? a) Cadbury's Dairy Milk b) The Mars bar c) The Kit Kat — **a) Cadbury's Dairy Milk (June 1905; the British Mars bar 1932, made in Slough; the Kit Kat September 1935, but launched as Rowntree's Chocolate Crisp and not renamed until 1937)**
+4. Which came first? a) The first text message being sent b) The first camera phone going on sale c) The first website going online — **c) The first website going online (CERN, 20 December 1990 — Berners-Lee's info.cern.ch; he announced the project publicly on 6 August 1991; first text message 3 December 1992; first camera phone, the Kyocera VP-210, May 1999)**
+5. Which came first? a) The Ford Model T b) The world's first traffic signal c) Commercially sliced bread — **b) The world's first traffic signal (gas-lit and hand-worked, outside Parliament, 9 December 1868; Model T October 1908; first machine-sliced loaf July 1928. It exploded on 2 January 1869 and badly injured the constable working it, and Britain had no traffic lights again until 1926, when electric signals went up at Piccadilly Circus. If a team says Cleveland 1914, that was the first electric signal)**
 6. Which came first? a) Coca-Cola b) Nintendo c) The opening of the Eiffel Tower — **a) Coca-Cola (first sold 8 May 1886; the Eiffel Tower opened 15 May 1889, and Nintendo was founded four months later, 23 September 1889, making playing cards)**
-7. Which came first? a) Britain's first fish and chip shop b) Britain's first Indian restaurant c) The opening of the London Underground — **b) Britain's first Indian restaurant (the Hindoostane Coffee House, 34 George Street, London, 1810 — fifty years before either fish and chip shop claim, and it closed within about a year for lack of business. The Underground opened 10 January 1863)**
+7. Which came first? a) Britain's first fish and chip shop b) Britain's first Indian restaurant c) The opening of the London Underground — **b) Britain's first Indian restaurant (the Hindoostane Coffee House, 34 George Street, London, 1810 — fifty years before either fish and chip shop claim. It ruined Sake Dean Mahomed within two years, though the premises traded on until 1833. The Underground opened 10 January 1863)**
 8. Which came first? a) Marks & Spencer b) Sainsbury's c) Tesco — **b) Sainsbury's (Drury Lane 1869; the Marks & Spencer penny bazaar 1884; Tesco's first store 1931)**
 9. Which came first? a) The Great Pyramid of Giza b) The last woolly mammoths dying out c) The invention of writing — **c) The invention of writing (cuneiform around 3200 BC; the Great Pyramid around 2560 BC; the last mammoths, a relict population on Wrangel Island, survived to around 2000 BC — so mammoths were still alive while the pyramids were going up)**
 10. Which came first? a) YouTube b) Montenegro splitting from Serbia c) The iPhone — **a) YouTube (first video uploaded 23 April 2005; Montenegro's independence referendum May 2006; the iPhone went on sale June 2007)**
@@ -64,8 +64,8 @@ Format: open
 
 Instructions: Each question gives a nickname. Name the person, place, building or thing. One point each.
 
-1. Which northern English city, the world's first industrial city, was known in the 19th century as Cottonopolis? — **Manchester**
-2. Which British king was mocked as Farmer George for his enthusiasm for crop rotation and sheep breeding? — **George III**
+1. Which northern English city, the world's first industrialised city, was known in the 19th century as Cottonopolis? — **Manchester**
+2. Which British king was mocked as Farmer George for his homely tastes and his interest in farming? — **George III (he founded a royal merino flock at Kew in 1792)**
 3. Which country is known as the Rainbow Nation? — **South Africa (coined by Archbishop Desmond Tutu after the first democratic elections in 1994)**
 4. Which British prime minister, in office from 1828 to 1830 and again for three weeks in 1834, was known as the Iron Duke? — **The Duke of Wellington (Arthur Wellesley, who beat Napoleon at Waterloo)**
 5. Which city is known as Auld Reekie? — **Edinburgh (Scots for "Old Smoky", after the pall of smoke over the Old Town)**
@@ -73,7 +73,7 @@ Instructions: Each question gives a nickname. Name the person, place, building o
 7. The circular Cupertino headquarters nicknamed "the spaceship" opened in 2017. What is its actual name? — **Apple Park (designed by Norman Foster; employees call it the ring)**
 8. Which American inventor was known as the Wizard of Menlo Park? — **Thomas Edison (holder of 1,093 US patents)**
 9. Which European country is nicknamed l'Hexagone, the Hexagon, after the rough shape of its mainland? — **France**
-10. Howard Hughes's H-4 Hercules, an enormous wooden flying boat that flew only once — for 26 seconds, in November 1947 — is far better known by what nickname? — **The Spruce Goose (built almost entirely of birch, which Hughes resented)**
+10. Howard Hughes's H-4 Hercules, an enormous wooden flying boat that flew only once — for 26 seconds, in November 1947 — is far better known by what nickname? — **The Spruce Goose (a name Hughes hated: the aircraft was built almost entirely of birch, not spruce)**
 
 ## Round 5: Food and Drink (/ 10)
 
@@ -108,7 +108,7 @@ Instructions: One point per question.
 8. The name of which car manufacturer means "I roll" in Latin? — **Volvo (from volvere; first registered in 1911 as a trademark for ball bearings)**
 9. The Bank of England's £50 note carries King Charles III on the front. Which computer scientist is on the back? — **Alan Turing**
 10. Which currency, launched in 2009 by a person or group using the name Satoshi Nakamoto, was the world's first cryptocurrency? — **Bitcoin (the supply is capped at 21 million coins, and nobody has established who Nakamoto was)**
-11. Which British prime minister has spent the fewest days in office? — **Andy Burnham (43 days on 1 September 2026, having taken office on 20 July; Liz Truss served 49. Burnham passes her on 7 September, so this answer is only right until then)**
+11. Which British prime minister has spent the fewest days in office? — **Andy Burnham (43 days on 1 September 2026, having taken office on 20 July; Liz Truss served 49. Burnham equals her on 7 September and passes her on 8 September, so this answer is only right until then)**
 12. Who was the first Roman emperor? — **Augustus (emperor from 27 BC to AD 14; accept Octavian)**
 13. In which month of the Islamic calendar do Muslims fast from dawn to sunset, ending with Eid al-Fitr? — **Ramadan (the ninth month)**
 14. Mary Quant, from her King's Road boutique Bazaar, is credited with popularising which garment? — **The miniskirt**
@@ -117,4 +117,4 @@ Instructions: One point per question.
 17. Conkers, as used in the playground game, are the seeds of which tree? — **The horse chestnut (native to the Balkans, not Britain)**
 18. What is the name of the white marble mausoleum in Agra? — **The Taj Mahal (built by the Mughal emperor Shah Jahan for his wife, who died in 1631)**
 19. In 2014, which company paid $2.5 billion for Mojang, the Stockholm studio behind Minecraft? — **Microsoft**
-20. Which element has the chemical symbol W? — **Tungsten (W for wolfram; the highest melting point of any element, 3,422 °C)**
+20. Which element has the chemical symbol W? — **Tungsten (W for wolfram; the highest melting point of any metal, 3,422 °C)**
