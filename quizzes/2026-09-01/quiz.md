@@ -6,7 +6,7 @@ Total: / 75
 
 Format: picture
 
-Instructions: Name the show or film each teacher is from. One point each. Character names score nothing.
+Instructions: Name the show, the film, or the film series each teacher is from. One point each.
 
 1. **Harry Potter (Severus Snape)** — images/r1-01.jpg
 2. **Derry Girls (Sister Michael)** — images/r1-02.jpg
@@ -47,14 +47,14 @@ Format: open
 
 Instructions: Every answer hides the name of a body part inside a longer word or phrase — CHINa, EARwig, KNEEcap, GUMboot. The questions are ordinary general knowledge. Ten different body parts. You score for the answer, not for spotting the body part.
 
-1. Which SpaceX launch vehicle, 121 metres tall, had its Super Heavy first stage caught in mid-air by the launch tower's "chopstick" arms for the first time on 13 October 2024? — **Starship (starsHIP)**
-2. Which punctuation mark made its first appearance in print in a 1496 book by Pietro Bembo, from the Venice press of Aldus Manutius? — **Semicolon (semiCOLON)**
+1. What is the name of the giant SpaceX rocket designed to carry people to Mars? — **Starship (starsHIP; its Super Heavy booster was first caught in mid-air by the launch tower's arms in October 2024)**
+2. Which punctuation mark is written as a dot above a comma, and joins two sentences that could each stand alone? — **Semicolon (semiCOLON)**
 3. Cuba, Jamaica, Hispaniola and Puerto Rico are the largest islands in which sea? — **The Caribbean (caRIBbean)**
 4. Which armoured South American mammal's name is Spanish for "little armoured one"? — **Armadillo (ARMadillo)**
 5. Which 1980 Stanley Kubrick film has Jack Nicholson as the winter caretaker of the Overlook Hotel? — **The Shining (SHINing)**
-6. In Three Men in a Boat, the three empty every scrap of food they have into one pot; which dish are they attempting, the one Montmorency offers to improve with a dead water rat? — **Irish stew (IRISh)**
-7. Which firework is named after the fourth-century Alexandrian saint whose spiked instrument of execution shattered at her touch, leaving Emperor Maxentius to have her beheaded instead? — **Catherine wheel (wHEEL)**
-8. Which Charles Dickens novel, his second, carries the subtitle "The Parish Boy's Progress"? — **Oliver Twist (OLIVER)**
+6. Which hot drink combines coffee, whiskey, sugar and a layer of cream floated on top? — **Irish coffee (IRISh)**
+7. Which spinning firework shares its name with a Christian saint? — **Catherine wheel (wHEEL; St Catherine of Alexandria was condemned to be broken on a spiked wheel, which shattered at her touch)**
+8. Which Charles Dickens novel, his second, carries the subtitle "The Parish Boy's Progress"? — **Oliver Twist (oLIVER)**
 9. Which flower was the subject of the speculative bubble that collapsed in the Dutch Republic in February 1637? — **Tulip (tuLIP)**
 10. Which sweet, non-alcoholic drink of fizzy pop and grenadine, served with a maraschino cherry, is named after a 1930s Hollywood child star? — **Shirley Temple (TEMPLE)**
 
@@ -90,7 +90,7 @@ Instructions: One point per question.
 7. Named after the French chemist who first described it in 1912, what name is given to the reaction between amino acids and sugars that browns a seared steak and the crust of toast? — **The Maillard reaction (Louis-Camille Maillard; accept Maillard)**
 8. Which pasta takes its name from the Italian for "little worms" — a name also carried by the thin rice noodles sold for Asian cooking? — **Vermicelli**
 9. Which nut is ground with sugar to make marzipan, the layer that sits under the icing on a Christmas cake? — **Almonds**
-10. Vindaloo comes from the Portuguese carne de vinha d'alhos, meat marinated in wine and garlic. Which meat — still the one used in Goa, but rare on a British curry-house menu — was in the original? — **Pork**
+10. Which dip is made from roasted aubergine, tahini, lemon juice and olive oil? — **Baba ganoush (accept mutabbal or moutabal — some sources treat them as one dish, others as the tahini and non-tahini versions. The aubergine is charred over a flame first, which is what gives the dip its smoky taste)**
 
 ## Round 6: General Knowledge (/ 20)
 
