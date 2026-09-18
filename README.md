@@ -24,51 +24,14 @@ The team sheet prints no question text, because the quizmaster reads the questio
 
 ## Dependencies
 
-The repository runs on macOS only.
+- macOS
+- Homebrew
+- Ruby 3.2 or later, with no gems
+- Google Chrome, at `/Applications/Google Chrome.app`
+- Claude Code, with web search
+- curl-impersonate: `brew install lexiforest/tap/curl-impersonate`
 
-### Homebrew
-
-Homebrew installs curl-impersonate and can install the other dependencies. Install Homebrew from brew.sh.
-
-### Ruby 3.2 or later
-
-The renderer needs Ruby 3.2 or later, with no gems. The Ruby that ships with macOS is 2.6, which is too old. To print the version in use, run:
-
-```
-ruby -v
-```
-
-Install a current Ruby with a Ruby version manager such as mise.
-
-### Google Chrome
-
-Chrome prints the HTML sheets to PDF, and must be installed at `/Applications/Google Chrome.app`. Install Chrome from google.com/chrome, or with Homebrew:
-
-```
-brew install --cask google-chrome
-```
-
-### iCloud Drive
-
-A render copies the PDFs to `~/Library/Mobile Documents/com~apple~CloudDocs/Quiz/YYYY-MM-DD/`. The render fails if iCloud Drive is missing.
-
-### Claude Code
-
-Claude Code, with web search, runs the `/new-quiz` skill that writes the quiz. Claude Code needs a Pro, Max, Team, Enterprise or Console account. Install Claude Code with:
-
-```
-curl -fsSL https://claude.ai/install.sh | bash
-```
-
-The first run of `claude` opens a browser for you to log in.
-
-### curl-impersonate
-
-Claude uses curl-impersonate to fetch picture-round images from sites that block plain curl. Install curl-impersonate with:
-
-```
-brew install lexiforest/tap/curl-impersonate
-```
+A render writes the PDFs to `quizzes/YYYY-MM-DD/out/`, then copies them to `~/Library/Mobile Documents/com~apple~CloudDocs/Quiz/YYYY-MM-DD/`. To copy them somewhere else, change `ICLOUD_QUIZ_DIR` in `scripts/lib/cli.rb`.
 
 ## Creating a quiz
 
