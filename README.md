@@ -22,12 +22,11 @@ A render produces three sheets:
 
 The team sheet prints no question text, because the quizmaster reads the questions out.
 
-An example quiz, for 1 September 2026:
+An example quiz, generated from [quiz.md](quizzes/2026-09-01/quiz.md) :
 
-- [quiz.md](quizzes/2026-09-01/quiz.md), the quiz as Claude writes it
+- [picture sheet](quizzes/2026-09-01/out/pictures.pdf)
 - [answer sheet](quizzes/2026-09-01/out/answers.pdf)
 - [team sheet](quizzes/2026-09-01/out/team.pdf)
-- [picture sheet](quizzes/2026-09-01/out/pictures.pdf)
 
 ## Dependencies
 
