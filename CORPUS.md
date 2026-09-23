@@ -89,7 +89,69 @@ _None recorded._
 
 ## Open rounds
 
-_None recorded._
+### Spoken Lyrics
+
+Vetted from SUGGESTIONS.md on 2026-09-23.
+
+The quizmaster reads a line of a song's lyrics aloud in a flat speaking voice,
+with no tune, and teams name the song. A familiar pub format that tests the
+right thing, and the songs span the 1970s to the 2010s, so every age has
+something. Difficulty depends entirely on the songs picked, which makes it
+easy to tune: there are plenty of songs whose opening line is as well known
+as the chorus, and the round can reach 90% with them.
+
+Occasion: none. A Christmas version would clash with the Christmas songs round
+of 2024-12-23.
+
+Reviewer: viable; expected average 65% as drafted. Africa and Waterloo Sunset
+(45% each) pull it down; swap either for a better-known opening line.
+
+The lines are given by position only; look each one up before the night.
+
+```markdown
+## Round N: Spoken Lyrics (/ 10)
+
+Format: open
+
+Instructions: Name the song.
+
+1. The opening a cappella line of Bohemian Rhapsody — **Bohemian Rhapsody, Queen**
+2. The opening line of Wannabe — **Wannabe, Spice Girls**
+3. The opening line of Wonderwall — **Wonderwall, Oasis**
+4. The first line of the first verse of Dancing Queen — **Dancing Queen, ABBA**
+5. The opening line of Africa — **Africa, Toto**
+6. The opening line of Someone Like You — **Someone Like You, Adele**
+7. The first sung line of Hotel California — **Hotel California, Eagles**
+8. The opening line of Common People — **Common People, Pulp**
+9. The opening line of Waterloo Sunset — **Waterloo Sunset, The Kinks**
+10. The first two lines of Life on Mars? — **Life on Mars?, David Bowie**
+```
+
+Sources:
+
+- Bohemian Rhapsody: https://www.udiscovermusic.com/stories/queen-bohemian-rhapsody-song-history/
+- Wannabe: https://en.wikipedia.org/wiki/Wannabe
+- Wonderwall: https://www.songfacts.com/lyrics/oasis/wonderwall
+- Dancing Queen: https://www.songfacts.com/lyrics/abba/dancing-queen
+- Africa: https://magneticmag.com/2024/11/toto-africa-lyrics-and-meaning/
+- Someone Like You: https://learnenglishvocabulary.co.uk/c1-advanced/song-lyric-adele-someone-like-you/
+- Hotel California: https://lyricstranslate.com/en/Hotel-California-lyrics.html
+- Common People: https://en.wikipedia.org/wiki/Common_People
+- Waterloo Sunset: https://en.wikipedia.org/wiki/Waterloo_Sunset
+- Life on Mars?: https://en.wikipedia.org/wiki/Life_on_Mars_(song)
+
+Before reuse:
+
+- Read genuinely flat. Any rhythm or tune makes every question easier.
+- None of the chosen lines contains the song's title. Keep it that way: Africa,
+  Dancing Queen and Wonderwall all name their title in the chorus.
+- Dancing Queen, Hotel California and Bohemian Rhapsody don't open on the
+  chosen line; say "a line from", not "the first line".
+- Score one point for the song. Half points for title and artist add almost
+  nothing, since a team that knows the song knows the artist.
+- The format ran as "Song Lyrics" on 2024-11-25 (sung, not spoken); none of its
+  songs is reused here.
+- Spare: A Whiter Shade of Pale, Procol Harum, the opening line (about 30%).
 
 ---
 
