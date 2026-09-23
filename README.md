@@ -41,17 +41,20 @@ A render writes the PDFs to `quizzes/YYYY-MM-DD/out/`, then copies them to `~/Li
 
 ## Creating a quiz
 
-The repository comes with the author's past quizzes, in these five places:
+The repository comes with the author's past quizzes and ideas, in these six places:
 
 - `OLD-QUIZZES.md`
 - `old-quiz-texts/`
 - `quizzes/`
 - `ROUND-HISTORY.md`
 - `CORPUS.md`
+- `SUGGESTIONS.md`
 
-To use your own past quizzes instead, empty all five. Then write your past quizzes into `OLD-QUIZZES.md` in the `quiz.md` format, one quiz after another.
+To use your own past quizzes instead, empty all six. Then write your past quizzes into `OLD-QUIZZES.md` in the `quiz.md` format, one quiz after another.
 
 If you have no past quizzes of your own, keep the author's quizzes. New quizzes will not repeat any question in the author's quizzes.
+
+Between quizzes, note ideas for questions and rounds in `SUGGESTIONS.md`, in any shorthand. Before writing a quiz, type `/vet-suggestions` at the Claude Code prompt. Claude asks what any unclear suggestion means, researches each one, and says which to keep and why. The ones you keep move to `CORPUS.md`, where `/new-quiz` draws on them.
 
 To create a quiz:
 
@@ -108,7 +111,8 @@ ruby test/render_test.rb -n test_name
 - `quizzes/YYYY-MM-DD/`: one directory per quiz, holding `quiz.md`, `images/` and `out/`.
 - `OLD-QUIZZES.md`: every question from quizzes written before this repository, used for deduplication. The originals are in `old-quiz-texts/`.
 - `ROUND-HISTORY.md`: one row per past round, newest first.
-- `CORPUS.md`: rounds and questions ready to use, including rounds drafted for an earlier quiz and not used.
+- `SUGGESTIONS.md`: ideas for questions and rounds, not yet vetted.
+- `CORPUS.md`: rounds and questions ready to use: vetted suggestions, and rounds drafted for an earlier quiz and not used.
 - `scripts/`: the renderer. Its stylesheets are in `scripts/render/`.
 
 The skill reads `OLD-QUIZZES.md`, `ROUND-HISTORY.md` and `CORPUS.md`. When a quiz is finished, the skill adds the quiz's rounds to `ROUND-HISTORY.md`, and the rounds it didn't use to `CORPUS.md`.

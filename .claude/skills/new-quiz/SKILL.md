@@ -13,9 +13,13 @@ change how a quiz is made, edit this file.
 Generate a pub quiz for the date given as argument (ask if missing). Work
 round by round; never move to the next round without approval.
 
+First, if SUGGESTIONS.md holds any suggestions, say how many and offer to run
+`/vet-suggestions` before starting; the quiz draws only on vetted entries, in
+CORPUS.md. Then read CORPUS.md.
+
 ## Structure
 
-Default: Round 1 picture (15 questions, / 15), then four rounds of 10, final round general knowledge (20 questions, / 20). Total 75. Round 2 is multiple choice, or true/false in about one quiz in three (check ROUND-HISTORY.md for how recently round 2 was true/false), usually themed (past examples: Size Matters, Guess the Year, Fictional Places). Rounds 3–5 mix novelty formats and themed open rounds; occasionally one of them is a second multiple-choice round. Ask up front if the user wants a different shape. Then propose 4–5 candidate themes for the quiz, drawn from the date, the season, and any special events near it, as a checklist — the user picks the ones they like, and none is a fine answer. Each picked theme colours one round only, usually the picture round or round 2, never the whole quiz; fold the picked themes into the per-round theme proposals below.
+Default: Round 1 picture (15 questions, / 15), then four rounds of 10, final round general knowledge (20 questions, / 20). Total 75. Round 2 is multiple choice, or true/false in about one quiz in three (check ROUND-HISTORY.md for how recently round 2 was true/false), usually themed (past examples: Size Matters, Guess the Year, Fictional Places). Rounds 3–5 mix novelty formats and themed open rounds; occasionally one of them is a second multiple-choice round. Ask up front if the user wants a different shape. Then propose 4–5 candidate themes for the quiz, drawn from the date, the season, any special events near it, and any CORPUS.md round that suits the date (a Dead or Alive round for a Halloween quiz), as a checklist — the user picks the ones they like, and none is a fine answer. Each picked theme colours one round only, usually the picture round or round 2, never the whole quiz; fold the picked themes into the per-round theme proposals below.
 
 An anniversary or event near the date that the user does not pick as a theme still earns a question or two, dropped into whichever rounds fit — never a full round. Include a few questions about things happening in the week around the quiz date, but the quiz must not become a current-affairs quiz unless a round is specifically that. Propose a sports round only for a special event such as an Olympics or a World Cup, or when ROUND-HISTORY.md shows no sports round in the last six months.
 
