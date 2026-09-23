@@ -171,17 +171,6 @@ Kazakhstan, at 2,724,900 km², is the largest landlocked country in the world. �
 - Why: Mongolia is a plausible wrong answer.
 - Vetted 2026-09-23.
 
-### Territory on all seven continents
-
-Counting overseas territories and Antarctic claims, the UK has territory on all seven continents; France has six, and none in Asia. — **The United Kingdom**
-
-- Asked as: "Which country has territory on all seven continents?"
-- Explained: Europe is Britain, Gibraltar and the Crown Dependencies; North America is six Caribbean and Atlantic territories, including Bermuda and the Cayman Islands; South America is the Falklands; Africa is St Helena, Ascension and Tristan da Cunha; Asia is the Akrotiri and Dhekelia bases on Cyprus; Oceania is the Pitcairn Islands; Antarctica is the British Antarctic Territory. France has six: Europe, North America (Guadeloupe, Martinique, St Pierre and Miquelon), South America (French Guiana), Africa (Réunion, Mayotte), Oceania (New Caledonia, French Polynesia) and Antarctica (Adélie Land), but nothing in Asia.
-- Accuracy: the answer counts overseas territories and the Antarctic claim; add "counting its overseas territories and Antarctic claims" if the room is pedantic.
-- Faults: Antarctic claims, the UK's and France's alike, are suspended under the Antarctic Treaty, and the Asian box depends on counting Cyprus as Asia. The Chagos handover, on hold in September 2026, would not change the answer.
-- Why: a mild trick; many teams reach for France.
-- Vetted 2026-09-23.
-
 ### The angels' share
 
 The spirit lost to evaporation from the cask as whisky matures is the angels' share. — **The angels' share**
