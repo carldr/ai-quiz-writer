@@ -13,7 +13,6 @@ into `CORPUS.md`.
 
 ## Round ideas
 
-- Given three songs, name the artist and the album (half point for each)
 - Dead or alive quiz round.
   - Sue johnson
 - Dead pop stars picture round

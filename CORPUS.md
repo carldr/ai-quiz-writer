@@ -172,6 +172,72 @@ Before reuse:
 - Standalone: "True or false: Phil Collins joined Genesis as their drummer,
   not their singer" (true).
 
+### Three Songs, One Album
+
+Vetted from SUGGESTIONS.md on 2026-09-23.
+
+Teams hear three track titles and name the artist and the original studio
+album, half a point each. The artist half is nearly free, so every team
+scores; the album half separates them. Difficulty is set by the albums
+picked: iconic albums are gettable, deeper ones are hard, and there are
+plenty of each.
+
+Occasion: none.
+
+Reviewer: viable; expected average 78% as drafted, too easy. Swap one iconic
+album for a mid-known one to reach 70%.
+
+```markdown
+## Round N: Three Songs, One Album (/ 10)
+
+Format: open
+
+Instructions: Name the artist and the original studio album all three songs come from. Half a point for the artist, half a point for the album.
+
+1. Billie Jean, Beat It, Thriller — **Michael Jackson, Thriller**
+2. Rolling in the Deep, Someone Like You, Set Fire to the Rain — **Adele, 21**
+3. Wonderwall, Don't Look Back in Anger, Champagne Supernova — **Oasis, (What's the Story) Morning Glory?**
+4. Go Your Own Way, Dreams, Don't Stop — **Fleetwood Mac, Rumours**
+5. Rehab, You Know I'm No Good, Tears Dry on Their Own — **Amy Winehouse, Back to Black**
+6. Come Together, Something, Here Comes the Sun — **The Beatles, Abbey Road**
+7. Bohemian Rhapsody, You're My Best Friend, Love of My Life — **Queen, A Night at the Opera**
+8. Do I Wanna Know?, R U Mine?, Why'd You Only Call Me When You're High? — **Arctic Monkeys, AM**
+9. Girls & Boys, End of a Century, This Is a Low — **Blur, Parklife**
+10. Once in a Lifetime, Born Under Punches, Crosseyed and Painless — **Talking Heads, Remain in Light**
+```
+
+Sources:
+
+- Thriller: https://www.michaeljackson.com/albums/thriller/
+- 21: https://en.wikipedia.org/wiki/21_(Adele_album)
+- (What's the Story) Morning Glory?: https://en.wikipedia.org/wiki/(What%27s_the_Story)_Morning_Glory%3F
+- Rumours: https://en.wikipedia.org/wiki/Rumours_(album)
+- Back to Black: https://www.discogs.com/release/1236121-Amy-Winehouse-Back-To-Black
+- Abbey Road: https://www.beatlesbible.com/albums/abbey-road/
+- A Night at the Opera: https://queen.fandom.com/wiki/A_Night_At_The_Opera
+- AM: https://en.wikipedia.org/wiki/AM_(Arctic_Monkeys_album)
+- Parklife: https://en.wikipedia.org/wiki/Parklife, https://en.wikipedia.org/wiki/This_Is_a_Low
+- Remain in Light: https://en.wikipedia.org/wiki/Remain_in_Light
+
+Before reuse:
+
+- Q1 gives its album away: Thriller is a listed track. Swap it for Wanna Be
+  Startin' Somethin'.
+- Read out "original studio album". Every song here is also on compilations
+  or live albums (Queen's Greatest Hits, the Beatles' 1, Stop the Clocks,
+  Rumours Live); none of those scores.
+- Pink Floyd's The Dark Side of the Moon was dropped: Roger Waters re-recorded
+  it as The Dark Side of the Moon Redux in 2023, a second possible answer.
+- Marking: accept "Morning Glory" and "Rumors". Refuse "David Byrne" for
+  Talking Heads.
+- Q7: some teams will say A Day at the Races.
+- Unverified mid-difficulty swaps: Nevermind (Nirvana), The Joshua Tree (U2),
+  Parallel Lines (Blondie), Urban Hymns (The Verve).
+- An earlier quiz asked for the artist only from three songs (Simply Red,
+  2024-07-28, OLD-QUIZZES.md:1105).
+- Standalone: "Bohemian Rhapsody first appeared on which Queen album?" as
+  multiple choice against A Day at the Races and News of the World.
+
 ### Spoken Lyrics
 
 Vetted from SUGGESTIONS.md on 2026-09-23.
