@@ -161,6 +161,75 @@ _None recorded._
 
 ## Open rounds
 
+### Airport Codes
+
+Vetted from SUGGESTIONS.md on 2026-09-23.
+
+Teams are given a three-letter IATA airport code and name the airport or
+city. Pub teams have booked flights and read bag tags, so most codes are
+familiar, and a code that doesn't match its city (ORD, MCO) is a real test.
+Codes that spell their city (MAN, EDI, AMS) test spelling, not codes; the
+round works best with codes UK holidaymakers have seen that don't spell the
+city.
+
+Occasion: none; suits a summer-holiday or travel quiz.
+
+Reviewer: viable open; expected average 82% as drafted, too easy because Q2,
+Q6 and Q7 spell their city. Multiple choice with this set would score about
+93%; it only works with a harder set.
+
+```markdown
+## Round N: Airport Codes (/ 10)
+
+Format: open
+
+Instructions: Name the airport or city from its three-letter code.
+
+1. LHR is the code for which London airport? — **Heathrow**
+2. MAN is the code for which UK city's airport? — **Manchester**
+3. JFK is the code for an airport in which city? — **New York**
+4. CDG is the code for the main airport of which capital city? — **Paris (Charles de Gaulle)**
+5. LAX is the code for which American city's main airport? — **Los Angeles**
+6. EDI is the code for which Scottish city's airport? — **Edinburgh**
+7. AMS is the code for which capital city's airport? — **Amsterdam (Schiphol)**
+8. BHX is the code for which UK city's airport? — **Birmingham**
+9. MCO is the code for the main airport of which Florida city? — **Orlando**
+10. ORD is the code for which American city's main airport? — **Chicago (O'Hare)**
+```
+
+Sources:
+
+- LHR: https://en.wikipedia.org/wiki/Heathrow_Airport
+- MAN: https://en.wikipedia.org/wiki/Manchester_Airport
+- JFK: https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport
+- CDG: https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport
+- LAX: https://en.wikipedia.org/wiki/Los_Angeles_International_Airport
+- EDI: https://en.wikipedia.org/wiki/Edinburgh_Airport
+- AMS: https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol
+- BHX: https://en.wikipedia.org/wiki/Birmingham_Airport
+- MCO: https://simpleflying.com/orlando-international-airport-mco-iata-code-history/
+- ORD: https://en.wikipedia.org/wiki/O'Hare_International_Airport
+- STN, LGW (spares): https://en.wikipedia.org/wiki/London_Stansted_Airport, https://en.wikipedia.org/wiki/Gatwick_Airport
+
+Before reuse:
+
+- Swap two or three of Q2, Q6 and Q7 for codes that don't spell the city.
+  Verified: STN (Stansted), LGW (Gatwick); ask for the airport, as in Q1.
+  Unverified: AGP (Malaga), FAO (Faro), PMI (Palma), TFS (Tenerife South), FCO
+  (Rome), YYZ (Toronto), SFO (San Francisco), LTN (Luton).
+- Ask for the city where it is unambiguous, and for the airport only where a
+  city has several (London), so a city answer can't be half right.
+- Q3: New York has three major airports. Refuse Newark; decide in advance on
+  Queens.
+- Q4 and Q7: the airports lie outside the city limits; overrule any challenge,
+  since the question asks which city the airport serves.
+- Q8: "UK" rules out Birmingham, Alabama (BHM).
+- Q9: without "Florida" it drops to about 20%. Miami is the reflex wrong answer.
+- DXB was asked on 2025-01-26 (OLD-QUIZZES.md:670). VCE was avoided: Marco
+  Polo airport was asked on 2024-07-28 (OLD-QUIZZES.md:1085).
+- Standalone: ORD (from the former Orchard Field) and MCO (from the former
+  McCoy Air Force Base) as true/false or multiple choice.
+
 ### Lead Singers
 
 Vetted from SUGGESTIONS.md on 2026-09-23.

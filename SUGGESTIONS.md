@@ -13,7 +13,6 @@ into `CORPUS.md`.
 
 ## Round ideas
 
-- Airport designations
 - TLAs
 - Around the World: geography
 - Science and Nature: a mix of chemistry, physics, the human body, space, animals, plants and weather
