@@ -13,4 +13,3 @@ into `CORPUS.md`.
 
 ## Round ideas
 
-- Science and Nature: a mix of chemistry, physics, the human body, space, animals, plants and weather

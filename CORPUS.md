@@ -514,6 +514,68 @@ Before reuse:
 - Unverified easy spares: KFC, UFO, GMT.
 - Standalone: SIM and LED as multiple choice; HMV and MOT as true/false.
 
+### Science and Nature
+
+Vetted from SUGGESTIONS.md on 2026-09-23.
+
+A mix of chemistry, physics, the human body, space, animals, plants and
+weather. The theme is broad and well supplied at every difficulty, so the
+curve is easy to tune without a change of format.
+
+Occasion: none; could sit near a space anniversary.
+
+Reviewer: viable; expected average 78% as drafted, too easy. It has no hard
+question and only one near 50%.
+
+```markdown
+## Round N: Science and Nature (/ 10)
+
+Format: open
+
+1. Which planet is known as the Red Planet? — **Mars**
+2. What is a baby kangaroo called? — **A joey**
+3. Which tree do acorns grow on? — **The oak**
+4. What is the longest bone in the human body? — **The femur (thigh bone)**
+5. What is the chemical symbol for gold? — **Au (from the Latin aurum)**
+6. Which instrument measures air pressure? — **A barometer**
+7. Frequency is measured in which unit, named after a German physicist? — **The hertz**
+8. What is the largest living species of penguin? — **The emperor penguin**
+9. Which gas makes up most of the Earth's atmosphere? — **Nitrogen (about 78%; oxygen is about 21%)**
+10. Which planet spins on its side, tilted at about 98 degrees? — **Uranus**
+```
+
+Sources:
+
+- Mars: https://science.nasa.gov/mars/facts/
+- Joey: https://www.discoverwildlife.com/animal-facts/mammals/how-long-do-joeys-stay-in-the-pouch
+- Oak: https://www.britannica.com/science/acorn-nut
+- Femur: https://my.clevelandclinic.org/health/body/22503-femur
+- Gold: https://en.wikipedia.org/wiki/Gold
+- Barometer: https://weather.metoffice.gov.uk/guides/observations/how-we-measure-atmospheric-pressure
+- Hertz: https://en.wikipedia.org/wiki/Hertz
+- Emperor penguin: https://www.guinnessworldrecords.com/world-records/382130-largest-living-penguin-species
+- Nitrogen: https://scied.ucar.edu/learning-zone/air-quality/whats-in-the-air
+- Uranus: https://www.ebsco.com/research-starters/astronomy-and-astrophysics/uranuss-tilt/
+
+Before reuse:
+
+- Replace Q1 or Q3 with a question at about 50%, and add one at about 20%.
+- Q9 is a trick question: oxygen is the reflex answer. "Which element makes
+  up most of the air we breathe?" keeps the pull.
+- Q8: keep "living"; extinct penguins were larger. King penguin is the
+  common wrong answer.
+- Q10: keep "on its side"; Venus's 177° tilt makes it upside down, not on its
+  side.
+- Q2 shares its answer with an old koala question (OLD-QUIZZES.md:426); not a
+  repeat, but close.
+- Dropped as repeats: the ohm (OLD-QUIZZES.md:779), the octopus's three
+  hearts (OLD-QUIZZES.md:1286), tungsten's symbol W and insulin from the
+  pancreas (quizzes/2026-09-01).
+- Chemistry has two questions and physics one.
+- Standalone: nitrogen as a general-knowledge trick; "Uranus spins on its
+  side" as true/false; emperor penguin as multiple choice against king and
+  Adélie.
+
 ### Spoken Lyrics
 
 Vetted from SUGGESTIONS.md on 2026-09-23.
