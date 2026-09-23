@@ -112,10 +112,10 @@ ruby test/render_test.rb -n test_name
 - `OLD-QUIZZES.md`: every question from quizzes written before this repository, used for deduplication. The originals are in `old-quiz-texts/`.
 - `ROUND-HISTORY.md`: one row per past round, newest first.
 - `SUGGESTIONS.md`: ideas for questions and rounds, not yet vetted.
-- `CORPUS.md`: rounds and questions ready to use: vetted suggestions, and rounds drafted for an earlier quiz and not used.
+- `CORPUS.md`: vetted suggestions, ready to use.
 - `scripts/`: the renderer. Its stylesheets are in `scripts/render/`.
 
-`/new-quiz` reads `OLD-QUIZZES.md`, `ROUND-HISTORY.md` and `CORPUS.md`. When a quiz is finished, `/new-quiz` adds the quiz's rounds to `ROUND-HISTORY.md`, adds the rounds it didn't use to `CORPUS.md`, and deletes from `CORPUS.md` anything the quiz used.
+`/new-quiz` reads `OLD-QUIZZES.md`, `ROUND-HISTORY.md` and `CORPUS.md`. When a quiz is finished, `/new-quiz` adds the quiz's rounds to `ROUND-HISTORY.md` and deletes from `CORPUS.md` anything the quiz used. A round you passed over is dropped, unless you ask `/new-quiz` to keep it; it then goes into `SUGGESTIONS.md` as an idea, to be vetted.
 
 `/new-quiz` never updates `OLD-QUIZZES.md`. It also checks new quizzes for repeats against `quizzes/*/quiz.md`.
 

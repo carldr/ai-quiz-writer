@@ -150,9 +150,7 @@ Image rights are not a concern.
    target of about 52 of 75.
 5. Add the new quiz's rounds to the top of the ROUND-HISTORY.md table, which
    runs newest first.
-6. Move the unused rounds into CORPUS.md, under the heading for the
-   round type, keeping the questions and answers verbatim and recording the
-   drafting date. Record only a round the user passed over in favour of a different
-   round. Leave out anything dropped because its questions gave away their
-   answers, its images could not be sourced, or its facts would not verify.
-   Delete from CORPUS.md anything this quiz used.
+6. Delete from CORPUS.md anything this quiz used. A round the user passed over
+   is dropped. Only when the user asks to keep one, add its theme to the Round
+   ideas in SUGGESTIONS.md as a one-line idea, without its drafted questions,
+   so that `/vet-suggestions` vets it like any other suggestion.

@@ -16,7 +16,7 @@ The `/new-quiz` skill, `.claude/skills/new-quiz/SKILL.md`, drives a quiz from th
 
 - `OLD-QUIZZES.md`: every past question, in quiz file format. New questions are deduped against it and against `quizzes/*/quiz.md`. It is compiled from the raw originals in `old-quiz-texts/`.
 - `ROUND-HISTORY.md`: one row per past round, newest first, so themes are not reused too soon.
-- `CORPUS.md`: rounds and questions ready to use, with notes on why each is worth asking: vetted suggestions, and rounds drafted for an earlier quiz and passed over.
+- `CORPUS.md`: vetted suggestions, ready to use, with notes on why each is worth asking.
 
 The user notes ideas for questions and rounds in `SUGGESTIONS.md`. The `/vet-suggestions` skill, `.claude/skills/vet-suggestions/SKILL.md`, researches each one with the user, moves the good ones into `CORPUS.md`, and deletes every one decided on from `SUGGESTIONS.md`.
 

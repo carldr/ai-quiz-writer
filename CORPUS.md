@@ -1,14 +1,8 @@
 # Corpus
 
-Rounds and questions good enough to use, each with the notes that say why. Two
-sources feed it: `/vet-suggestions` adds the suggestions that pass vetting, and
-`/new-quiz` adds rounds drafted for a quiz and passed over for another round.
-Take themes and questions from here when proposing rounds, rather than starting
-from nothing.
-
-A round rejected for a fault does not belong here. If it was dropped because its
-questions gave away their answers, its images could not be sourced, or its facts
-would not verify, it is gone — do not record it.
+Rounds and questions good enough to use, each with the notes that say why.
+`/vet-suggestions` adds the suggestions that pass vetting. Take themes and
+questions from here when proposing rounds, rather than starting from nothing.
 
 **Everything below was checked when it was added, and not since.** Answers were
 verified then, sometimes against a single source, and none has been deduped
