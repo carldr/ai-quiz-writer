@@ -75,6 +75,11 @@ prime minister has spent the fewest days in office?" was one: the reflex was
 Liz Truss, and the answer was Andy Burnham, then 43 days in. A trick question
 sits in the hard tail of its round's curve.
 
+A trick question is not a technicality. When the right answer holds only under
+a classification or definition most of the room would reject, such as Cyprus
+counting as Asia because the UN's regions put it there, teams feel cheated
+rather than caught out. Drop the question.
+
 ## Per round
 
 1. Read ROUND-HISTORY.md and CORPUS.md, then propose 3–4 round
