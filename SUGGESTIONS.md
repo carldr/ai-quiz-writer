@@ -14,7 +14,6 @@ into `CORPUS.md`.
 - Spoken word lyrics quiz round
 - Lead singer of bands.
 - Given three songs, name the artist and the album (half point for each)
-- Celebrity deathmatch
 - Dead or alive quiz round.
   - Sue johnson
 - Dead pop stars picture round
