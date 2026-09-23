@@ -15,18 +15,18 @@ user decides every other suggestion.
 ## Standard
 
 The Difficulty section of `.claude/skills/new-quiz/SKILL.md` sets the target
-every judgement below is made against.
+a round idea is judged against, and how every question is worded.
 
 A question is good when:
 
 - web search confirms its answer, and no other answer fits the question as
   worded. Every answer is verified by search, including the ones the note
   already gives and the ones that seem obvious;
-- an average team has between about 10% and 95% chance of answering it. A
-  question every team gets, or one almost no team gets, earns nothing;
 - it is not a repeat of a question in OLD-QUIZZES.md, quizzes/*/quiz.md or
   CORPUS.md, by the rule in step 7 of `new-quiz`'s Per round section.
 
+How hard a question is depends on its wording, which is fitted to a round's
+curve when the round is written, so a question's difficulty is left to then.
 A trick question, as `new-quiz` defines it, is worth keeping; say so in its
 notes.
 
@@ -53,8 +53,8 @@ every item; check that candidates exist, and fetch nothing.
    suggestions. Each sub-agent returns, for every suggestion it was given:
    - for a question: the fact and its answer, the source that confirms it,
      an explanation of the answer that would settle a team's challenge, a
-     baseline wording with the chance an average team answers it, the
-     wordings or formats that make it easier or harder, the result of the
+     short, plain baseline wording, the clues or formats that make it
+     easier or harder, the result of the
      dedupe, and a verdict of keep or reject with its reason. Where the
      note's wording or answer is wrong, the sub-agent says what it changed;
    - for a round: the drafted round, with each answer's source and each
@@ -91,11 +91,10 @@ file format (docs/quiz-format.md), and a "Before reuse:" note of known faults.
 A question goes under Questions, under a heading that names it. It opens with
 the fact in one sentence, ending in the bold answer, then a list:
 
-- Asked as: the baseline wording and its chance;
+- Asked as: the baseline wording;
 - Explained: the answer in plain words, complete enough for the quizmaster to
   read out or to settle a team's challenge with;
-- Easier and Harder: other wordings or formats, with their chances where
-  known;
+- Easier and Harder: clues to add or remove, or a change of format;
 - Accuracy: wording that must stay for the question to be true;
 - Marking: answers to accept or refuse;
 - Faults: known weaknesses;
