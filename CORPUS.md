@@ -774,3 +774,53 @@ Five countries have won the FIFA Women's World Cup: the USA, Germany, Norway, Ja
 - Marking: for the "Also" form, require both countries; accept West Germany for Germany.
 - Why: teams who assume England or Brazil have won it get caught.
 - Vetted 2026-09-23.
+
+### The Beatles and The Quarrymen
+
+The Beatles grew out of The Quarrymen, the skiffle group John Lennon formed in Liverpool in 1956, which Paul McCartney joined in 1957. — **The Quarrymen**
+
+- Asked as: "What was John Lennon's band called when Paul McCartney joined in 1957?"
+- Explained: Lennon formed the group in November 1956 with school friends, naming it after a line in the Quarry Bank High School song, "Quarrymen, old before our birth". McCartney joined in October 1957. The group became Johnny and the Moondogs in 1958, then the Silver Beetles, and The Beatles by 1960.
+- Easier: true or false, "The Beatles grew out of a skiffle group called The Quarrymen"; or multiple choice against two made-up Liverpool skiffle names.
+- Accuracy: never "first called" or "started out as"; the group was very briefly the Blackjacks before any public performance.
+- Marking: accept "Quarry Men", with or without "The"; refuse Johnny and the Moondogs and the Silver Beetles, which came later.
+- Why: everyone knows the Beatles, and many have half-heard the name.
+- Vetted 2026-09-23.
+
+### U2 and Feedback
+
+U2 formed in Dublin in 1976 as Feedback, became The Hype in 1977, and U2 in 1978. — **Feedback**
+
+- Asked as: "U2 formed in 1976. What were they first called?"
+- Explained: Larry Mullen Jr. put up a notice at Mount Temple Comprehensive School, and the first practice was in September 1976. They chose Feedback as one of the few technical terms they knew. After their first paid gig in 1977 they became The Hype, and in March 1978 they took U2 from a list of names suggested by Steve Averill, as the one they disliked least.
+- Easier: true or false, "U2 were once called Feedback"; or add the clue "a technical term".
+- Harder: multiple choice against The Hype, with the 1976 wording.
+- Accuracy: ask for the first name, or date it to 1976; "What were U2 called before they were U2?" is The Hype.
+- Marking: refuse The Hype.
+- Why: U2 is universally known, and the story behind the name is a good reveal.
+- Vetted 2026-09-23.
+
+### Simon & Garfunkel and Tom and Jerry
+
+Simon & Garfunkel made their first record, Hey Schoolgirl, in 1957 as Tom & Jerry. — **Tom and Jerry**
+
+- Asked as: "Simon & Garfunkel made their first record, in 1957, under what name?"
+- Explained: Paul Simon and Art Garfunkel met at school in New York in 1953. In 1957 they released Hey Schoolgirl as Tom & Jerry; it reached No. 49 on the Billboard chart, and they played it on American Bandstand. Garfunkel was "Tom Graph", because he liked maths, and Simon was "Jerry Landis".
+- Easier: true or false, "Simon & Garfunkel first recorded as Tom and Jerry"; or multiple choice against Bert and Ernie and Laurel and Hardy.
+- Accuracy: keep "recorded" or "made their first record", not "were first called"; they sang earlier in a doo-wop group, the Peptones, which made no record.
+- Marking: refuse the Peptones.
+- Why: everyone knows the duo, and the old name surprises.
+- Vetted 2026-09-23.
+
+### Black Sabbath and Earth
+
+Black Sabbath were called Earth until 1969, when they renamed themselves after their song Black Sabbath. — **Earth**
+
+- Asked as: "Until 1969, Black Sabbath were named after which planet?"
+- Explained: Tony Iommi, Geezer Butler, Bill Ward and Ozzy Osbourne formed the band in Birmingham in 1968 as the Polka Tulk Blues Band, shortened to Polka Tulk, then renamed Earth. In 1969 they kept being mistaken for another English band called Earth. A cinema near their rehearsal room was showing the 1963 horror film Black Sabbath, which inspired a song of that name, and in August 1969 the band took its title.
+- Easier: true or false, "Black Sabbath were called Earth until 1969"; or multiple choice against Mercury and a silly option.
+- Harder: drop the planet clue: "What name did Black Sabbath use just before 1969?"
+- Accuracy: never "first called"; that is Polka Tulk.
+- Marking: if the wording is looser than "until 1969" or "just before", Polka Tulk has to be accepted.
+- Why: the room knows Black Sabbath and Ozzy, and the horror-film origin of the name is worth hearing.
+- Vetted 2026-09-23.
