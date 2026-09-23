@@ -58,6 +58,15 @@ is still 70%, but the stronger teams pull ahead there.
 In rounds 1–5, a misjudged question should be too easy, never too hard. When a
 question's difficulty is uncertain, choose the more accessible version.
 
+Difficulty is set by wording. To move a question along the curve, reword it
+before replacing it: add or remove clues, or switch between open and multiple
+choice. After two rewordings that still miss, replace it.
+
+Write short, plain questions by default: everyday words, one clause where
+possible, and the clue that matters stated plainly. In a long question, one
+misheard word can change the answer. Lengthening a question to add a clue is
+a fair way to make a hard question easier, and better than replacing it.
+
 Aim for two or three trick questions per quiz, in whichever rounds suit them;
 fewer is fine when the rounds don't lend themselves to one. A trick question
 is plainly worded, most teams' reflex answer is wrong, and the right answer is
@@ -76,9 +85,8 @@ sits in the hard tail of its round's curve.
    come from it. Everything in that file is a draft: it still goes through
    steps 4 to 8 in full, and its answers are re-verified and re-deduped from
    scratch. Each entry records its own known faults; read those before
-   proposing it. A corpus question's wording and format are a starting
-   point: rephrase it, add or remove clues, or switch between open and
-   multiple choice to put its chance where the round's curve needs it.
+   proposing it. A corpus question's wording is a baseline, reworded to fit
+   the curve as the Difficulty section describes.
 2. Start a sub-agent per picked theme, in parallel, each generating example
    questions for its theme. Give each sub-agent ROUND-HISTORY.md to read for
    tone and to avoid recent overlaps, and the Difficulty section to pitch its
