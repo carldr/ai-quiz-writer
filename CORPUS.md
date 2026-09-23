@@ -1,17 +1,19 @@
-# Future quiz rounds
+# Corpus
 
-Rounds drafted for a quiz, good enough to use, and not used only because another
-round was picked instead. Take themes and questions from here when proposing
-rounds, rather than starting from nothing.
+Rounds and questions good enough to use, each with the notes that say why. Two
+sources feed it: `/vet-suggestions` adds the suggestions that pass vetting, and
+`/new-quiz` adds rounds drafted for a quiz and passed over for another round.
+Take themes and questions from here when proposing rounds, rather than starting
+from nothing.
 
 A round rejected for a fault does not belong here. If it was dropped because its
 questions gave away their answers, its images could not be sourced, or its facts
 would not verify, it is gone — do not record it.
 
-**Everything below is a first draft.** No entry has been through the full check:
-answers were verified once at drafting, sometimes against a single source, and
-none has been deduped against quizzes written since. Re-verify every answer and
-re-run the dedupe before using anything here.
+**Everything below was checked when it was added, and not since.** Answers were
+verified then, sometimes against a single source, and none has been deduped
+against quizzes written since. Re-verify every answer and re-run the dedupe
+before using anything here.
 
 Delete an entry once it has been used in a quiz.
 
@@ -77,8 +79,8 @@ _None recorded._
 
 ---
 
-## Spare questions
+## Questions
 
-Single questions held back for a general knowledge round.
+Single questions, for whichever round they fit.
 
 - In whisky maturation, what name is given to the spirit lost to evaporation from the cask? — **The angels' share** (drafted 2026-08-31; do not state a percentage, the commonly quoted 2% a year could not be confirmed)

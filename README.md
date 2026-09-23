@@ -47,7 +47,7 @@ The repository comes with the author's past quizzes, in these five places:
 - `old-quiz-texts/`
 - `quizzes/`
 - `ROUND-HISTORY.md`
-- `FUTURE-QUIZ-ROUNDS.md`
+- `CORPUS.md`
 
 To use your own past quizzes instead, empty all five. Then write your past quizzes into `OLD-QUIZZES.md` in the `quiz.md` format, one quiz after another.
 
@@ -108,10 +108,10 @@ ruby test/render_test.rb -n test_name
 - `quizzes/YYYY-MM-DD/`: one directory per quiz, holding `quiz.md`, `images/` and `out/`.
 - `OLD-QUIZZES.md`: every question from quizzes written before this repository, used for deduplication. The originals are in `old-quiz-texts/`.
 - `ROUND-HISTORY.md`: one row per past round, newest first.
-- `FUTURE-QUIZ-ROUNDS.md`: rounds drafted for an earlier quiz and not used, kept for reuse.
+- `CORPUS.md`: rounds and questions ready to use, including rounds drafted for an earlier quiz and not used.
 - `scripts/`: the renderer. Its stylesheets are in `scripts/render/`.
 
-The skill reads `OLD-QUIZZES.md`, `ROUND-HISTORY.md` and `FUTURE-QUIZ-ROUNDS.md`. When a quiz is finished, the skill adds the quiz's rounds to `ROUND-HISTORY.md`, and the rounds it didn't use to `FUTURE-QUIZ-ROUNDS.md`.
+The skill reads `OLD-QUIZZES.md`, `ROUND-HISTORY.md` and `CORPUS.md`. When a quiz is finished, the skill adds the quiz's rounds to `ROUND-HISTORY.md`, and the rounds it didn't use to `CORPUS.md`.
 
 The skill never updates `OLD-QUIZZES.md`. The skill also checks new quizzes for repeats against `quizzes/*/quiz.md`.
 

@@ -9,4 +9,5 @@
 # a question withholds its answer on purpose, and an instruction repeats itself
 # on purpose, because it is heard once across a noisy room.
 /quizzes
-/FUTURE-QUIZ-ROUNDS.md
+/CORPUS.md
+/SUGGESTIONS.md

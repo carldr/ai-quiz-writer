@@ -16,7 +16,7 @@ The `/new-quiz` skill, `.claude/skills/new-quiz/SKILL.md`, drives a quiz from th
 
 - `OLD-QUIZZES.md`: every past question, in quiz file format. New questions are deduped against it and against `quizzes/*/quiz.md`. It is compiled from the raw originals in `old-quiz-texts/`.
 - `ROUND-HISTORY.md`: one row per past round, newest first, so themes are not reused too soon.
-- `FUTURE-QUIZ-ROUNDS.md`: rounds drafted for an earlier quiz and passed over, kept for reuse.
+- `CORPUS.md`: rounds and questions ready to use, with notes on why each is worth asking: vetted suggestions, and rounds drafted for an earlier quiz and passed over.
 
 `docs/quiz-format.md` specifies `quiz.md`. The parser is strict: a line that is not a recognised construct is an error, never skipped.
 
@@ -40,4 +40,4 @@ A multiple-choice answer repeats the correct option and may add a bracketed asid
 
 ## Prose judge
 
-`.prose-ignore` keeps the prose judge off `quizzes/` and `FUTURE-QUIZ-ROUNDS.md`, which hold quiz questions rather than prose.
+`.prose-ignore` keeps the prose judge off `quizzes/`, `CORPUS.md` and `SUGGESTIONS.md`, which hold quiz questions rather than prose.

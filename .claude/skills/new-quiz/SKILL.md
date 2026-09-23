@@ -64,12 +64,12 @@ sits in the hard tail of its round's curve.
 
 ## Per round
 
-1. Read ROUND-HISTORY.md and FUTURE-QUIZ-ROUNDS.md, then propose 3–4 round
+1. Read ROUND-HISTORY.md and CORPUS.md, then propose 3–4 round
    themes with a one-line description each, as a checklist — the user can pick more
-   than one. Do not propose a theme used in a recent quiz. FUTURE-QUIZ-ROUNDS.md
-   holds rounds and questions drafted for earlier quizzes and not used; draw on
+   than one. Do not propose a theme used in a recent quiz. CORPUS.md
+   holds rounds and questions ready to use; draw on
    it rather than starting from nothing, and say in the proposal which themes
-   come from it. Everything in that file is a first draft: it still goes through
+   come from it. Everything in that file is a draft: it still goes through
    steps 4 to 8 in full, and its answers are re-verified and re-deduped from
    scratch. Each entry records its own known faults; read those before
    proposing it.
@@ -146,9 +146,9 @@ Image rights are not a concern.
    target of about 52 of 75.
 5. Add the new quiz's rounds to the top of the ROUND-HISTORY.md table, which
    runs newest first.
-6. Move the unused rounds into FUTURE-QUIZ-ROUNDS.md, under the heading for the
+6. Move the unused rounds into CORPUS.md, under the heading for the
    round type, keeping the questions and answers verbatim and recording the
    drafting date. Record only a round the user passed over in favour of a different
    round. Leave out anything dropped because its questions gave away their
    answers, its images could not be sourced, or its facts would not verify.
-   Delete from FUTURE-QUIZ-ROUNDS.md anything this quiz used.
+   Delete from CORPUS.md anything this quiz used.
