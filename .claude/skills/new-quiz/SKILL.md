@@ -45,8 +45,9 @@ That averages 7 in 10. Scale the same shape to rounds of 15 and 20.
 
 Rounds 1–5 are accessible: a team that does not know an answer can still reach
 it, by recognising a face, ruling out an option, or making an educated guess.
-Round 2 gives each question at least one silly option that any team can rule
-out, so a team guessing a lot still scores 70%. Round 6, general knowledge,
+In a multiple-choice round 2, each question has at least one silly option
+that any team can rule out. In a true/false round 2, most statements are ones
+a team can reason out. Either way, a team guessing a lot still scores 70%. Round 6, general knowledge,
 needs the answer to be known, which makes it the distinguisher: the average
 is still 70%, but the stronger teams pull ahead there.
 
