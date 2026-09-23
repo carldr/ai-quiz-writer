@@ -19,7 +19,69 @@ _None recorded._
 
 ## Multiple-choice rounds
 
-_None recorded._
+### Animal Groups
+
+Vetted from SUGGESTIONS.md on 2026-09-23.
+
+Teams are given a collective noun and pick the animal it belongs to. Many
+nouns hint at their animal (a tower of giraffes, a crash of rhinos), so a team
+that doesn't know can reason its way there, and one silly option in each
+question gives every team a way in. Only multiple choice works: asked openly,
+most would score under 30%, several nouns belong to more than one animal, and
+many animals have more than one noun. The options close both problems.
+
+Occasion: none.
+
+Reviewer: viable as multiple choice; expected average 73%.
+
+```markdown
+## Round N: Animal Groups (/ 10)
+
+Format: multiple-choice
+
+1. A pride is a group of which animal? a) Lions b) Sheep c) Penguins — **a) Lions**
+2. A murder is a group of which bird? a) Robins b) Crows c) Ducks — **b) Crows**
+3. A loveliness is a group of which insect? a) Cockroaches b) Wasps c) Ladybirds — **c) Ladybirds**
+4. A parliament is a group of which bird? a) Owls b) Pigeons c) Swans — **a) Owls**
+5. A murmuration is a group of which bird? a) Seagulls b) Starlings c) Ostriches — **b) Starlings**
+6. A tower is a group of which animal? a) Giraffes b) Tortoises c) Hedgehogs — **a) Giraffes**
+7. A dazzle is a group of which animal? a) Pandas b) Zebras c) Frogs — **b) Zebras**
+8. A crash is a group of which animal? a) Butterflies b) Sloths c) Rhinos — **c) Rhinos**
+9. A business is a group of which animal? a) Ferrets b) Badgers c) Snails — **a) Ferrets**
+10. A shrewdness is a group of which animal? a) Shrews b) Apes c) Moles — **b) Apes**
+```
+
+Sources:
+
+- Pride, murder: https://www.merriam-webster.com/wordplay/a-drudge-of-lexicographers-presents-collective-nouns
+- Loveliness: https://sussexwildlifetrust.org.uk/news/a-loveliness-of-ladybirds
+- Parliament: https://x.com/MerriamWebster/status/1752435320174338288
+- Murmuration: https://www.rspb.org.uk/whats-happening/news/starlings-murmurations
+- Tower: https://savegiraffesnow.org/what-is-a-group-of-giraffes-called/
+- Dazzle: https://zoo-guide.com/did-you-know-a-group-of-zebras-is-called-a-dazzle/
+- Crash: https://africafreak.com/what-is-a-group-of-rhinos-called
+- Business, shrewdness: https://www.worldwidewords.org/collectives.html (both in the Book of St Albans, 1486)
+
+Before reuse:
+
+- No option may share the noun in question: leave out rooks for parliament,
+  flies and mongooses for business, jaguars for leap, raccoons for smack.
+  Check the options against https://en.wikipedia.org/wiki/List_of_animal_names,
+  read in full; the vetting read it through a summariser.
+- Loveliness, dazzle, tower and crash are modern coinages. They hold only with
+  closed options; never ask them openly.
+- Q10 is a fair trick question: Shrews is the reflex answer, and apes are
+  shrewd.
+- "Grumble of pugs", from the original note, was dropped: only dog blogs use
+  it, and none gives an origin.
+- Pandas appear as an option in Q7; an old question asked for the panda noun
+  (OLD-QUIZZES.md:1276, "embarrassment"). Not a repeat.
+- Unverified spares: exaltation of larks, unkindness of ravens, bloat of
+  hippos, prickle of porcupines, flamboyance of flamingos, clowder of cats.
+- Standalone: shrewdness of apes as a true/false trick ("A shrewdness is a
+  group of shrews" — false); business of ferrets and dazzle of zebras as
+  true/false; parliament of owls open in general knowledge, asking for "which
+  bird of prey" to rule out rooks.
 
 ## True/false rounds
 

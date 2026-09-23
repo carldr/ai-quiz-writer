@@ -13,7 +13,6 @@ into `CORPUS.md`.
 
 ## Round ideas
 
-- Collections of animals: Loveliness of ladybirds, dazzle of zebras, business of ferrets, grumble of pugs
 - Spoken word lyrics quiz round
 - Lead singer of bands.
 - Given three songs, name the artist and the album (half point for each)
