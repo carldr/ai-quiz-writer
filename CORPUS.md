@@ -41,11 +41,10 @@ baseline wording, and how to make it easier or harder.
 Quality Street chocolates, launched by Mackintosh's in 1936, are named after J. M. Barrie's 1901 play *Quality Street*. — **J. M. Barrie**
 
 - Asked as: "Quality Street chocolates are named after a play by which author?"
-- Explained: Mackintosh's of Halifax launched Quality Street in 1936, and Harold Mackintosh named it after Barrie's play, first staged in 1901 and set in the Napoleonic era. The soldier and lady on the tin, "Major Quality" and "Miss Sweetly", were based on the play's Captain Valentine Brown and Phoebe Throssel, and were on every tin until 2000. Nestlé has made them since 1988.
+- Explained: Mackintosh's of Halifax launched Quality Street in 1936 and named it after Barrie's play, first staged in 1901 and set in the Napoleonic era. The soldier and lady on the tin, "Major Quality" and "Miss Sweetly", were based on the play's Valentine Brown and Phoebe Throssel, and were on every tin until 2000. Nestlé has made them since 1988.
 - Easier: add "better known for Peter Pan".
-- Harder: "What links Peter Pan and Quality Street?"
-- Accuracy: Barrie wrote the play, not the chocolates.
-- Marking: for the "what links" form, the answer sheet spells out the play.
+- Harder: "Which author links Peter Pan and Quality Street?"
+- Accuracy: Barrie wrote the play, not the chocolates. "What links Peter Pan and Quality Street?" has other answers: both are plays, and both are films.
 - Why: a household tin with a literary origin few know.
 - Vetted 2026-09-23.
 
@@ -54,7 +53,7 @@ Quality Street chocolates, launched by Mackintosh's in 1936, are named after J. 
 Total Eclipse of the Heart by Bonnie Tyler has passed a billion Spotify streams, the most for any song by a Welsh artist. — **Total Eclipse of the Heart (Bonnie Tyler)**
 
 - Asked as: "Which song by a Welsh artist has the most streams on Spotify?"
-- Explained: the 1983 song passed a billion streams in August 2025 and stood at about 1.27 billion in September 2026. Next are Marina's Bubblegum Bitch (about 830m) and Tyler's own Holding Out for a Hero (about 625m). Tyler, born Gaynor Hopkins near Neath, died on 8 July 2026, aged 75. The song was written by the American Jim Steinman.
+- Explained: the 1983 song has passed a billion streams, and stood at about 1.27 billion in September 2026. The next most streamed song by a Welsh artist is Marina's Bubblegum Bitch, at about 830 million. Tyler, born Gaynor Hopkins in Skewen, near Neath, died on 8 July 2026, aged 75. The song was written by the American Jim Steinman.
 - Easier: ask for the singer, as multiple choice against Tom Jones, Duffy and Marina; or add "over a billion streams".
 - Accuracy: say "by a Welsh artist", not "Welsh song", which reads as Welsh-language. Tyler has died, so use the past tense for her.
 - Faults: depends on a Spotify ranking (kworb.net tracks it).
@@ -63,10 +62,10 @@ Total Eclipse of the Heart by Bonnie Tyler has passed a billion Spotify streams,
 
 ### As You Like It and Soulton Hall
 
-Soulton Hall, near Wem, claims its builder Sir Rowland Hill inspired "Old Sir Rowland" in As You Like It, and its woodland the Forest of Arden. — **As You Like It**
+Soulton Hall, near Wem, claims its builder Sir Rowland Hill inspired "Old Sir Rowland" in As You Like It, and its landscape the play. — **As You Like It**
 
 - Asked as: "Soulton Hall, near Wem, claims to have inspired which Shakespeare play?"
-- Explained: Sir Rowland Hill, London's first Protestant Lord Mayor, built Soulton Hall in 1556–60, and is said to have been a cousin of Shakespeare's mother, Mary Arden. Shakespeare based As You Like It on Thomas Lodge's Rosalynde (1590); Lodge's father had sold Soulton to Hill. In Rosalynde the hero's father is Sir John of Bordeaux; Shakespeare renamed him Sir Rowland de Boys, and the hall says the name honours Hill. Scholars treat the link as speculation.
+- Explained: Sir Rowland Hill, London's first Protestant Lord Mayor, built Soulton Hall in 1556–60, and is said to have been a cousin of Shakespeare's mother, Mary Arden. Shakespeare based As You Like It on Thomas Lodge's Rosalynde (1590); Lodge's father had sold Soulton to Hill. In Rosalynde the hero's father is Sir John of Bordeaux; Shakespeare renamed him Sir Rowland de Boys, and the hall says the name honours Hill. The link is a suggestion, not established fact.
 - Easier: add "set in the Forest of Arden", or make it multiple choice against Twelfth Night and Much Ado About Nothing.
 - Accuracy: word it as the hall's claim; it is not scholarly consensus, and no source says the play was written in Wem.
 - Why: a local link most locals won't know.
@@ -77,7 +76,7 @@ Soulton Hall, near Wem, claims its builder Sir Rowland Hill inspired "Old Sir Ro
 A gala pie is a long, loaf-shaped pork pie with hard-boiled egg running through its centre. — **Hard-boiled egg**
 
 - Asked as: "What runs through the middle of a gala pie?"
-- Explained: a gala pie is a raised pork pie baked in a loaf tin, with hard-boiled eggs laid end to end down the middle, so every slice has a ring of egg. Factory pies use one "long egg", yolk set in a tube inside a tube of white, so the slices match. Some recipes add chicken; it is also called a Grosvenor pie.
+- Explained: a gala pie is a raised pork pie baked in a loaf tin, with hard-boiled eggs laid end to end down the middle, so every slice has a ring of egg. Some factory pies use one "long egg", yolk set in a tube inside a tube of white, so every slice matches. Many include chicken as well as pork; it is also called a Grosvenor pie.
 - Easier: "What is a gala pie?" as multiple choice against a steak and ale pie and a fish pie.
 - Marking: accept "egg" alone.
 - Why: a British buffet staple most teams have eaten.
@@ -88,9 +87,9 @@ A gala pie is a long, loaf-shaped pork pie with hard-boiled egg running through 
 The name SPAM is usually said to be short for "spiced ham"; Hormel offers that explanation without confirming it. — **Spiced ham**
 
 - Asked as: "SPAM is usually said to be short for which two words?"
-- Explained: Hormel launched SPAM in July 1937 to sell pork shoulder, a cut that sold poorly. Ken Daigneau, brother of a Hormel vice-president, won $100 for the name in a naming contest. Hormel says its meaning is "only known by a small circle of former Hormel executives", but gives "SPiced hAM" as the usual explanation. "Specially Processed American Meat" and "Shoulder of Pork And Ham" are other explanations in circulation.
+- Explained: Hormel launched SPAM in July 1937 to sell pork shoulder, a cut that sold poorly. Ken Daigneau, brother of a Hormel executive, won $100 for the name in a naming contest. Hormel says the meaning is known only to "a small circle of former Hormel Foods executives", and calls "spiced ham" a popular belief. Other explanations include "shoulder of pork and ham" and Hormel's own joke, "sizzle, pork and mmm".
 - Accuracy: keep "usually said to be"; "what does SPAM stand for?" has no answer you can mark.
-- Why: "Specially Processed American Meat" is the wrong reflex answer.
+- Why: the name looks like an acronym, so teams hunt for four words; it is usually taken as a contraction of two.
 - Vetted 2026-09-23.
 
 ### Montenegro and Kenya
@@ -99,9 +98,10 @@ Montenegro means "black mountain", after Mount Lovćen; Kenya is named after Mou
 
 - Asked as: "Which European country's name means 'black mountain'?"
 - Also: "Which African country is named after Africa's second-highest mountain?"
-- Explained: Montenegro is the Venetian Italian form of the local name Crna Gora, "Black Mountain", after Mount Lovćen, whose dense forests make it look dark. Kenya is named after Mount Kenya (5,199 m), second only to Kilimanjaro in Africa. The missionary Johann Ludwig Krapf wrote its name down in the 19th century as "Kenia", from the Kamba name Kĩinyaa; the name passed from the mountain to the colony and then the country.
+- Explained: Montenegro is the Venetian Italian form of the local name Crna Gora, "Black Mountain", after Mount Lovćen, whose dense forests make it look dark. Kenya is named after Mount Kenya (5,199 m), second only to Kilimanjaro in Africa. In 1849 the missionary Johann Ludwig Krapf wrote its name down as "Kenia", probably from the Kamba name Kĩ-Nyaa; the name passed from the mountain to the Colony of Kenya in 1920, and then to the country.
 - Harder: drop "European".
 - Accuracy: never "the only country named after a mountain"; both qualify.
+- Marking: accept "Crna Gora".
 - Why: teams can work Montenegro out from "monte" and "negro".
 - Vetted 2026-09-23.
 
@@ -110,8 +110,9 @@ Montenegro means "black mountain", after Mount Lovćen; Kenya is named after Mou
 Paul McCartney played bass guitar in The Beatles, taking over from Stuart Sutcliffe in 1961. — **Bass guitar**
 
 - Asked as: "What was Paul McCartney's main instrument in The Beatles?"
-- Explained: in 1961 in Hamburg, bassist Stuart Sutcliffe left to study art and McCartney took over the bass. He bought a Höfner 500/1 "violin" bass for about £30 because it suited a left-hander. He also played piano, guitar and sometimes drums on Beatles records, but bass was his instrument on stage and on most recordings. That first Höfner was stolen in 1972 and returned to him in 2023.
+- Explained: in 1961 in Hamburg, bassist Stuart Sutcliffe left to study art and McCartney took over the bass. He bought a Höfner 500/1 "violin" bass in Hamburg for about £30, because its symmetrical shape looked less awkward played left-handed. He also played piano, guitar and sometimes drums on Beatles records, but bass was his instrument on stage and on most recordings. That first Höfner was stolen from a van in 1972 and not recovered until 2024.
 - Accuracy: keep "main"; he also played piano, lead guitar and drums on some tracks.
+- Marking: accept "bass"; refuse "guitar" on its own.
 - Why: a Beatles fact most of the room knows.
 - Vetted 2026-09-23.
 
@@ -120,7 +121,7 @@ Paul McCartney played bass guitar in The Beatles, taking over from Stuart Sutcli
 The flashing memory-wiping device in the Men in Black films is the Neuralyzer. — **The Neuralyzer**
 
 - Asked as: "In Men in Black, what is the memory-wiping device called?"
-- Explained: the Neuralyzer is the silver, pen-sized device in Men in Black (1997) and its sequels. Its bright flash wipes a witness's recent memory, with a dial to set how far back. The agents wear their black sunglasses to shield themselves from the flash, then give the dazed witness a cover story, such as swamp gas.
+- Explained: in Men in Black (1997) and its sequels, agents use the Neuralyzer to wipe a witness's memory with a bright flash. They wear black Ray-Ban sunglasses to shield themselves from it, then give the dazed witness a cover story, such as swamp gas from a weather balloon.
 - Marking: spellings vary ("Neuralizer"); mark on sound.
 - Why: most people remember the prop; fewer know its name.
 - Vetted 2026-09-23.
@@ -134,7 +135,7 @@ The Wizard of Oz (1939) opens in sepia Kansas, switches to Technicolor in Oz, an
 - Easier: name Kansas, or Dorothy opening the door.
 - Harder: "What does The Wizard of Oz end in, sepia or colour?" Sepia; a near-trick, since the reflex answer is colour.
 - Accuracy: say sepia in the question; it does not end in colour.
-- Marking: for the harder form, accept black and white; the footage is black-and-white film tinted sepia, and TV showed it untinted until 1989.
+- Marking: refuse The Women (1939), which is black and white with a Technicolor fashion show, not sepia. For the harder form, accept black and white; the footage is black-and-white film tinted sepia, and TV showed it untinted until 1989.
 - Why: the most famous colour switch in film.
 - Vetted 2026-09-23.
 
@@ -165,9 +166,10 @@ The effect of noticing something everywhere just after learning about it is the 
 Kazakhstan, at 2,724,900 km², is the largest landlocked country in the world. — **Kazakhstan**
 
 - Asked as: "What is the largest landlocked country in the world?"
-- Explained: Kazakhstan covers about 2.7 million km², the ninth-largest country in the world and the largest with no coast on the open ocean. It has about 1,900 km of shore on the Caspian Sea, but the Caspian has no natural outlet to the ocean and is usually classed as the world's largest lake. Mongolia is second.
+- Explained: Kazakhstan covers about 2.7 million km², the ninth-largest country in the world. A landlocked country is one with no coast on the open ocean. Kazakhstan has a long shore on the Caspian Sea, but the Caspian has no natural outlet to the ocean, so that shore doesn't count, whether the Caspian is called a sea or a lake; a 2018 treaty between the five countries around it gave it a legal status of its own, neither fully either. Mongolia is second.
 - Easier: "Which Central Asian country is the largest landlocked country?"
 - Accuracy: its Caspian coast doesn't count; the Caspian is itself landlocked.
+- Marking: refuse Mongolia; it is the largest only if the Caspian shore counts as a coast, and it doesn't.
 - Why: Mongolia is a plausible wrong answer.
 - Vetted 2026-09-23.
 
@@ -176,7 +178,7 @@ Kazakhstan, at 2,724,900 km², is the largest landlocked country in the world. �
 The spirit lost to evaporation from the cask as whisky matures is the angels' share. — **The angels' share**
 
 - Asked as: "What is the whisky lost to evaporation from the cask called?"
-- Explained: oak casks breathe, so some whisky evaporates as it matures, about 2% of the cask a year in Scotland and far more in hot climates. Old distillers put the missing spirit down to the angels taking their cut. The "devil's cut" is the spirit soaked into the wood, a name made popular by Jim Beam's Devil's Cut bourbon in 2011.
+- Explained: oak casks breathe, so some whisky evaporates every year as it matures, and more in hot climates. The whisky that is lost is called the angels' share. The "devil's cut" is the whisky soaked into the wood; Jim Beam has sold a bourbon called Devil's Cut since 2011.
 - Marking: "the devil's cut" is wrong.
 - Why: a well-known phrase many teams can work out.
 - Vetted 2026-09-23.
@@ -186,11 +188,10 @@ The spirit lost to evaporation from the cask as whisky matures is the angels' sh
 By the UN's 2025 count, Delhi, at about 30.2 million, is the largest city in a country where English is an official language. — **Delhi**
 
 - Asked as: "By the UN's count, what is the largest city in a country where English is an official language?"
-- Explained: the UN's 2025 count puts Jakarta, Dhaka and Tokyo top, and English is not official in Indonesia, Bangladesh or Japan. Next comes Delhi, at about 30 million; English is an official language of India's government alongside Hindi. Manila, Karachi and Mumbai follow, and Lagos is well down the list.
+- Explained: the UN's 2025 count puts Jakarta, Dhaka and Tokyo top, and English is not official in Indonesia, Bangladesh or Japan. Next comes Delhi, at about 30 million; English is an official language of India's government alongside Hindi. Manila, Kolkata, Karachi and Mumbai follow, and Lagos is well down the list.
 - Easier: multiple choice against Lagos, Manila and Karachi.
-- Accuracy: keep "by the UN's count"; counting by city limits rather than the built-up area can give Karachi or Mumbai.
+- Accuracy: keep "by the UN's count"; counting by city limits rather than the built-up area can give Karachi or Mumbai. If a team says English is not official in India: the constitution kept English for the central government's official business alongside Hindi, and it still is.
 - Marking: accept Delhi or New Delhi.
-- Faults: English's official status in the Philippines and Pakistan, and Japan having no official language, were not confirmed by search; the answer does not depend on them.
 - Why: most teams will guess Lagos, London or New York.
 - Vetted 2026-09-23.
 
@@ -199,7 +200,7 @@ By the UN's 2025 count, Delhi, at about 30.2 million, is the largest city in a c
 "Marriage is a wonderful institution, but who wants to live in an institution?" is usually credited to Groucho Marx; the earliest record is the actor Raymond Hitchcock saying it in 1916. — **…live in an institution?**
 
 - Asked as: "Finish the joke: 'Marriage is a wonderful institution, but who wants to…'"
-- Explained: the joke is usually credited to Groucho Marx, and sometimes to Mae West or H. L. Mencken, but none of them is recorded saying it. The earliest record is the Boston Sunday Post of 26 November 1916, quoting the actor Raymond Hitchcock in the musical Betty.
+- Explained: the joke is usually credited to Groucho Marx, and sometimes to H. L. Mencken, but neither is recorded saying it. Mae West is quoted with a variant: "Marriage is a fine institution, but I'm not ready for an institution." The earliest record is the Boston Sunday Post of 26 November 1916, quoting the actor Raymond Hitchcock in the musical Betty.
 - Easier: give more of the line.
 - Harder: "Which actor was first recorded saying it, in 1916?" (Raymond Hitchcock).
 - Accuracy: say "usually credited to" if Groucho is named; "who said it?" has no verified answer.
@@ -213,7 +214,7 @@ Five countries have won the FIFA Women's World Cup: the USA, Germany, Norway, Ja
 
 - Asked as: "How many different countries have won the women's World Cup?"
 - Also: "Which two countries have won both the men's and women's World Cup?" (Germany and Spain).
-- Explained: the USA has won it four times (1991, 1999, 2015, 2019), Germany twice (2003, 2007), and Norway (1995), Japan (2011) and Spain (2023) once each. England reached the 2023 final and lost 1–0 to Spain. Spain became the second country, after Germany, to win both the men's and women's tournaments.
+- Explained: the USA has won it four times (1991, 1999, 2015, 2019), Germany twice (2003, 2007), and Norway (1995), Japan (2011) and Spain (2023) once each. England reached the 2023 final and lost 1–0 to Spain. Spain became the second country, after Germany, to win both the men's and women's tournaments, and won the men's again in 2026.
 - Easier: add "The USA has won it four times."
 - Harder: "Name all five."
 - Accuracy: keep "women's"; the men's count was asked on 2026-07-07. The count may change at the 2027 final (25 July 2027).
