@@ -60,9 +60,12 @@ every item; check that candidates exist, and fetch nothing.
      question's estimated chance; the round's expected average; any occasion
      it suits, such as Halloween; and a verdict of viable or not with its
      reason.
-4. Write every kept clear question into CORPUS.md and delete it from
-   SUGGESTIONS.md. Show the user one line per question promoted: the question
-   as worded, its answer, and any change from the note.
+4. Wait until every sub-agent has returned, re-running any that failed. Then
+   write every kept clear question into CORPUS.md, delete it from
+   SUGGESTIONS.md, and commit. Show the user one line per question promoted:
+   the question as worded, its answer, and any change from the note.
+   Steps 5 to 7 start only once this step is done and no work is in flight,
+   so each of their messages carries one decision and nothing else.
 5. Take the rejected questions one at a time, one per message: the question,
    the answer, and why it fails the standard. The user confirms the rejection,
    and it is deleted from SUGGESTIONS.md, or overrides it, and it is written
