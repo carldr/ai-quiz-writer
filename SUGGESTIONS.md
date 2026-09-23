@@ -13,7 +13,6 @@ into `CORPUS.md`.
 
 ## Round ideas
 
-- Dead pop stars picture round
 - Airport designations
 - TLAs
 - Around the World: geography
