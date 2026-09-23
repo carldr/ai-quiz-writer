@@ -62,6 +62,13 @@ Difficulty is set by wording. To move a question along the curve, reword it
 before replacing it: add or remove clues, or switch between open and multiple
 choice. After two rewordings that still miss, replace it.
 
+A hard fact can become an easy, surprising question as multiple choice or
+true/false. Asked openly, "What were Simon & Garfunkel first called?" is
+rarely answered. "True or false: Simon & Garfunkel first recorded as Tom and
+Jerry" is a fair guess, and a team that gets it wrong is still glad to learn
+it. A fact that is fun to learn earns its place this way, even when it is too
+hard to ask openly.
+
 Write short, plain questions by default: everyday words, one clause where
 possible, and the clue that matters stated plainly. In a long question, one
 misheard word can change the answer. Lengthening a question to add a clue is
@@ -87,11 +94,12 @@ rather than caught out. Drop the question.
    than one. Do not propose a theme used in a recent quiz. CORPUS.md
    holds rounds and questions ready to use; draw on
    it rather than starting from nothing, and say in the proposal which themes
-   come from it. Everything in that file is a draft: it still goes through
-   steps 4 to 8 in full, and its answers are re-verified and re-deduped from
-   scratch. Each entry records its own known faults; read those before
-   proposing it. A corpus question's wording is a baseline, reworded to fit
-   the curve as the Difficulty section describes.
+   come from it. Everything in that file is a candidate, and no question and
+   answer pair in it is taken literally: rephrase a question or change its
+   format to fit the round, as the Difficulty section describes. It still goes
+   through steps 4 to 8 in full, and its answers are re-verified and
+   re-deduped from scratch. Each entry records its own known faults; read
+   those before proposing it.
 2. Start a sub-agent per picked theme, in parallel, each generating example
    questions for its theme. Give each sub-agent ROUND-HISTORY.md to read for
    tone and to avoid recent overlaps, and the Difficulty section to pitch its
