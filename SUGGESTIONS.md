@@ -13,5 +13,4 @@ into `CORPUS.md`.
 
 ## Round ideas
 
-- Around the World: geography
 - Science and Nature: a mix of chemistry, physics, the human body, space, animals, plants and weather

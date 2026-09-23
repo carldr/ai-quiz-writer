@@ -161,6 +161,77 @@ _None recorded._
 
 ## Open rounds
 
+### Around the World
+
+Vetted from SUGGESTIONS.md on 2026-09-23.
+
+World geography: rivers, capitals, flags, borders, mountains. A deep pool of
+widely known facts, a supply of well-known traps (Canberra, Ankara) for the
+middle, and surprising facts for the hard tail. Contested items were left
+out: Switzerland's capital, which country Everest is in, the longest river,
+transcontinental countries, and the most time zones.
+
+Occasion: none.
+
+Reviewer: viable; expected average 67%, following the curve. One reworded
+question brings it to 70%.
+
+```markdown
+## Round N: Around the World (/ 10)
+
+Format: open
+
+1. Which river flows through Paris? — **The Seine**
+2. Which country's flag is a red circle on a white background? — **Japan**
+3. What is the smallest country in the world? — **Vatican City (0.49 km²)**
+4. What is the capital of Australia? — **Canberra**
+5. What is the highest mountain in Africa? — **Kilimanjaro (5,895 m, in Tanzania)**
+6. What is the capital of Turkey? — **Ankara (the capital since 1923)**
+7. The world's longest international border is between which two countries? — **Canada and the United States (8,891 km)**
+8. Which country is completely surrounded by South Africa? — **Lesotho**
+9. Which is the only country whose national flag is not four-sided? — **Nepal**
+10. Which US state is closest to Africa? — **Maine (Quoddy Head to El Beddouza, Morocco)**
+```
+
+Sources:
+
+- Seine: https://www.aparisguide.com/seine/
+- Japan: https://en.wikipedia.org/wiki/Flag_of_Japan
+- Vatican City: https://en.wikipedia.org/wiki/Geography_of_Vatican_City
+- Canberra: https://www.britannica.com/place/Canberra
+- Kilimanjaro: https://education.nationalgeographic.org/resource/kilimanjaro/
+- Ankara: https://www.britannica.com/place/Ankara
+- Canada–US border: https://en.wikipedia.org/wiki/Canada%E2%80%93United_States_border
+- Lesotho: https://www.worldatlas.com/articles/which-are-the-three-enclaved-countries-of-the-world.html
+- Nepal: https://en.wikipedia.org/wiki/List_of_non-rectangular_flags
+- Maine: https://en.wikipedia.org/wiki/Quoddy_Head_State_Park, https://www.sciencealert.com/which-us-state-is-closest-to-africa
+
+Before reuse:
+
+- To reach 70%: "Istanbul is Turkey's largest city, but what is its
+  capital?" (about 80%), or "Which mountain kingdom is completely surrounded
+  by South Africa?" (about 50%).
+- Q7: keep "international". Russia–Kazakhstan is often cited as the longest
+  continuous land border. Accept only Canada and the USA.
+- Q9: keep "not four-sided"; "not rectangular" lets in the square Swiss and
+  Vatican flags.
+- Q10: Maine stays closest even counting the Canary Islands (Quoddy Head to La
+  Palma 4,630 km, Cape Cod 4,857 km, Florida to Cape Verde at least 5,715 km).
+  Puerto Rico is not a state.
+- Q2 and Q9 are flag questions; a flags picture round ran on 2026-07-07.
+- Q3, Q4 and Q6 are pub-quiz standards; re-run the dedupe with care.
+- Reserves: Mozambique's flag shows an AK-47 (check it hasn't changed; a
+  motion to remove it was raised in November 2025),
+  https://en.wikipedia.org/wiki/Flag_of_Mozambique. Lake Titicaca lies on the
+  border of Peru and Bolivia,
+  https://www.britannica.com/place/Lake-Titicaca. Bratislava is the only
+  capital bordering two other countries (Austria and Hungary),
+  https://en.wikipedia.org/wiki/Bratislava; it was an anagram answer on
+  2026-08-04.
+- Standalone: "Maine is closer to Africa than Florida is" as true/false;
+  Nepal as multiple choice against Switzerland and Vatican City; Lesotho as
+  multiple choice against Eswatini.
+
 ### Airport Codes
 
 Vetted from SUGGESTIONS.md on 2026-09-23.
