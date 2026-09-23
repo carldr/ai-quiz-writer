@@ -22,6 +22,7 @@ into `CORPUS.md`.
 - What's that thing when you hear about something new, and suddenly you see it everywhere?
 - Which central country is the largest landlocked country in the world? Kazakhstan
 - Which country has territory on all seven continents? UK
+- In whisky maturation, what is the spirit lost to evaporation from the cask called? The angels' share
 
 ## Round ideas
 
@@ -36,3 +37,5 @@ into `CORPUS.md`.
 - Dead pop stars picture round
 - Airport designations
 - TLAs
+- Around the World: geography
+- Science and Nature: a mix of chemistry, physics, the human body, space, animals, plants and weather
