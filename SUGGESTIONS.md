@@ -6,22 +6,10 @@ into `CORPUS.md`.
 
 ## Questions
 
-From the rejected "Bands that have changed their name" round:
-
-- The Beatles started out as The Quarrymen.
-- The Dixie Chicks became The Chicks in 2020.
-- Little Mix first performed on The X Factor as Rhythmix.
-- U2 were first called Feedback.
-- Simon & Garfunkel first recorded as Tom and Jerry, in 1957. Try true/false, or multiple choice against other cartoon duos.
-- Destiny's Child were first called Girl's Tyme.
-- Radiohead started out as On a Friday.
-- Blur started out as Seymour.
-- After Ian Curtis died in 1980, Joy Division carried on as New Order.
-- Pearl Jam played their first gigs as Mookie Blaylock.
-- Green Day started out as Sweet Children.
-- Black Sabbath were first called Earth.
-- Kaiser Chiefs released an album as Parva.
-- Maroon 5 released an album as Kara's Flowers.
+- The Beatles started out as The Quarrymen. https://en.wikipedia.org/wiki/The_Quarrymen
+- U2 were first called Feedback. https://en.wikipedia.org/wiki/U2
+- Simon & Garfunkel first recorded as Tom and Jerry, in 1957. https://en.wikipedia.org/wiki/Simon_%26_Garfunkel
+- Black Sabbath were called Earth until 1969. https://americansongwriter.com/on-this-day-in-1969-the-band-formerly-known-as-earth-changes-its-name-to-black-sabbath/
 
 ## Round ideas
 
