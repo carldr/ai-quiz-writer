@@ -60,17 +60,6 @@ Total Eclipse of the Heart by Bonnie Tyler has passed a billion Spotify streams,
 - Why: teams can reason through the Welsh singers they know.
 - Vetted 2026-09-23.
 
-### As You Like It and Soulton Hall
-
-Soulton Hall, near Wem, claims its builder Sir Rowland Hill inspired "Old Sir Rowland" in As You Like It, and its landscape the play. — **As You Like It**
-
-- Asked as: "Soulton Hall, near Wem, claims to have inspired which Shakespeare play?"
-- Explained: Sir Rowland Hill, London's first Protestant Lord Mayor, built Soulton Hall in 1556–60, and is said to have been a cousin of Shakespeare's mother, Mary Arden. Shakespeare based As You Like It on Thomas Lodge's Rosalynde (1590); Lodge's father had sold Soulton to Hill. In Rosalynde the hero's father is Sir John of Bordeaux; Shakespeare renamed him Sir Rowland de Boys, and the hall says the name honours Hill. The link is a suggestion, not established fact.
-- Easier: add "set in the Forest of Arden", or make it multiple choice against Twelfth Night and Much Ado About Nothing.
-- Accuracy: word it as the hall's claim; it is not scholarly consensus, and no source says the play was written in Wem.
-- Why: a local link most locals won't know.
-- Vetted 2026-09-23.
-
 ### Gala pie
 
 A gala pie is a long, loaf-shaped pork pie with hard-boiled egg running through its centre. — **Hard-boiled egg**
@@ -80,16 +69,6 @@ A gala pie is a long, loaf-shaped pork pie with hard-boiled egg running through 
 - Easier: "What is a gala pie?" as multiple choice against a steak and ale pie and a fish pie.
 - Marking: accept "egg" alone.
 - Why: a British buffet staple most teams have eaten.
-- Vetted 2026-09-23.
-
-### SPAM
-
-The name SPAM is usually said to be short for "spiced ham"; Hormel offers that explanation without confirming it. — **Spiced ham**
-
-- Asked as: "SPAM is usually said to be short for which two words?"
-- Explained: Hormel launched SPAM in July 1937 to sell pork shoulder, a cut that sold poorly. Ken Daigneau, brother of a Hormel executive, won $100 for the name in a naming contest. Hormel says the meaning is known only to "a small circle of former Hormel Foods executives", and calls "spiced ham" a popular belief. Other explanations include "shoulder of pork and ham" and Hormel's own joke, "sizzle, pork and mmm".
-- Accuracy: keep "usually said to be"; "what does SPAM stand for?" has no answer you can mark.
-- Why: the name looks like an acronym, so teams hunt for four words; it is usually taken as a contraction of two.
 - Vetted 2026-09-23.
 
 ### Montenegro and Kenya
@@ -126,19 +105,6 @@ The flashing memory-wiping device in the Men in Black films is the Neuralyzer. �
 - Why: most people remember the prop; fewer know its name.
 - Vetted 2026-09-23.
 
-### The Wizard of Oz
-
-The Wizard of Oz (1939) opens in sepia Kansas, switches to Technicolor in Oz, and goes back to sepia for the ending. — **The Wizard of Oz**
-
-- Asked as: "Which 1939 film switches from sepia to Technicolor partway through?"
-- Explained: the Kansas scenes were shot on black-and-white film and printed in MGM's sepia process, which gives them a brown tint. The film switches to Technicolor when Dorothy opens the farmhouse door onto Oz, and goes back to sepia for Kansas at the end. For decades, reissues and TV showings put Kansas out in plain black and white; the sepia came back with the 50th-anniversary release in 1989.
-- Easier: name Kansas, or Dorothy opening the door.
-- Harder: "What does The Wizard of Oz end in, sepia or colour?" Sepia; a near-trick, since the reflex answer is colour.
-- Accuracy: say sepia in the question; it does not end in colour.
-- Marking: refuse The Women (1939), which is black and white with a Technicolor fashion show, not sepia. For the harder form, accept black and white; the footage is black-and-white film tinted sepia, and TV showed it untinted until 1989.
-- Why: the most famous colour switch in film.
-- Vetted 2026-09-23.
-
 ### Stopping distance at 70 mph
 
 The Highway Code's typical overall stopping distance at 70 mph is 96 metres: 21 m thinking plus 75 m braking. — **96 metres**
@@ -161,18 +127,6 @@ The effect of noticing something everywhere just after learning about it is the 
 - Why: everyone has experienced it; few know its name.
 - Vetted 2026-09-23.
 
-### Largest landlocked country
-
-Kazakhstan, at 2,724,900 km², is the largest landlocked country in the world. — **Kazakhstan**
-
-- Asked as: "What is the largest landlocked country in the world?"
-- Explained: Kazakhstan covers about 2.7 million km², the ninth-largest country in the world. A landlocked country is one with no coast on the open ocean. Kazakhstan has a long shore on the Caspian Sea, but the Caspian has no natural outlet to the ocean, so that shore doesn't count, whether the Caspian is called a sea or a lake; a 2018 treaty between the five countries around it gave it a legal status of its own, neither fully either. Mongolia is second.
-- Easier: "Which Central Asian country is the largest landlocked country?"
-- Accuracy: its Caspian coast doesn't count; the Caspian is itself landlocked.
-- Marking: refuse Mongolia; it is the largest only if the Caspian shore counts as a coast, and it doesn't.
-- Why: Mongolia is a plausible wrong answer.
-- Vetted 2026-09-23.
-
 ### The angels' share
 
 The spirit lost to evaporation from the cask as whisky matures is the angels' share. — **The angels' share**
@@ -181,18 +135,6 @@ The spirit lost to evaporation from the cask as whisky matures is the angels' sh
 - Explained: oak casks breathe, so some whisky evaporates every year as it matures, and more in hot climates. The whisky that is lost is called the angels' share. The "devil's cut" is the whisky soaked into the wood; Jim Beam has sold a bourbon called Devil's Cut since 2011.
 - Marking: "the devil's cut" is wrong.
 - Why: a well-known phrase many teams can work out.
-- Vetted 2026-09-23.
-
-### Largest city where English is official
-
-By the UN's 2025 count, Delhi, at about 30.2 million, is the largest city in a country where English is an official language. — **Delhi**
-
-- Asked as: "By the UN's count, what is the largest city in a country where English is an official language?"
-- Explained: the UN's 2025 count puts Jakarta, Dhaka and Tokyo top, and English is not official in Indonesia, Bangladesh or Japan. Next comes Delhi, at about 30 million; English is an official language of India's government alongside Hindi. Manila, Kolkata, Karachi and Mumbai follow, and Lagos is well down the list.
-- Easier: multiple choice against Lagos, Manila and Karachi.
-- Accuracy: keep "by the UN's count"; counting by city limits rather than the built-up area can give Karachi or Mumbai. If a team says English is not official in India: the constitution kept English for the central government's official business alongside Hindi, and it still is.
-- Marking: accept Delhi or New Delhi.
-- Why: most teams will guess Lagos, London or New York.
 - Vetted 2026-09-23.
 
 ### Marriage is a wonderful institution
