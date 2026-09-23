@@ -11,7 +11,7 @@ Instructions: Jim Henson, creator of the Muppets, was born 90 years ago today. N
 1. **Kermit the Frog** — images/r1-01.jpg
 2. **The Swedish Chef (accept Swedish Chef)** — images/r1-02.jpg
 3. **Rowlf the Dog (accept Rolf)** — images/r1-03.jpg
-4. **Cookie Monster** — images/r1-04.jpg
+4. **Cookie Monster** — images/r1-04.png
 5. **Beaker** — images/r1-05.jpg
 6. **Bert** — images/r1-06.jpg
 7. **Gonzo (accept The Great Gonzo)** — images/r1-07.jpg
