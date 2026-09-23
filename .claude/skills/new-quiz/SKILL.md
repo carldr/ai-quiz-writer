@@ -19,11 +19,39 @@ Default: Round 1 picture (15 questions, / 15), then four rounds of 10, final rou
 
 An anniversary or event near the date that the user does not pick as a theme still earns a question or two, dropped into whichever rounds fit — never a full round. Include a few questions about things happening in the week around the quiz date, but the quiz must not become a current-affairs quiz unless a round is specifically that. NEVER propose music or audio rounds, even though past quizzes had them. Never propose a sports round except during a special event such as an Olympics or a World Cup; the regulars don't enjoy them.
 
-Study `OLD-QUIZZES.md` for tone, difficulty, and the kinds of novelty rounds
-used before (connections, anagrams, true/false, "X or Y?", single-letter
-answers, headlines...). Novelty round formats may be reused; questions may not.
+Study `OLD-QUIZZES.md` and every `quizzes/*/quiz.md` for tone and the kinds of
+novelty rounds used before (connections, anagrams, true/false, "X or Y?",
+single-letter answers, headlines...). Novelty round formats may be reused;
+questions may not.
 
 Questions in every round must work for a mix of ages.
+
+## Difficulty
+
+Target an average team score of 70% in every round, about 52 of 75 overall,
+with teams bunched close together.
+
+Within a round, difficulty runs on a curve: most questions are easy or
+gettable, and a short tail is hard. For a round of 10, roughly:
+
+| Questions | Chance an average team gets each |
+|---|---|
+| 3 | 95%, obviously easy |
+| 4 | 75% |
+| 2 | 50% |
+| 1 | 20%, only the strongest teams |
+
+That averages 7 in 10. Scale the same shape to rounds of 15 and 20.
+
+Rounds 1–5 are accessible: a team that does not know an answer can still reach
+it, by recognising a face, ruling out an option, or making an educated guess.
+Round 2 gives each question at least one silly option that any team can rule
+out, so a team guessing a lot still scores 70%. Round 6, general knowledge,
+needs the answer to be known, which makes it the distinguisher: the average
+is still 70%, but the stronger teams pull ahead there.
+
+In rounds 1–5, a misjudged question should be too easy, never too hard. When a
+question's difficulty is uncertain, choose the more accessible version.
 
 ## Per round
 
@@ -38,12 +66,16 @@ Questions in every round must work for a mix of ages.
    proposing it.
 2. Start a sub-agent per picked theme, in parallel, each generating example
    questions for its theme. Give each sub-agent ROUND-HISTORY.md to read for
-   tone and to avoid recent overlaps. For a picture round, the examples
+   tone and to avoid recent overlaps, and the Difficulty section to pitch its
+   questions against. For a picture round, the examples
    describe what the pictures could be; no images are fetched at this stage.
 3. Present the example questions for every picked theme. The user picks the final
    theme.
 4. Start a sub-agent to review the chosen theme's questions, then offer the
-   sub-agent's improvements or changes to the user.
+   sub-agent's improvements or changes to the user. Give it the Difficulty
+   section; it rates each question's chance of being answered by an average
+   team, and flags a round whose average misses 70% or whose ratings do not
+   follow the curve.
 5. Draft the full round in the quiz file format (see docs/quiz-format.md).
 6. Verify EVERY answer with web search. Correct or replace any question whose
    answer cannot be confirmed; if kept despite doubt, flag it to the user.
@@ -54,8 +86,9 @@ Questions in every round must work for a mix of ages.
    A new question that merely shares its answer with an old one is fine.
    Replace any repeat. Within the quiz being generated, though, no answer
    may appear twice — check the round against the rounds already approved.
-8. Show the round to the user. Apply requested swaps (re-verify and re-dedupe
-   replacements) until approved.
+8. Show the round to the user, with each question's estimated chance of being
+   answered and the round's expected average against 70%. Apply requested
+   swaps (re-verify and re-dedupe replacements) until approved.
 9. Once the user approves the round, start a fresh sub-agent to verify the final
    text of every question, from the round as it now reads rather than as it was
    drafted. The sub-agent in step 4 reviewed an earlier version of the round,
@@ -100,9 +133,11 @@ Image rights are not a concern.
 1. Write quizzes/YYYY-MM-DD/quiz.md (format: docs/quiz-format.md).
 2. Run: ruby scripts/render.rb quizzes/YYYY-MM-DD
 3. Fix any parse errors, and report the three PDF paths.
-4. Add the new quiz's rounds to the top of the ROUND-HISTORY.md table, which
+4. Report the expected score for each round and for the quiz, against the
+   target of about 52 of 75.
+5. Add the new quiz's rounds to the top of the ROUND-HISTORY.md table, which
    runs newest first.
-5. Move the unused rounds into FUTURE-QUIZ-ROUNDS.md, under the heading for the
+6. Move the unused rounds into FUTURE-QUIZ-ROUNDS.md, under the heading for the
    round type, keeping the questions and answers verbatim and recording the
    drafting date. Record only a round the user passed over in favour of a different
    round. Leave out anything dropped because its questions gave away their
