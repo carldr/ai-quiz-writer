@@ -54,6 +54,14 @@ is still 70%, but the stronger teams pull ahead there.
 In rounds 1–5, a misjudged question should be too easy, never too hard. When a
 question's difficulty is uncertain, choose the more accessible version.
 
+Aim for two or three trick questions per quiz, in whichever rounds suit them;
+fewer is fine when the rounds don't lend themselves to one. A trick question
+is plainly worded, most teams' reflex answer is wrong, and the right answer is
+one they could reach by stopping to think. In September 2026, "Which British
+prime minister has spent the fewest days in office?" was one: the reflex was
+Liz Truss, and the answer was Andy Burnham, then 43 days in. A trick question
+sits in the hard tail of its round's curve.
+
 ## Per round
 
 1. Read ROUND-HISTORY.md and FUTURE-QUIZ-ROUNDS.md, then propose 3–4 round
