@@ -76,9 +76,9 @@ sits in the hard tail of its round's curve.
    come from it. Everything in that file is a draft: it still goes through
    steps 4 to 8 in full, and its answers are re-verified and re-deduped from
    scratch. Each entry records its own known faults; read those before
-   proposing it. A corpus question's format is a suggestion: ask a
-   multiple-choice question open, or an open one as multiple choice, when
-   that puts its chance where the round's curve needs it.
+   proposing it. A corpus question's wording and format are a starting
+   point: rephrase it, add or remove clues, or switch between open and
+   multiple choice to put its chance where the round's curve needs it.
 2. Start a sub-agent per picked theme, in parallel, each generating example
    questions for its theme. Give each sub-agent ROUND-HISTORY.md to read for
    tone and to avoid recent overlaps, and the Difficulty section to pitch its
