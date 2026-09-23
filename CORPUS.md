@@ -21,11 +21,11 @@ _None recorded._
 
 _None recorded._
 
-## Open and themed rounds
+## True/false rounds
 
 _None recorded._
 
-## Novelty rounds
+## Open rounds
 
 _None recorded._
 
