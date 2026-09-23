@@ -13,6 +13,14 @@ change how a quiz is made, edit this file.
 Generate a pub quiz for the date given as argument (ask if missing). Work
 round by round; never move to the next round without approval.
 
+Before anything else, check that the tools the quiz needs are present:
+`curl_chrome150` from curl-impersonate (`command -v curl_chrome150`), which
+fetches images from sites other than Wikimedia; Google Chrome at
+`/Applications/Google Chrome.app` and the iCloud Drive folder
+`~/Library/Mobile Documents/com~apple~CloudDocs/`, which `scripts/render.rb`
+needs; and `ruby`, `sips` and `file`. If any is missing, name it and ask the
+user whether to continue without it.
+
 First, if SUGGESTIONS.md holds any suggestions, say how many and offer to run
 `/vet-suggestions` before starting; the quiz draws only on vetted entries, in
 CORPUS.md. Then read CORPUS.md.
