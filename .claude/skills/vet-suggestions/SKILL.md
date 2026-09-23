@@ -51,11 +51,11 @@ every item; check that candidates exist, and fetch nothing.
    one per round idea, and one per batch of about five questions. Give each
    sub-agent the Standard section, the Difficulty section, and its
    suggestions. Each sub-agent returns, for every suggestion it was given:
-   - for a question: the question as it would be asked, the answer, the source
-     that confirms it, the estimated chance an average team answers it, the
-     result of the dedupe, and a verdict of keep or reject with its reason.
-     Where the note's wording or answer is wrong, the sub-agent rewords the
-     question and says what it changed;
+   - for a question: the fact and its answer, the source that confirms it, a
+     baseline wording with the chance an average team answers it, the
+     wordings or formats that make it easier or harder, the result of the
+     dedupe, and a verdict of keep or reject with its reason. Where the
+     note's wording or answer is wrong, the sub-agent says what it changed;
    - for a round: the drafted round, with each answer's source and each
      question's estimated chance; the round's expected average; any occasion
      it suits, such as Halloween; and a verdict of viable or not with its
@@ -87,5 +87,17 @@ line saying it was vetted from SUGGESTIONS.md on today's date, why it is a
 good round, any occasion it suits, its expected average, the questions in quiz
 file format (docs/quiz-format.md), and a "Before reuse:" note of known faults.
 
-A question goes under Questions, and carries the vetting date, its estimated
-chance, why it is a good question, and any known faults.
+A question goes under Questions, under a heading that names it. It opens with
+the fact in one sentence, ending in the bold answer, then a list:
+
+- Asked as: the baseline wording and its chance;
+- Easier and Harder: other wordings or formats, with their chances where
+  known;
+- Accuracy: wording that must stay for the question to be true;
+- Marking: answers to accept or refuse;
+- Faults: known weaknesses;
+- Why: why it is a good question;
+- Vetted: today's date.
+
+Asked as, Why and Vetted are always there; the rest only where there is
+something to say.
