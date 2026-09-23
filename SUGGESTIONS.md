@@ -6,9 +6,6 @@ into `CORPUS.md`.
 
 ## Questions
 
-- Who said "marriage is an institution"
-- Which is the world's largest city with English as the official language? Lagos
-- How many teams have won the World Cup?
 
 ## Round ideas
 

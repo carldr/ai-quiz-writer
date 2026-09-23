@@ -180,3 +180,43 @@ The spirit lost to evaporation from the cask as whisky matures is the angels' sh
 - Marking: "the devil's cut" is wrong.
 - Why: a well-known phrase many teams can work out.
 - Vetted 2026-09-23.
+
+### Largest city where English is official
+
+By the UN's 2025 count, Delhi, at about 30.2 million, is the largest city in a country where English is an official language. — **Delhi**
+
+- Asked as: "By the UN's count, what is the largest city in a country where English is an official language?"
+- Explained: the UN's 2025 count puts Jakarta, Dhaka and Tokyo top, and English is not official in Indonesia, Bangladesh or Japan. Next comes Delhi, at about 30 million; English is an official language of India's government alongside Hindi. Manila, Karachi and Mumbai follow, and Lagos is well down the list.
+- Easier: multiple choice against Lagos, Manila and Karachi.
+- Accuracy: keep "by the UN's count"; counting by city limits rather than the built-up area can give Karachi or Mumbai.
+- Marking: accept Delhi or New Delhi.
+- Faults: English's official status in the Philippines and Pakistan, and Japan having no official language, were not confirmed by search; the answer does not depend on them.
+- Why: most teams will guess Lagos, London or New York.
+- Vetted 2026-09-23.
+
+### Marriage is a wonderful institution
+
+"Marriage is a wonderful institution, but who wants to live in an institution?" is usually credited to Groucho Marx; the earliest record is the actor Raymond Hitchcock saying it in 1916. — **…live in an institution?**
+
+- Asked as: "Finish the joke: 'Marriage is a wonderful institution, but who wants to…'"
+- Explained: the joke is usually credited to Groucho Marx, and sometimes to Mae West or H. L. Mencken, but none of them is recorded saying it. The earliest record is the Boston Sunday Post of 26 November 1916, quoting the actor Raymond Hitchcock in the musical Betty.
+- Easier: give more of the line.
+- Harder: "Which actor was first recorded saying it, in 1916?" (Raymond Hitchcock).
+- Accuracy: say "usually credited to" if Groucho is named; "who said it?" has no verified answer.
+- Marking: accept any wording meaning "live in an institution".
+- Why: a well-known joke with a neat twist, and the true origin is a good story for the answer.
+- Vetted 2026-09-23.
+
+### Women's World Cup winners
+
+Five countries have won the FIFA Women's World Cup: the USA, Germany, Norway, Japan and Spain. — **5**
+
+- Asked as: "How many different countries have won the women's World Cup?"
+- Also: "Which two countries have won both the men's and women's World Cup?" (Germany and Spain).
+- Explained: the USA has won it four times (1991, 1999, 2015, 2019), Germany twice (2003, 2007), and Norway (1995), Japan (2011) and Spain (2023) once each. England reached the 2023 final and lost 1–0 to Spain. Spain became the second country, after Germany, to win both the men's and women's tournaments.
+- Easier: add "The USA has won it four times."
+- Harder: "Name all five."
+- Accuracy: keep "women's"; the men's count was asked on 2026-07-07. The count may change at the 2027 final (25 July 2027).
+- Marking: for the "Also" form, require both countries; accept West Germany for Germany.
+- Why: teams who assume England or Brazil have won it get caught.
+- Vetted 2026-09-23.
