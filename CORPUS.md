@@ -379,6 +379,70 @@ Before reuse:
 - Standalone: "Bohemian Rhapsody first appeared on which Queen album?" as
   multiple choice against A Day at the Races and News of the World.
 
+### TLAs
+
+Vetted from SUGGESTIONS.md on 2026-09-23.
+
+Teams say what a three-letter abbreviation stands for. Everyday
+abbreviations, and a team that doesn't know can reason from context (the
+words that fit a lorry or a satnav) and often gets part of the way.
+
+Occasion: none.
+
+Reviewer: viable; expected average 72%, close to the curve.
+
+```markdown
+## Round N: TLAs (/ 10)
+
+Format: open
+
+Instructions: Three-letter abbreviations. Say what the letters stand for.
+
+1. What does the broadcaster BBC stand for? — **British Broadcasting Corporation**
+2. What does NHS stand for? — **National Health Service**
+3. In home improvement, what does DIY stand for? — **Do It Yourself**
+4. The tax on your shopping receipt, VAT: what does it stand for? — **Value Added Tax**
+5. On a lorry driver's licence, what does HGV stand for? — **Heavy Goods Vehicle**
+6. In your car's satnav, what does GPS stand for? — **Global Positioning System**
+7. The yearly car test, the MOT: what does MOT stand for? — **Ministry of Transport**
+8. The music and film shop HMV: what does HMV stand for? — **His Master's Voice**
+9. In an LED light bulb, what does LED stand for? — **Light-Emitting Diode**
+10. In a mobile phone's SIM card, what does SIM stand for? — **Subscriber Identity Module**
+```
+
+Sources:
+
+- BBC: https://en.wikipedia.org/wiki/BBC_Charter
+- NHS: https://www.nationalarchives.gov.uk/explore-the-collection/stories/the-foundation-of-the-nhs/
+- DIY: https://dictionary.cambridge.org/dictionary/english/do-it-yourself
+- VAT: https://gov.uk/hmrc-internal-manuals/business-income-manual/bim31505
+- HGV: https://en.wikipedia.org/wiki/Large_goods_vehicle
+- GPS: https://www.gps.gov/gps
+- MOT: https://en.wikipedia.org/wiki/MOT_test
+- HMV: https://en.wikipedia.org/wiki/HMV
+- LED: https://www.britannica.com/technology/LED
+- SIM: https://www.infobip.com/glossary/sim-subscriber-identity-module-card
+
+Before reuse:
+
+- Q1 and Q4 give away a word of the answer ("broadcaster", "tax"). Ask "What
+  does BBC stand for?" and "What does VAT stand for?"; both stay easy.
+- Q1: refuse "British Broadcasting Company", its name from 1922 to 1927.
+- Q6: refuse "Global Positioning Satellite", the common wrong answer.
+- Q5: the official licence term is now LGV; HGV still stands for Heavy Goods
+  Vehicle.
+- Q7: the Ministry of Transport no longer exists; the answer holds.
+- Q10: accept "Subscriber Identification Module".
+- Decide partial answers ("Light Emitting D…") in advance.
+- SOS was left out: it stands for nothing, and teams can't reason their way
+  to that.
+- Asked before as single questions, and kept out: OBE/CBE, MI5, EDM, DRS, TT,
+  FIFA, MRI.
+- Within one quiz: MOT and HGV clash with motoring questions, HMV with a
+  brand-logo round.
+- Unverified easy spares: KFC, UFO, GMT.
+- Standalone: SIM and LED as multiple choice; HMV and MOT as true/false.
+
 ### Spoken Lyrics
 
 Vetted from SUGGESTIONS.md on 2026-09-23.
