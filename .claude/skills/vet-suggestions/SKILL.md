@@ -29,13 +29,18 @@ A question is good when:
   worded. Every answer is verified by search, including the ones the note
   already gives and the ones that seem obvious;
 - it is not a repeat of a question in OLD-QUIZZES.md, quizzes/*/quiz.md or
-  CORPUS.md, by the rule in step 7 of `new-quiz`'s Per round section.
+  CORPUS.md, by the rule in step 7 of `new-quiz`'s Per round section;
+- most of the room knows its subject, and the fact is worth hearing even to a
+  team that gets it wrong. "Simon & Garfunkel first recorded as Tom and
+  Jerry" passes: everyone knows the duo, and the old name surprises. "Little
+  Mix first performed as Rhythmix" fails: few in the room care what Little
+  Mix were first called.
 
 If the note's answer is wrong, look for the right answer. If the question
 only holds with a qualifier, a definition, or an argument ready for a
 challenge, drop it. If in doubt, drop it; there are always more questions.
 
-How hard a question is depends on its wording, which is fitted to a round's
+Beyond that test, how hard a question is depends on its wording, which is fitted to a round's
 curve when the round is written, so a question's difficulty is left to then.
 A trick question, as `new-quiz` defines it, is worth keeping; say so in its
 notes.
