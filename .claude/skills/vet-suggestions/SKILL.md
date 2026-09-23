@@ -25,9 +25,9 @@ A question is good when:
 - it is not a repeat of a question in OLD-QUIZZES.md, quizzes/*/quiz.md or
   CORPUS.md, by the rule in step 7 of `new-quiz`'s Per round section.
 
-A note's answer or wording being wrong is a reason to reword, not to reject:
-find the question the note is reaching for that has one verified answer.
-Reject only when no wording gives one.
+If the note's answer is wrong, look for the right answer. If the question
+only holds with a qualifier, a definition, or an argument ready for a
+challenge, drop it. If in doubt, drop it; there are always more questions.
 
 How hard a question is depends on its wording, which is fitted to a round's
 curve when the round is written, so a question's difficulty is left to then.
