@@ -51,7 +51,8 @@ every item; check that candidates exist, and fetch nothing.
    one per round idea, and one per batch of about five questions. Give each
    sub-agent the Standard section, the Difficulty section, and its
    suggestions. Each sub-agent returns, for every suggestion it was given:
-   - for a question: the fact and its answer, the source that confirms it, a
+   - for a question: the fact and its answer, the source that confirms it,
+     an explanation of the answer that would settle a team's challenge, a
      baseline wording with the chance an average team answers it, the
      wordings or formats that make it easier or harder, the result of the
      dedupe, and a verdict of keep or reject with its reason. Where the
@@ -91,6 +92,8 @@ A question goes under Questions, under a heading that names it. It opens with
 the fact in one sentence, ending in the bold answer, then a list:
 
 - Asked as: the baseline wording and its chance;
+- Explained: the answer in plain words, complete enough for the quizmaster to
+  read out or to settle a team's challenge with;
 - Easier and Harder: other wordings or formats, with their chances where
   known;
 - Accuracy: wording that must stay for the question to be true;
@@ -99,5 +102,5 @@ the fact in one sentence, ending in the bold answer, then a list:
 - Why: why it is a good question;
 - Vetted: today's date.
 
-Asked as, Why and Vetted are always there; the rest only where there is
+Asked as, Explained, Why and Vetted are always there; the rest only where there is
 something to say.
