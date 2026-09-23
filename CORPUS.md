@@ -15,7 +15,7 @@ Delete an entry once it has been used in a quiz.
 
 ## Picture rounds
 
-_None recorded._
+- Lead Singers has a picture version: see Lead Singers under Open rounds.
 
 ## Multiple-choice rounds
 
@@ -88,6 +88,89 @@ Before reuse:
 _None recorded._
 
 ## Open rounds
+
+### Lead Singers
+
+Vetted from SUGGESTIONS.md on 2026-09-23.
+
+Two versions, with candidates for both. Open: name the lead singer of a band.
+Picture: a singer's face is shown and teams name the band. Band names are
+better known than singers' names, so the picture version lets a team that
+knows "that's the Killers bloke" score without knowing Brandon Flowers, which
+suits rounds 1–5. There are plenty of well-known frontmen across the decades,
+and difficulty is tuned by how well known the band is.
+
+Occasion: none. Keep it out of a quiz that already has a general music round.
+
+Reviewer: both versions viable. Open, as drafted: 72%, but top-heavy, with
+three questions at 35–45% where the curve wants one hard question.
+
+Open version:
+
+```markdown
+## Round N: Lead Singers (/ 10)
+
+Format: open
+
+1. Who is the lead singer of Coldplay? — **Chris Martin**
+2. Who is the lead singer of U2? — **Bono**
+3. Who is the lead singer of the Rolling Stones? — **Mick Jagger**
+4. Who is the lead singer of Blur? — **Damon Albarn**
+5. Who was the lead singer of the Smiths? — **Morrissey**
+6. Who is the lead singer of Duran Duran? — **Simon Le Bon**
+7. Who is the lead singer of Pulp? — **Jarvis Cocker**
+8. Who is the lead singer of the Killers? — **Brandon Flowers**
+9. Who is the lead singer of the Kaiser Chiefs? — **Ricky Wilson**
+10. Who sang lead vocals on Genesis's first album, released in 1969? — **Peter Gabriel**
+```
+
+Picture version candidates, face to band: Mick Jagger (the Rolling Stones),
+Bono (U2), Chris Martin (Coldplay), Freddie Mercury (Queen), Liam Gallagher
+(Oasis), Thom Yorke (Radiohead), Simon Le Bon (Duran Duran), Jarvis Cocker
+(Pulp), Brandon Flowers (the Killers), Ricky Wilson (the Kaiser Chiefs), Alex
+Turner (Arctic Monkeys), Tom Chaplin (Keane), Gary Lightbody (Snow Patrol).
+Images not yet checked.
+
+Sources:
+
+- Chris Martin: https://www.biography.com/musicians/chris-martin
+- Bono: https://en.wikipedia.org/wiki/Bono
+- Mick Jagger: https://en.wikipedia.org/wiki/Mick_Jagger
+- Damon Albarn: https://www.britannica.com/biography/Damon-Albarn
+- Morrissey: https://www.britannica.com/biography/Morrissey
+- Simon Le Bon: https://en.wikipedia.org/wiki/Duran_Duran
+- Jarvis Cocker: https://en.wikipedia.org/wiki/Jarvis_Cocker
+- Brandon Flowers: https://en.wikipedia.org/wiki/Brandon_Flowers
+- Ricky Wilson: https://en.wikipedia.org/wiki/Ricky_Wilson_(singer)
+- Peter Gabriel on Genesis's first album: https://www.progarchives.com/album.asp?id=6, https://en.wikipedia.org/wiki/Phil_Collins
+- Thom Yorke: https://en.wikipedia.org/wiki/Thom_Yorke
+- Tom Chaplin: https://en.wikipedia.org/wiki/Tom_Chaplin
+- Gary Lightbody: https://en.wikipedia.org/wiki/Gary_Lightbody
+- Alex Turner: https://en.wikipedia.org/wiki/Arctic_Monkeys
+- Freddie Mercury, Liam Gallagher: not yet sourced.
+
+Before reuse:
+
+- Open Q10 is a fair trick question, but only as worded: Phil Collins joined
+  as drummer in August 1970 and took over the singing in 1975. "Genesis's
+  lead singer" alone would allow both.
+- Open Q2: OLD-QUIZZES.md:1225 asked Bono's real name, with "Bono, U2" as the
+  answer. A different fact, but close; Nirvana (Kurt Cobain) or Culture Club
+  (Boy George) are alternatives.
+- Open Q8 and Q9 are hard as worded; a hit song (Mr Brightside) or "former
+  judge on The Voice" makes either easier.
+- All ten open answers are men. Garbage (Shirley Manson), No Doubt (Gwen
+  Stefani) and Texas (Sharleen Spiteri) are unverified alternatives.
+- Picture version: use photos from the band's peak years. Leave out singers
+  known for more than one act (Damon Albarn, Paul Weller, Ozzy Osbourne,
+  Peter Gabriel, Phil Collins), and Morrissey and Sting, who are better known
+  solo. Leave out bands named after their singer (Bon Jovi) and Blondie, whose
+  Debbie Harry was a picture question before (OLD-QUIZZES.md:1231).
+- Excluded: Spandau Ballet (Tony Hadley left in 2017), Queen as an open
+  question (OLD-QUIZZES.md:191 names Freddie Mercury), and bands with shared
+  or changed singers.
+- Standalone: "True or false: Phil Collins joined Genesis as their drummer,
+  not their singer" (true).
 
 ### Spoken Lyrics
 
