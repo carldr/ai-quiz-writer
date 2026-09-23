@@ -59,8 +59,7 @@ image to exist for every item; check that candidates exist, and fetch nothing.
    overrides, or asks for rework; a reworked suggestion goes back through
    step 3.
 5. Write each kept suggestion into CORPUS.md: a round under the heading for its
-   round type, a question under Questions. Follow the form of the entries
-   already there. A round carries its title, a line saying it was vetted from
+   round type, a question under Questions. A round carries its title, a line saying it was vetted from
    SUGGESTIONS.md on today's date, why it is a good round, any occasion it
    suits, its expected average, the questions in quiz file format
    (docs/quiz-format.md), and a "Before reuse:" note of known faults. A
