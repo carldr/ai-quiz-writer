@@ -9,6 +9,8 @@ into `CORPUS.md`.
 - Who said "marriage is an institution"
 - Which is the world's largest city with English as the official language? Lagos
 - How many teams have won the World Cup?
+- Which EU member state is, geographically, entirely in Asia? Cyprus
+- The UK's only territory in Asia is on which island? Cyprus
 
 ## Round ideas
 
