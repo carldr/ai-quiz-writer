@@ -106,7 +106,7 @@ rather than caught out. Drop the question.
    follow the curve.
 5. Draft the full round in the quiz file format (see docs/quiz-format.md).
 6. Verify EVERY answer with web search. Correct or replace any question whose
-   answer cannot be confirmed; if kept despite doubt, flag it to the user.
+   answer cannot be confirmed or could be argued; if in doubt, replace it.
 7. Dedupe: grep OLD-QUIZZES.md and every quizzes/*/quiz.md for each question's
    key fact (search for the answer and for distinctive question words, not the
    whole sentence). The grep only finds candidates. A question is a repeat
