@@ -149,7 +149,9 @@ After the 15 items are approved:
 1. Images on the picture sheet are 4/3, so prefer images that are approximately that aspect ratio, or ensure that if cropped to 4/3, the subject remains identifable.
 1. Fetch 2–3 candidate images per item into quizzes/YYYY-MM-DD/images/ as
    candidate-NN-a.jpg/png (keep each image's real extension), candidate-NN-b..., ...
-   Dispatch the fetching to parallel sub-agents, one item each. The
+   Dispatch the fetching to sub-agents one at a time, one item each,
+   starting the next only when the last has reported; sub-agents fetching
+   in parallel trip Wikimedia's rate limit. The
    Wikipedia summary API is the first source. Its JSON, at
    en.wikipedia.org/api/rest_v1/page/summary/<Article_Title>, carries a
    direct upload.wikimedia.org file URL in originalimage.source, and the
