@@ -13,8 +13,6 @@ into `CORPUS.md`.
 
 ## Round ideas
 
-- Dead or alive quiz round.
-  - Sue johnson
 - Dead pop stars picture round
 - Airport designations
 - TLAs

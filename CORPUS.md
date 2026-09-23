@@ -83,6 +83,78 @@ Before reuse:
   true/false; parliament of owls open in general knowledge, asking for "which
   bird of prey" to rule out rooks.
 
+### Dead or Alive
+
+Vetted from SUGGESTIONS.md on 2026-09-23.
+
+Teams say whether each famous person is dead or alive. A guess scores 50%;
+the round rises above that on big news of the past year and a half,
+centenaries and widely covered deaths, which one person on a team settles.
+Mixed ages suit it: older players know Sue Johnston, Kevin Keegan and Bonnie
+Tyler, younger ones Anthony Head and Chuck Norris.
+
+Occasion: Halloween.
+
+Reviewer: viable; expected average 71%. With two options no question can be
+truly hard.
+
+Statuses checked on 2026-09-23 by two independent searches.
+
+```markdown
+## Round N: Dead or Alive (/ 10)
+
+Format: multiple-choice
+
+Instructions: Is each person dead or alive today?
+
+1. Sir David Attenborough, wildlife presenter. a) Dead b) Alive — **b) Alive (turned 100 on 8 May 2026)**
+2. Ozzy Osbourne, Black Sabbath singer. a) Dead b) Alive — **a) Dead (died 22 July 2025, aged 76)**
+3. Sir Paul McCartney, Beatle. a) Dead b) Alive — **b) Alive (aged 84)**
+4. Kevin Keegan, England footballer and manager. a) Dead b) Alive — **a) Dead (died 20 July 2026, aged 75)**
+5. Sue Johnston, Barbara in The Royle Family. a) Dead b) Alive — **b) Alive (aged 82; stars in the BBC's Ann Droid)**
+6. Bonnie Tyler, singer of Total Eclipse of the Heart. a) Dead b) Alive — **a) Dead (died July 2026, aged 75)**
+7. Dick Van Dyke, Bert in Mary Poppins. a) Dead b) Alive — **b) Alive (turned 100 on 13 December 2025)**
+8. Chuck Norris, action film star. a) Dead b) Alive — **a) Dead (died 19 March 2026, aged 86)**
+9. Buzz Aldrin, second man on the Moon. a) Dead b) Alive — **b) Alive (aged 96)**
+10. Anthony Head, Giles in Buffy the Vampire Slayer. a) Dead b) Alive — **a) Dead (died June 2026, aged 72)**
+```
+
+Sources:
+
+- Attenborough: https://www.npr.org/2026/05/08/nx-s1-5802305/david-attenborough-celebrates-his-100th-birthday, https://www.cnn.com/2026/05/08/uk/david-attenborough-100-key-moments-intl-scli
+- Osbourne: https://www.nbcnews.com/news/obituaries/ozzy-osbourne-pioneering-heavy-metal-singer-black-sabbath-frontman-die-rcna42423, https://www.npr.org/2025/07/22/833512508/ozzy-osbourne-black-sabbath-obituary
+- McCartney: https://www.paulmccartney.com/live/all, https://variety.com/2026/music/album-reviews/paul-mccartney-boys-of-dungeon-lane-album-review-1236757156/
+- Keegan: https://www.cnn.com/2026/07/20/sport/kevin-keegan-dies-at-75, https://www.skysports.com/football/news/11095/13563799/kevin-keegan-dies-aged-75-former-england-forward-and-manager-passes-away-after-battle-with-cancer, https://www.thefa.com/news/2026/jul/20/kevin-keegan-1951-2026
+- Johnston: https://www.chortle.co.uk/news/2026/08/27/61475/ann_droid_gets_a_second_series
+- Tyler: https://www.nbcnews.com/news/obituaries/bonnie-tyler-singer-total-eclipse-heart-dies-rcna353636, https://abcnews.com/GMA/Culture/bonnie-tyler-singer-total-eclipse-heart-dies/story?id=134609025
+- Van Dyke: https://lamag.com/arts-and-entertainment/give-dick-van-dyke-an-oscar-already/, https://hoodline.com/2026/08/dick-van-dyke-100-works-out-upside-down-says-he-still-feels-lonely-at-times/
+- Norris: https://www.cnn.com/2026/03/20/entertainment/chuck-norris-death, https://www.npr.org/2026/03/20/nx-s1-5753907/chuck-norris-dead
+- Aldrin: https://phys.org/news/2026-01-oldest-astronaut-aldrin-moon-astronauts.html, https://www.washingtontimes.com/news/2026/feb/2/happy-belated-96th-birthday-buzz-aldrin/
+- Head: https://www.pbs.org/newshour/arts/anthony-head-british-actor-known-for-buffy-the-vampire-slayer-dies-at-72, https://www.cbsnews.com/news/anthony-head-dies-age-72-buffy-the-vampire-slayer/
+
+Before reuse:
+
+- Check every status again on the day of the quiz, the living ones above all:
+  Van Dyke is 100, Aldrin 96, McCartney 84. Update the ages.
+- Weakest evidence of life: Aldrin (latest major news January–February 2026)
+  and Van Dyke (latest from minor outlets, July–August 2026).
+- Tyler's date of death is given as 8 July by NBC and Wikipedia, 9 July by
+  ABC; the answer says "July". Head's date, 1 June, comes only from
+  Wikipedia; the answer says "June".
+- Ignore death-hoax sites such as Mediamass, which report hoaxes about all
+  three of the oldest.
+- The split is five dead, five alive; keep it balanced.
+- Within one quiz, no answer twice: the corpus questions on Bonnie Tyler and
+  Paul McCartney can't run alongside this round.
+- Candidates checked by news search: dead, Brigitte Bardot (28 December 2025),
+  Tim Curry (25 August 2026), Sam Neill (July 2026), Dickie Bird (23 September
+  2025); alive, Mel Brooks (100 on 28 June 2026), William Roache (94), Sir Geoff
+  Hurst. Penelope Keith, Bill Oddie, Richard O'Sullivan, Judith Chalmers and
+  Stephanie Cole appear on Wikipedia's 2026 UK deaths list only; confirm
+  before use.
+- Standalone: "Dick Van Dyke has turned 100" and "Buzz Aldrin is still alive"
+  as true/false; both surprise.
+
 ## True/false rounds
 
 _None recorded._
