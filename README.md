@@ -54,7 +54,7 @@ To use your own past quizzes instead, empty all six. Then write your past quizze
 
 If you have no past quizzes of your own, keep the author's quizzes. New quizzes will not repeat any question in the author's quizzes.
 
-Between quizzes, note ideas for questions and rounds in `SUGGESTIONS.md`, in any shorthand. Before writing a quiz, type `/vet-suggestions` at the Claude Code prompt. Claude asks what any unclear suggestion means, researches each one, and says which to keep and why. The ones you keep move to `CORPUS.md`, where `/new-quiz` draws on them.
+Between quizzes, note ideas for questions and rounds in `SUGGESTIONS.md`, in any shorthand, under its `## Questions` and `## Round ideas` headings. Before writing a quiz, type `/vet-suggestions` at the Claude Code prompt. Claude asks what any unclear suggestion means, researches each one, and says which to keep and why. The ones you keep move to `CORPUS.md`, where `/new-quiz` draws on them. The ones you reject are deleted, and any you have not decided on stay in `SUGGESTIONS.md` for the next run. If you start `/new-quiz` with suggestions still in `SUGGESTIONS.md`, Claude offers to vet them first.
 
 To create a quiz:
 
@@ -115,9 +115,11 @@ ruby test/render_test.rb -n test_name
 - `CORPUS.md`: rounds and questions ready to use: vetted suggestions, and rounds drafted for an earlier quiz and not used.
 - `scripts/`: the renderer. Its stylesheets are in `scripts/render/`.
 
-The skill reads `OLD-QUIZZES.md`, `ROUND-HISTORY.md` and `CORPUS.md`. When a quiz is finished, the skill adds the quiz's rounds to `ROUND-HISTORY.md`, and the rounds it didn't use to `CORPUS.md`.
+`/new-quiz` reads `OLD-QUIZZES.md`, `ROUND-HISTORY.md` and `CORPUS.md`. When a quiz is finished, `/new-quiz` adds the quiz's rounds to `ROUND-HISTORY.md`, adds the rounds it didn't use to `CORPUS.md`, and deletes from `CORPUS.md` anything the quiz used.
 
-The skill never updates `OLD-QUIZZES.md`. The skill also checks new quizzes for repeats against `quizzes/*/quiz.md`.
+`/new-quiz` never updates `OLD-QUIZZES.md`. It also checks new quizzes for repeats against `quizzes/*/quiz.md`.
+
+`/vet-suggestions` moves the suggestions you keep from `SUGGESTIONS.md` to `CORPUS.md`, and deletes the ones you reject.
 
 ## Licence
 
