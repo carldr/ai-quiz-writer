@@ -14,6 +14,12 @@ user decides every other suggestion.
 
 ## Standard
 
+Vetting produces candidates, not finished rounds. A round idea yields a
+candidate round and a set of candidate questions. Each question stands on its
+own: it can be used in any round and any format, true/false or multiple choice
+included, even when its round is rejected. Wording and difficulty are fitted
+when a quiz is written.
+
 The Difficulty section of `.claude/skills/new-quiz/SKILL.md` sets the target
 a round idea is judged against, and how every question is worded.
 
@@ -34,12 +40,15 @@ curve when the round is written, so a question's difficulty is left to then.
 A trick question, as `new-quiz` defines it, is worth keeping; say so in its
 notes.
 
-A round idea is viable when a full round can be drafted from it, 10 questions
-or 15 for a picture round, in which every question meets the standard and the
-chances follow the curve to an average of 70%. Most themes are viable with the
-right questions; a theme fails when it is too obscure or too niche for enough
-gettable questions to exist. A picture round also needs an image to exist for
-every item; check that candidates exist, and fetch nothing.
+A round idea is viable when an average team could score 70% on the theme:
+enough of its facts are widely known, or can be worked out by a team that
+doesn't know them. A clue that gives the answer away without drawing on the
+theme, such as naming Beyoncé to identify Destiny's Child, does not make the
+theme gettable. The sub-agent that drafts the round does not judge its
+difficulty. A separate reviewer is given the drafted questions and the
+Difficulty section, with no target to fit. It rates each question's chance,
+and says whether the theme can reach 70%. A picture round also needs an image
+to exist for every item; check that candidates exist, and fetch nothing.
 
 ## Steps
 
@@ -61,36 +70,47 @@ every item; check that candidates exist, and fetch nothing.
      easier or harder, the result of the
      dedupe, and a verdict of keep or reject with its reason. Where the
      note's wording or answer is wrong, the sub-agent says what it changed;
-   - for a round: the drafted round, with each answer's source and each
-     question's estimated chance; the round's expected average; any occasion
-     it suits, such as Halloween; and a verdict of viable or not with its
-     reason.
-4. Wait until every sub-agent has returned, re-running any that failed. Then
+   - for a round: the candidate questions, 10 or 15 for a picture round, each
+     with its answer, the source that confirms it, and the result of the
+     dedupe; any occasion the round suits, such as Halloween; and the formats
+     each question would suit besides the round's own.
+4. For each round, start a reviewer sub-agent, as the Standard section
+   describes. Give it the candidate questions and the Difficulty section, and
+   nothing that suggests what the chances should be. It returns each
+   question's chance as worded, the round's expected average, and a verdict
+   of viable or not with its reason.
+5. Wait until every sub-agent has returned, re-running any that failed. Then
    write every kept clear question into CORPUS.md, delete it from
    SUGGESTIONS.md, and commit. Show the user one line per question promoted:
    the question as worded, its answer, and any change from the note.
-   Steps 5 to 7 start only once this step is done and no work is in flight,
+   Steps 6 to 8 start only once this step is done and no work is in flight,
    so each of their messages carries one decision and nothing else.
-5. Take the rejected questions one at a time, one per message: the question,
+6. Take the rejected questions one at a time, one per message: the question,
    the answer, and why it fails the standard. The user confirms the rejection,
    and it is deleted from SUGGESTIONS.md, or overrides it, and it is written
    into CORPUS.md.
-6. Take the unclear questions one at a time, one per message, and ask what the
+7. Take the unclear questions one at a time, one per message, and ask what the
    user meant. Once the reading is settled, research it as in step 3; a keep
-   is written into CORPUS.md, and a reject is put to the user as in step 5.
-7. Take the round ideas one at a time, one per message: the verdict and its
-   reason, the expected average, and three sample questions with their
+   is written into CORPUS.md, and a reject is put to the user as in step 6.
+8. Take the round ideas one at a time, one per message: the reviewer's verdict
+   and its reason, its expected average, and three sample questions with their
    answers. The user confirms, overrides, or asks for rework; a reworked round
-   is researched again as in step 3 and shown again.
-8. A suggestion the user defers stays in SUGGESTIONS.md for a later run. Every
+   is researched and reviewed again as in steps 3 and 4, and shown again.
+   When a round is rejected, offer its questions that meet the standard for
+   the Questions section of CORPUS.md, each noting the formats it suits. For
+   example, "Simon & Garfunkel first recorded as Tom and Jerry" suits true or
+   false, or multiple choice against two other cartoon duos.
+9. A suggestion the user defers stays in SUGGESTIONS.md for a later run. Every
    other suggestion is deleted from it once decided.
 
 ## Corpus entries
 
 A round goes under the heading for its round type, and carries its title, a
 line saying it was vetted from SUGGESTIONS.md on today's date, why it is a
-good round, any occasion it suits, its expected average, the questions in quiz
-file format (docs/quiz-format.md), and a "Before reuse:" note of known faults.
+good round, any occasion it suits, the reviewer's verdict and expected
+average, the sample questions in quiz file format (docs/quiz-format.md), and
+a "Before reuse:" note of known faults. The sample questions are candidates,
+not fitted to the curve.
 
 A question goes under Questions, under a heading that names it. It opens with
 the fact in one sentence, ending in the bold answer, then a list:
