@@ -40,3 +40,20 @@ Instructions: Which film had this tagline on its poster?
 8. "Just because you're invited, doesn't mean you're welcome." a) Meet the Parents b) Get Out c) The Sound of Music — **b) Get Out (2017)**
 9. "He's the only kid ever to get into trouble before he was born." a) Gandhi b) Look Who's Talking c) Back to the Future — **c) Back to the Future (1985)**
 10. "Man is the warmest place to hide." a) Alien b) The Thing c) Frozen — **b) The Thing (1982)**
+
+## Round 3: Three Songs, One Album (/ 10)
+
+Format: open
+
+Instructions: Name the artist and the original studio album all three songs come from. Half a point for the artist, half a point for the album.
+
+1. Wanna Be Startin' Somethin', Billie Jean, Beat It — **Michael Jackson, Thriller**
+2. Go Your Own Way, Dreams, The Chain — **Fleetwood Mac, Rumours**
+3. Smells Like Teen Spirit, Come as You Are, Lithium — **Nirvana, Nevermind**
+4. Sir Duke, I Wish, Isn't She Lovely — **Stevie Wonder, Songs in the Key of Life**
+5. Wonderwall, Don't Look Back in Anger, Champagne Supernova — **Oasis, (What's the Story) Morning Glory?**
+6. Come Together, Something, Here Comes the Sun — **The Beatles, Abbey Road**
+7. Running Up That Hill, Cloudbusting, The Big Sky — **Kate Bush, Hounds of Love**
+8. Shake It Off, Blank Space, Bad Blood — **Taylor Swift, 1989**
+9. Once in a Lifetime, Born Under Punches, Crosseyed and Painless — **Talking Heads, Remain in Light**
+10. Rehab, You Know I'm No Good, Tears Dry on Their Own — **Amy Winehouse, Back to Black**
