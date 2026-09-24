@@ -185,6 +185,28 @@ After the 15 items are approved:
 
 Image rights are not a concern.
 
+## Gimmick rounds
+
+Guidance for particular gimmick rounds. This list is not exhaustive yet; add
+a round here once a version of it has worked.
+
+### Answer Smash
+
+Each question gives two clues, and the two answers overlap into one phrase:
+the end of the first answer is the start of the second, as in Big Ben
+Affleck or Tony Blair Witch Project.
+
+- Keep each clue short and a little open, so that on its own it could point
+  to more than one answer and only the pair pins it down. The challenge is
+  finding the two answers that overlap, not decoding either clue. "London
+  bell / Batman actor?" works; "Actor who played Batman and married Jennifer
+  Lopez" names one answer outright and makes the question trivial. Clues so
+  vague that neither half can be reached make it unfair.
+- Order the questions strictly by difficulty, easiest first, and end on a
+  fun, very long answer, such as A Town Called M-Alice's Adventures in
+  Wonderland.
+- Score one point for the full smash, with no half points.
+
 ## Finish
 
 1. Write quizzes/YYYY-MM-DD/quiz.md (format: docs/quiz-format.md).
