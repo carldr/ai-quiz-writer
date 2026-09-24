@@ -45,7 +45,7 @@ Instructions: Which film had this tagline on its poster?
 
 Format: open
 
-Instructions: Two clues per question; the two answers "smash" together into one overlapping phrase (e.g. "Elton John Lewis", "Buda-pesto").
+Instructions: You’ll get two clues for each question, they “smash” together to give you your answer.  Here’s a couple of examples : Singer of "Rocket Man” and A department store smash together to give you Elton John Lewis. Capital of Hungary and Italian sauce made of nuts, basil and olive oil?  Buda-pesto
 
 1. The boy who never grew up / Eaten on Shrove Tuesday? — **Peter Pan-cake**
 2. Rowan Atkinson character / Squashy seat? — **Mr Bean Bag**
