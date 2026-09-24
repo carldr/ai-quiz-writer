@@ -125,16 +125,9 @@ body {
   content: counter(question) '.';
   text-align: right;
 }
-/* Quizmaster sheet. Every question with its answer in bold, a round to a page,
-   matching the team sheet a table is filling in. Loaded after common.css. */
 
-/* Questions are numbered with a hanging indent, and set tighter than the rest of
-   the quiz: this is the one sheet nobody writes on, and the twenty-question
-   general knowledge round has to hold its page. */
-body {
-  font-size:9.75pt;
-}
-
+/* The answer sheet and the questions sheet number their questions with a hanging
+   indent. */
 .question-list {
   margin: 0;
 }
@@ -149,9 +142,18 @@ body {
   width: 7mm;
 }
 
-/* Multiple-choice options sit under their question. The correct one is bold. */
+/* Multiple-choice options sit under their question. On the answer sheet the
+   correct one is bold. */
 .options span {
   margin-right: 5mm;
+}
+/* Quizmaster sheet. Every question with its answer in bold, a round to a page,
+   matching the team sheet a table is filling in. Loaded after common.css. */
+
+/* Questions are set tighter than the rest of the quiz: the twenty-question
+   general knowledge round has to hold its page. */
+body {
+  font-size:9.75pt;
 }
 
 /* What the answer adds to the correct option, on its own line under the options
