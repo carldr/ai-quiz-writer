@@ -1,30 +1,10 @@
 /* Quizmaster sheet. Every question with its answer in bold, a round to a page,
    matching the team sheet a table is filling in. Loaded after common.css. */
 
-/* Questions are numbered with a hanging indent, and set tighter than the rest of
-   the quiz: this is the one sheet nobody writes on, and the twenty-question
+/* Questions are set tighter than the rest of the quiz: the twenty-question
    general knowledge round has to hold its page. */
 body {
   font-size:9.75pt;
-}
-
-.question-list {
-  margin: 0;
-}
-.question-list > li {
-  position: relative;
-  padding-left: 9mm;
-  margin: 0 0 0.5mm;
-}
-.question-list > li::before {
-  position: absolute;
-  left: 0;
-  width: 7mm;
-}
-
-/* Multiple-choice options sit under their question. The correct one is bold. */
-.options span {
-  margin-right: 5mm;
 }
 
 /* What the answer adds to the correct option, on its own line under the options

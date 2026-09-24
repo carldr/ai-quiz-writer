@@ -233,6 +233,30 @@ class AnswersRendererTest < Minitest::Test
   end
 end
 
+class QuestionsRendererTest < Minitest::Test
+  def html
+    quiz = QuizParser.parse(File.read(File.join(FIXTURE_DIR, "quiz.md")), quiz_dir: FIXTURE_DIR)
+    QuestionsRenderer.render(quiz)
+  end
+
+  def test_has_questions_and_no_answers
+    assert_includes html, "Which is the largest wine bottle size?"
+    refute_includes html, "Bologna"
+    refute_includes html, "Dunlop"
+    refute_includes html, "<strong>"
+  end
+
+  def test_multiple_choice_options_are_lettered_and_unmarked
+    assert_includes html, "a)&nbsp; Magnum"
+    assert_includes html, "c)&nbsp; Nebuchadnezzar"
+  end
+
+  def test_picture_round_is_numbered_images
+    assert_includes html, %(src="../images/r1-01.png")
+    assert_includes html, "<span class=\"picture-number\">1</span></figure>"
+  end
+end
+
 class TeamRendererTest < Minitest::Test
   def html
     quiz = QuizParser.parse(File.read(File.join(FIXTURE_DIR, "quiz.md")), quiz_dir: FIXTURE_DIR)
@@ -308,7 +332,7 @@ class CliTest < Minitest::Test
       dir = File.join(tmp, "2099-01-01")
       FileUtils.cp_r(FIXTURE_DIR, dir)
       Cli.write_sheets(dir)
-      %w[answers.html team.html pictures.html].each do |f|
+      %w[answers.html questions.html team.html pictures.html].each do |f|
         assert File.exist?(File.join(dir, "out", f)), "missing #{f}"
       end
     end

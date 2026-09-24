@@ -6,7 +6,7 @@
 #   ruby scripts/render.rb quizzes/2026-09-01
 #
 # The argument is the quiz directory; quiz.md inside it is implied. Three sheets
-# are written to its out/ subdirectory — answers, team and pictures — as both
+# are written to its out/ subdirectory — answers, questions, team and pictures — as both
 # HTML and PDF, and the PDFs are copied to iCloud Drive under the quiz date.
 #
 # The work is in scripts/lib/:
@@ -15,6 +15,7 @@
 #   quiz_parser.rb        quiz.md text in, a Quiz out
 #   sheet_renderer.rb     the HTML document and round heading the sheets share
 #   answers_renderer.rb   a Quiz in, the quizmaster's HTML out
+#   questions_renderer.rb a Quiz in, the questions without answers as HTML out
 #   team_renderer.rb      a Quiz in, the team's HTML out
 #   pictures_renderer.rb  a Quiz in, the image grid's HTML out
 #   cli.rb                reads the directory, writes the files, drives Chrome

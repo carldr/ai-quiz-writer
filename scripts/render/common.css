@@ -123,3 +123,25 @@ body {
   content: counter(question) '.';
   text-align: right;
 }
+
+/* The answer sheet and the questions sheet number their questions with a hanging
+   indent. */
+.question-list {
+  margin: 0;
+}
+.question-list > li {
+  position: relative;
+  padding-left: 9mm;
+  margin: 0 0 0.5mm;
+}
+.question-list > li::before {
+  position: absolute;
+  left: 0;
+  width: 7mm;
+}
+
+/* Multiple-choice options sit under their question. On the answer sheet the
+   correct one is bold. */
+.options span {
+  margin-right: 5mm;
+}

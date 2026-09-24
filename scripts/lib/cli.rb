@@ -5,6 +5,7 @@ require "fileutils"
 require_relative "quiz"
 require_relative "quiz_parser"
 require_relative "answers_renderer"
+require_relative "questions_renderer"
 require_relative "team_renderer"
 require_relative "pictures_renderer"
 
@@ -40,6 +41,7 @@ module Cli
     # compact drops the picture sheet when the quiz has no picture round.
     sheets = {
       "answers" => AnswersRenderer.render(quiz),
+      "questions" => QuestionsRenderer.render(quiz),
       "team" => TeamRenderer.render(quiz),
       "pictures" => PicturesRenderer.render(quiz)
     }.compact
