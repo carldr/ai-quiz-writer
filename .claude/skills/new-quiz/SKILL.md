@@ -169,19 +169,16 @@ After the 15 items are approved:
 1. Fetch 2–3 candidate images per item into quizzes/YYYY-MM-DD/images/ as
    candidate-NN-a.jpg/png (keep each image's real extension), candidate-NN-b..., ...
    Dispatch the fetching to sub-agents one at a time, one item each,
-   starting the next only when the last has reported; sub-agents fetching
-   in parallel trip Wikimedia's rate limit. The
-   Wikipedia summary API is the first source. Its JSON, at
-   en.wikipedia.org/api/rest_v1/page/summary/<Article_Title>, carries a
-   direct upload.wikimedia.org file URL in originalimage.source, and the
-   Commons search API lists further candidates with their licences.
-   Wikimedia rejects requests that lack a browser User-Agent, so send one.
-   Fetch every other site with curl_chrome150, from curl-impersonate, which
-   passes the bot checks that block plain curl. Check
-   every download with the file command. A download that is not an image
-   gets one retry from a different source, and the item then keeps whatever
-   candidates it has. Scrape image URLs from fetched web pages only for
-   items no API source covers.
+   starting the next only when the last has reported. Any source will do.
+   Tell each sub-agent:
+   - Use whatever source gives a good image. curl_chrome150 passes most bot
+     checks, and an archived copy of a page often works where a site blocks
+     direct requests.
+   - Rate limits, such as Wikimedia's, are expected. Wait and retry rather
+     than give up.
+   - Check every download with the file command, and look at it to confirm
+     it shows the right subject, alone, with no captions, text or logos.
+   - Report each file's pixel size and source.
 2. Write quizzes/YYYY-MM-DD/images/contact-sheet.html showing all candidates
    with their filenames; tell the user to open it and pick.
 3. Copy each pick to the final name r1-NN.png/jpg matching the quiz file. Keep
