@@ -100,12 +100,14 @@ truly hard.
 
 Statuses checked on 2026-09-23 by two independent searches.
 
-```markdown
+````markdown
 ## Round N: Dead or Alive (/ 10)
 
 Format: multiple-choice
 
-Instructions: Is each person dead or alive today?
+```
+Is each person dead or alive today?
+```
 
 1. Sir David Attenborough, wildlife presenter. a) Dead b) Alive — **b) Alive (turned 100 on 8 May 2026)**
 2. Ozzy Osbourne, Black Sabbath singer. a) Dead b) Alive — **a) Dead (died 22 July 2025, aged 76)**
@@ -117,7 +119,7 @@ Instructions: Is each person dead or alive today?
 8. Chuck Norris, action film star. a) Dead b) Alive — **a) Dead (died 19 March 2026, aged 86)**
 9. Buzz Aldrin, second man on the Moon. a) Dead b) Alive — **b) Alive (aged 96)**
 10. Anthony Head, Giles in Buffy the Vampire Slayer. a) Dead b) Alive — **a) Dead (died June 2026, aged 72)**
-```
+````
 
 Sources:
 
@@ -178,12 +180,14 @@ Reviewer: viable open; expected average 82% as drafted, too easy because Q2,
 Q6 and Q7 spell their city. Multiple choice with this set would score about
 93%; it only works with a harder set.
 
-```markdown
+````markdown
 ## Round N: Airport Codes (/ 10)
 
 Format: open
 
-Instructions: Name the airport or city from its three-letter code.
+```
+Name the airport or city from its three-letter code.
+```
 
 1. LHR is the code for which London airport? — **Heathrow**
 2. MAN is the code for which UK city's airport? — **Manchester**
@@ -195,7 +199,7 @@ Instructions: Name the airport or city from its three-letter code.
 8. BHX is the code for which UK city's airport? — **Birmingham**
 9. MCO is the code for the main airport of which Florida city? — **Orlando**
 10. ORD is the code for which American city's main airport? — **Chicago (O'Hare)**
-```
+````
 
 Sources:
 
@@ -325,12 +329,14 @@ Occasion: none.
 
 Reviewer: viable; expected average 72%, close to the curve.
 
-```markdown
+````markdown
 ## Round N: TLAs (/ 10)
 
 Format: open
 
-Instructions: Three-letter abbreviations. Say what the letters stand for.
+```
+Three-letter abbreviations. Say what the letters stand for.
+```
 
 1. What does the broadcaster BBC stand for? — **British Broadcasting Corporation**
 2. What does NHS stand for? — **National Health Service**
@@ -341,7 +347,7 @@ Instructions: Three-letter abbreviations. Say what the letters stand for.
 7. The music and film shop HMV: what does HMV stand for? — **His Master's Voice**
 8. In an LED light bulb, what does LED stand for? — **Light-Emitting Diode**
 9. In a mobile phone's SIM card, what does SIM stand for? — **Subscriber Identity Module**
-```
+````
 
 Sources:
 
@@ -453,12 +459,14 @@ Reviewer: viable; expected average 65% as drafted. Africa and Waterloo Sunset
 
 The lines are given by position only; look each one up before the night.
 
-```markdown
+````markdown
 ## Round N: Spoken Lyrics (/ 10)
 
 Format: open
 
-Instructions: Name the song.
+```
+Name the song.
+```
 
 1. The opening a cappella line of Bohemian Rhapsody — **Bohemian Rhapsody, Queen**
 2. The opening line of Wannabe — **Wannabe, Spice Girls**
@@ -470,7 +478,7 @@ Instructions: Name the song.
 8. The opening line of Common People — **Common People, Pulp**
 9. The opening line of Waterloo Sunset — **Waterloo Sunset, The Kinks**
 10. The first two lines of Life on Mars? — **Life on Mars?, David Bowie**
-```
+````
 
 Sources:
 
