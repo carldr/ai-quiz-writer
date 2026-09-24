@@ -6,6 +6,12 @@ Format is how teams answer, named as in the `Format:` line of `quiz.md`: `pictur
 
 | Date | R | Round | Format | Theme / gimmick |
 |---|---|---|---|---|
+| 2026-09-24 | 1 | Henson's Creatures | picture | Jim Henson characters, on his 90th birthday |
+| 2026-09-24 | 2 | Film Taglines | multiple-choice | name the film from its poster tagline |
+| 2026-09-24 | 3 | Answer Smash | open | two answers overlap into one phrase |
+| 2026-09-24 | 4 | Three Songs, One Album | open | artist and album from three track titles |
+| 2026-09-24 | 5 | Around the World | open | world geography |
+| 2026-09-24 | 6 | General Knowledge | open | — (/20) |
 | 2026-09-01 | 1 | Teacher, Teacher | picture | fictional teachers from film and TV stills |
 | 2026-09-01 | 2 | Which Came First? | multiple-choice | pick the earliest of three |
 | 2026-09-01 | 3 | Hidden Body Parts | open | every answer conceals a body part |
