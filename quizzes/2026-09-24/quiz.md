@@ -89,3 +89,28 @@ Format: open
 8. Which mountain kingdom is completely surrounded by South Africa? — **Lesotho**
 9. Which Himalayan country has the only national flag that is not four-sided? — **Nepal**
 10. Which US state is closest to Africa? — **Maine (Quoddy Head to El Beddouza, Morocco)**
+
+## Round 6: General Knowledge (/ 20)
+
+Format: open
+
+1. Which planet is closest to the Sun? — **Mercury**
+2. Feta cheese comes from which country? — **Greece**
+3. What was Paul McCartney's main instrument in the Beatles? — **Bass guitar (accept bass; refuse "guitar" alone)**
+4. This Saturday's full moon is the one nearest the autumn equinox. What is it traditionally called? — **The Harvest Moon (refuse Hunter's Moon, Corn Moon)**
+5. Which English king was killed at the Battle of Hastings in 1066? — **Harold II (accept Harold, Harold Godwinson)**
+6. What runs through the middle of a gala pie? — **Hard-boiled egg (accept egg)**
+7. Who replaced Prue Leith as a Bake Off judge when the new series began on Tuesday? — **Nigella Lawson**
+8. Which European country's name means "black mountain"? — **Montenegro (accept Crna Gora)**
+9. Which band held its first practice fifty years ago tomorrow, on 25 September 1976, in a Dublin kitchen, under the name Feedback? — **U2**
+10. Which element makes up most of the air we breathe? — **Nitrogen (about 78%; oxygen is about 21%)**
+11. What is a young hare called? — **A leveret**
+12. What is the whisky lost to evaporation from the cask called? — **The angels' share (refuse the devil's cut)**
+13. Strictly Come Dancing returned on Saturday with a new presenting team. Name any one of its three new presenters. — **Emma Willis, Josh Widdicombe or Johannes Radebe (refuse Tess Daly, Claudia Winkleman)**
+14. Mr Blobby first appeared in 1992 on which Saturday night BBC show? — **Noel's House Party**
+15. Which chocolates, typically bought in large tins, are named after a J. M. Barrie play? — **Quality Street (after his 1901 play; Mackintosh's launched them in 1936)**
+16. Which country has won the men's Rugby Union World Cup the most times? — **South Africa (4: 1995, 2007, 2019, 2023)**
+17. In Men in Black, what is the memory-wiping device called? — **The Neuralyzer (mark on sound)**
+18. In your car's satnav, what does GPS stand for? — **Global Positioning System (refuse "Global Positioning Satellite")**
+19. Simon & Garfunkel made their first record, in 1957, under what name? a) Ren and Stimpy b) Tom and Jerry c) Rocky and Bullwinkle — **b) Tom and Jerry (refuse the Peptones)**
+20. Which English artist painted The Hay Wain? — **John Constable (1821; it hangs in the National Gallery)**
