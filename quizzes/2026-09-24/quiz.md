@@ -49,14 +49,14 @@ Instructions: Two clues per question; the two answers "smash" together into one 
 
 1. The boy who never grew up / Eaten on Shrove Tuesday? — **Peter Pan-cake**
 2. Rowan Atkinson character / Squashy seat? — **Mr Bean Bag**
-3. Bear from Peru / Chief Scout? — **Paddington Bear Grylls**
-4. Vodka and tomato cocktail / Bake Off judge? — **Bloody Mary Berry**
+3. Bear from Peru / Former Chief Scout? — **Paddington Bear Grylls**
+4. Vodka and tomato cocktail / Former Bake Off judge? — **Bloody Mary Berry**
 5. London bell / Batman actor? — **Big Ben Affleck**
 6. BBC time traveller / Chris Tarrant quiz show? — **Doctor Who Wants to Be a Millionaire**
 7. ABBA song / EastEnders pub? — **Dancing Queen Vic**
-8. Prime Minister / 1999 shaky camera horror film? — **Tony Blair Witch Project**
-9. British F1 champion / Scottish football club? — **Lewis Hamilton Academical**
-10. First Harry Potter book / Manchester band behind I Wanna Be Adored? — **Harry Potter and the Philosopher's Stone Roses**
+8. Former Prime Minister / 1999 shaky camera horror film? — **Tony Blair Witch Project**
+9. British F1 champion / Scottish football club? — **Lewis Hamilton Academical (accept Damon Hill / Graham Hill of Beath Hawthorn)**
+10. First Harry Potter book / Manchester band behind I Wanna Be Adored? — **Harry Potter and the Philosopher's Stone Roses (accept Sorcerer's Stone)**
 
 ## Round 4: Three Songs, One Album (/ 10)
 
