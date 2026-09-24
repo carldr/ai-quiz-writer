@@ -6,7 +6,8 @@ require_relative "quiz"
 #
 # The format is documented in docs/quiz-format.md. Parsing is strict and
 # line-based: every non-blank line must be the header, the Total: line, a round
-# heading, a Format: line, an Instructions: line, or a numbered question. A line
+# heading, a Format: line, part of an instructions block, or a numbered
+# question. A line
 # that is none of those is an error rather than something to skip, because a
 # question silently dropped from a printed sheet is worse than a failed render.
 #
@@ -34,10 +35,27 @@ module QuizParser
     total = nil
     rounds = []
     round = nil
+    # The lines of an open instructions block, and the line number of its
+    # opening fence; nil outside a block.
+    block = nil
+    block_start = nil
 
     text.each_line.with_index(1) do |raw, lineno|
       line = raw.chomp
+      if block
+        if line == "```"
+          round.instructions = block.join("\n") if round
+          block = nil
+        else
+          block << line
+        end
+        next
+      end
+
       case line
+      when "```"
+        block = []
+        block_start = lineno
       when /\A# Pub Quiz — (\d{4}-\d{2}-\d{2})\z/
         date = Regexp.last_match(1)
       when /\ATotal: \/ ?(\d+)\z/
@@ -50,8 +68,6 @@ module QuizParser
         value = Regexp.last_match(1).strip
         errors << "line #{lineno}: unknown Format: #{value.inspect}" unless FORMATS.include?(value)
         round.format = value if round
-      when /\AInstructions: (.+)\z/
-        round.instructions = Regexp.last_match(1) if round
       when /\A\d+\. /
         parse_question(line, lineno, round, quiz_dir, errors)
       when /\A\s*\z/
@@ -61,6 +77,7 @@ module QuizParser
       end
     end
 
+    errors << "line #{block_start}: instructions block is not closed" if block
     errors << "line 1: missing '# Pub Quiz — YYYY-MM-DD' header" unless date
     rounds.each do |r|
       errors << "line #{r.line}: Round #{r.number} is missing its Format: line" unless r.format

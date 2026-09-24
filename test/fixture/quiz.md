@@ -5,7 +5,10 @@ Total: / 27
 ## Round 1: Logos (/ 2)
 
 Format: picture
-Instructions: Identify the brand from a cropped logo.
+
+```
+Identify the brand from a cropped logo.
+```
 
 1. **Dunlop** — images/r1-01.png
 2. **Whiskas** — images/r1-02.png
@@ -13,7 +16,10 @@ Instructions: Identify the brand from a cropped logo.
 ## Round 2: Size Matters (/ 2)
 
 Format: multiple-choice
-Instructions: Circle your answers.
+
+```
+Circle your answers.
+```
 
 1. Which is the largest wine bottle size? a) Magnum b) Midas (30 litres) c) Nebuchadnezzar — **b) Midas (30 litres)**
 2. Which is further? a) 1 astronomical unit b) 1 light year c) 1 parsec — **c) 1 parsec (3.26 light years)**
@@ -21,6 +27,13 @@ Instructions: Circle your answers.
 ## Round 3: True or False (/ 3)
 
 Format: true-false
+
+```
+Two clues each:
+
+One / Two? One-Two
+Three / Four? Three-Four
+```
 
 1. Bees have five eyes? — **True**
 2. You can sneeze in your sleep? — **False**

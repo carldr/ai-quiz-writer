@@ -72,7 +72,7 @@ module SheetRenderer
     cell << "</figure>"
   end
 
-  # The round title and its score box. The instructions line is printed on the
+  # The round title and its score box. The instructions are printed on the
   # team sheet so teams know what to write, and on the answer sheet so the
   # quizmaster reads out the same thing.
   def round_header(round)

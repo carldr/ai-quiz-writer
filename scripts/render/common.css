@@ -43,9 +43,11 @@ body {
   page-break-after: avoid;
 }
 
+/* Keeps the line breaks and blank lines of the instructions block in quiz.md. */
 .instructions {
   /* font-size: 10pt; */
   margin: 0 0 5mm;
+  white-space: pre-line;
 }
 
 /* Carried by every round but the last, on the two sheets that give a round a

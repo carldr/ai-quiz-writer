@@ -28,6 +28,11 @@ class ParserTest < Minitest::Test
     assert_nil parse_fixture.rounds[3].instructions
   end
 
+  def test_instructions_block_keeps_its_line_breaks_and_blank_lines
+    assert_equal "Two clues each:\n\nOne / Two? One-Two\nThree / Four? Three-Four",
+                 parse_fixture.rounds[2].instructions
+  end
+
   def test_parses_open_question
     q = parse_fixture.rounds[3].questions[0]
     assert_equal 1, q.number
@@ -84,6 +89,16 @@ class ParserErrorTest < Minitest::Test
     assert_parse_error(text, "line 5: Round 1 is missing its Format: line")
   end
 
+  def test_unclosed_instructions_block_is_an_error
+    text = HEADER + "## Round 1: X (/ 5)\n\nFormat: open\n\n```\nRead carefully.\n\n1. Q? — **A**\n"
+    assert_parse_error(text, "line 9: instructions block is not closed")
+  end
+
+  def test_an_instructions_line_is_no_longer_recognised
+    text = HEADER + "## Round 1: X (/ 5)\n\nFormat: open\nInstructions: Old style.\n\n1. Q? — **A**\n"
+    assert_parse_error(text, "line 8: unrecognized line")
+  end
+
   def test_missing_header_is_an_error
     assert_parse_error("Total: / 5\n", "missing '# Pub Quiz")
   end
@@ -123,6 +138,11 @@ class AnswersRendererTest < Minitest::Test
 
   def test_answers_are_present_and_marked
     assert_includes html, "<strong>Bologna</strong>"
+  end
+
+  def test_instructions_block_prints_with_its_line_breaks
+    assert_includes html,
+                    "<p class=\"instructions\">Two clues each:\n\nOne / Two? One-Two\nThree / Four? Three-Four</p>"
   end
 
   # A one-question multiple-choice quiz, for the answer-detail tests below.

@@ -18,7 +18,7 @@ A round heading is `## Round N: Name (/ points)`.
 
 Each round has a `Format:` line, one of `picture`, `multiple-choice`, `open`, `true-false`. The `Format:` line drives sheet layout. `Format:` must appear before the round's first question; a question before it is a parse error.
 
-`Instructions:` is printed on the team sheet. The `Instructions:` line is optional.
+A round's instructions go in a block fenced by two lines of three backticks. The block is optional, and is printed on the team sheet and the answer sheet with its line breaks and blank lines kept. A block that is not closed is a parse error naming its opening line.
 
 The team sheet prints no question text. Teams hear the questions read out, and each round starts a new page. What a round prints depends on its format:
 
@@ -41,7 +41,7 @@ Picture-round lines are `1. **Answer** — images/r1-01.png`: the bold answer co
 
 Point values in `Total:` and round headings, and question numbers, are printed as written. The parser does not check that they add up or run in sequence.
 
-Parsing is strict. An unknown `Format:` value, a question without a bold answer, a referenced image file that does not exist, or any non-blank line that is not a header, `Total:`, round heading, `Format:`, `Instructions:` or numbered question line is a hard error naming the offending line numbers.
+Parsing is strict. An unknown `Format:` value, a question without a bold answer, a referenced image file that does not exist, or any non-blank line that is not a header, `Total:`, round heading, `Format:`, instructions block or numbered question line is a hard error naming the offending line numbers.
 
 ## Rendering
 
@@ -57,7 +57,7 @@ PDFs come from the HTML via headless Chrome, A4. The three PDFs are then copied 
 
 ## Example
 
-```markdown
+````markdown
 # Pub Quiz — 2026-08-31
 
 Total: / 8
@@ -66,7 +66,9 @@ Total: / 8
 
 Format: open
 
-Instructions: One point per question.
+```
+One point per question.
+```
 
 1. Sample question text? — **Sample answer**
 2. Second sample question text? — **Second sample answer**
@@ -91,4 +93,4 @@ Format: picture
 
 1. **Sample answer** — images/r4-01.png
 2. **Second sample answer** — images/r4-02.png
-```
+````
