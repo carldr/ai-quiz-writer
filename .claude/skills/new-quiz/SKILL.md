@@ -135,7 +135,12 @@ rather than caught out. Drop the question.
    may appear twice — check the round against the rounds already approved.
 8. Show the round to the user, with each question's estimated chance of being
    answered and the round's expected average against 70%. Apply requested
-   swaps (re-verify and re-dedupe replacements) until approved. Throughout
+   swaps (re-verify and re-dedupe replacements) until approved. While the
+   round is being shaped, show the spares in the same list as the main
+   questions, ordered with them. Change only what the user asks to change;
+   never drop, add or replace a question, or change what a clue refers to,
+   without first asking which. Once the user agrees the wording and order,
+   cut the list down to the round's size, asking which to drop. Throughout
    review, whenever a question is changed, suggested, queried or clarified,
    repeat that question and its answer in full, never by number or
    description alone.
