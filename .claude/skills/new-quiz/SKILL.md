@@ -184,7 +184,7 @@ After the 15 items are approved:
 3. Copy each pick to the final name r1-NN.png/jpg matching the quiz file. Keep
    the candidates that were not picked, and keep the contact sheet.
 4. Re-aspect each final image to 4:3, the shape of the rendered grid cell.
-   The renderer cuts off any part of an image outside that shape, so center the subject in the crop, and ensure that clues which are required to identify the image are not lost. Crop with
+   The renderer cuts off any part of an image outside that shape, so place the crop over the feature that identifies the subject, such as a face or a logo, wherever it sits in the image rather than at the image's centre. Keep any other clues needed to identify it inside the crop. Crop with
    sips when the edges are only background; pad with white when content
    reaches the edges, as it does in a logo or a flag.
 
