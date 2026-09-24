@@ -11,7 +11,10 @@ the printable sheets; the user picks the themes and approves each round. To
 change how a quiz is made, edit this file.
 
 Generate a pub quiz for the date given as argument (ask if missing). Work
-round by round; never move to the next round without approval.
+one round at a time; never move to the next round without approval. If the
+user suggests a round or questions for another round while one is being
+set, queue the request and say so in one line. Take it up only once the
+current round is approved and its final verification (step 9) is done.
 
 Before anything else, check that the tools the quiz needs are present:
 `curl_chrome150` from curl-impersonate (`command -v curl_chrome150`), which
