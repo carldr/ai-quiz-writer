@@ -41,7 +41,24 @@ Instructions: Which film had this tagline on its poster?
 9. "He's the only kid ever to get into trouble before he was born." a) Gandhi b) Look Who's Talking c) Back to the Future — **c) Back to the Future (1985)**
 10. "Man is the warmest place to hide." a) Alien b) The Thing c) Frozen — **b) The Thing (1982)**
 
-## Round 3: Three Songs, One Album (/ 10)
+## Round 3: Answer Smash (/ 10)
+
+Format: open
+
+Instructions: Two clues per question; the two answers "smash" together into one overlapping phrase (e.g. "Elton John Lewis", "Buda-pesto").
+
+1. The boy who never grew up / Eaten on Shrove Tuesday? — **Peter Pan-cake**
+2. Rowan Atkinson character / Squashy seat? — **Mr Bean Bag**
+3. Bear from Peru / Chief Scout? — **Paddington Bear Grylls**
+4. Vodka and tomato cocktail / Bake Off judge? — **Bloody Mary Berry**
+5. London bell / Batman actor? — **Big Ben Affleck**
+6. BBC time traveller / Chris Tarrant quiz show? — **Doctor Who Wants to Be a Millionaire**
+7. ABBA song / EastEnders pub? — **Dancing Queen Vic**
+8. Prime Minister / 1999 shaky camera horror film? — **Tony Blair Witch Project**
+9. British F1 champion / Scottish football club? — **Lewis Hamilton Academical**
+10. First Harry Potter book / Manchester band behind I Wanna Be Adored? — **Harry Potter and the Philosopher's Stone Roses**
+
+## Round 4: Three Songs, One Album (/ 10)
 
 Format: open
 
@@ -58,7 +75,7 @@ Instructions: Name the artist and the original studio album all three songs come
 9. Once in a Lifetime, Born Under Punches, Crosseyed and Painless — **Talking Heads, Remain in Light**
 10. Rehab, You Know I'm No Good, Tears Dry on Their Own — **Amy Winehouse, Back to Black**
 
-## Round 4: Around the World (/ 10)
+## Round 5: Around the World (/ 10)
 
 Format: open
 
