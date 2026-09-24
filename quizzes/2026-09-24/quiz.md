@@ -102,7 +102,7 @@ Format: open
 6. What runs through the middle of a gala pie? — **Hard-boiled egg (accept egg)**
 7. Who replaced Prue Leith as a Bake Off judge when the new series began on Tuesday? — **Nigella Lawson**
 8. Which European country's name means "black mountain"? — **Montenegro (accept Crna Gora)**
-9. Which band held its first practice fifty years ago tomorrow, on 25 September 1976, in a Dublin kitchen, under the name Feedback? — **U2**
+9. Which band held its first practice fifty years ago tomorrow, on 25 September 1976, in a kitchen in Ireland? — **U2**
 10. Which element makes up most of the air we breathe? — **Nitrogen (about 78%; oxygen is about 21%)**
 11. What is a young hare called? — **A leveret**
 12. What is the whisky lost to evaporation from the cask called? — **The angels' share (refuse the devil's cut)**
