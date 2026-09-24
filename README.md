@@ -58,10 +58,10 @@ Between quizzes, note ideas for questions and rounds in `SUGGESTIONS.md`, in any
 
 To create a quiz:
 
-1. Start Claude Code in the repository directory:
+1. Start Claude Code in the repository directory, with the web search limit raised. Claude Code allows 200 searches a session by default, and a quiz uses more:
 
    ```
-   claude
+   CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION=20000 claude
    ```
 
 2. At the Claude Code prompt, type the command below, with the date the quiz will be played:
