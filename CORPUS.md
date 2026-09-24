@@ -161,77 +161,6 @@ _None recorded._
 
 ## Open rounds
 
-### Around the World
-
-Vetted from SUGGESTIONS.md on 2026-09-23.
-
-World geography: rivers, capitals, flags, borders, mountains. A deep pool of
-widely known facts, a supply of well-known traps (Canberra, Ankara) for the
-middle, and surprising facts for the hard tail. Contested items were left
-out: Switzerland's capital, which country Everest is in, the longest river,
-transcontinental countries, and the most time zones.
-
-Occasion: none.
-
-Reviewer: viable; expected average 67%, following the curve. One reworded
-question brings it to 70%.
-
-```markdown
-## Round N: Around the World (/ 10)
-
-Format: open
-
-1. Which river flows through Paris? — **The Seine**
-2. Which country's flag is a red circle on a white background? — **Japan**
-3. What is the smallest country in the world? — **Vatican City (0.49 km²)**
-4. What is the capital of Australia? — **Canberra**
-5. What is the highest mountain in Africa? — **Kilimanjaro (5,895 m, in Tanzania)**
-6. What is the capital of Turkey? — **Ankara (the capital since 1923)**
-7. The world's longest international border is between which two countries? — **Canada and the United States (8,891 km)**
-8. Which country is completely surrounded by South Africa? — **Lesotho**
-9. Which is the only country whose national flag is not four-sided? — **Nepal**
-10. Which US state is closest to Africa? — **Maine (Quoddy Head to El Beddouza, Morocco)**
-```
-
-Sources:
-
-- Seine: https://www.aparisguide.com/seine/
-- Japan: https://en.wikipedia.org/wiki/Flag_of_Japan
-- Vatican City: https://en.wikipedia.org/wiki/Geography_of_Vatican_City
-- Canberra: https://www.britannica.com/place/Canberra
-- Kilimanjaro: https://education.nationalgeographic.org/resource/kilimanjaro/
-- Ankara: https://www.britannica.com/place/Ankara
-- Canada–US border: https://en.wikipedia.org/wiki/Canada%E2%80%93United_States_border
-- Lesotho: https://www.worldatlas.com/articles/which-are-the-three-enclaved-countries-of-the-world.html
-- Nepal: https://en.wikipedia.org/wiki/List_of_non-rectangular_flags
-- Maine: https://en.wikipedia.org/wiki/Quoddy_Head_State_Park, https://www.sciencealert.com/which-us-state-is-closest-to-africa
-
-Before reuse:
-
-- To reach 70%: "Istanbul is Turkey's largest city, but what is its
-  capital?" (about 80%), or "Which mountain kingdom is completely surrounded
-  by South Africa?" (about 50%).
-- Q7: keep "international". Russia–Kazakhstan is often cited as the longest
-  continuous land border. Accept only Canada and the USA.
-- Q9: keep "not four-sided"; "not rectangular" lets in the square Swiss and
-  Vatican flags.
-- Q10: Maine stays closest even counting the Canary Islands (Quoddy Head to La
-  Palma 4,630 km, Cape Cod 4,857 km, Florida to Cape Verde at least 5,715 km).
-  Puerto Rico is not a state.
-- Q2 and Q9 are flag questions; a flags picture round ran on 2026-07-07.
-- Q3, Q4 and Q6 are pub-quiz standards; re-run the dedupe with care.
-- Reserves: Mozambique's flag shows an AK-47 (check it hasn't changed; a
-  motion to remove it was raised in November 2025),
-  https://en.wikipedia.org/wiki/Flag_of_Mozambique. Lake Titicaca lies on the
-  border of Peru and Bolivia,
-  https://www.britannica.com/place/Lake-Titicaca. Bratislava is the only
-  capital bordering two other countries (Austria and Hungary),
-  https://en.wikipedia.org/wiki/Bratislava; it was an anagram answer on
-  2026-08-04.
-- Standalone: "Maine is closer to Africa than Florida is" as true/false;
-  Nepal as multiple choice against Switzerland and Vatican City; Lesotho as
-  multiple choice against Eswatini.
-
 ### Airport Codes
 
 Vetted from SUGGESTIONS.md on 2026-09-23.
@@ -384,72 +313,6 @@ Before reuse:
 - Standalone: "True or false: Phil Collins joined Genesis as their drummer,
   not their singer" (true).
 
-### Three Songs, One Album
-
-Vetted from SUGGESTIONS.md on 2026-09-23.
-
-Teams hear three track titles and name the artist and the original studio
-album, half a point each. The artist half is nearly free, so every team
-scores; the album half separates them. Difficulty is set by the albums
-picked: iconic albums are gettable, deeper ones are hard, and there are
-plenty of each.
-
-Occasion: none.
-
-Reviewer: viable; expected average 78% as drafted, too easy. Swap one iconic
-album for a mid-known one to reach 70%.
-
-```markdown
-## Round N: Three Songs, One Album (/ 10)
-
-Format: open
-
-Instructions: Name the artist and the original studio album all three songs come from. Half a point for the artist, half a point for the album.
-
-1. Billie Jean, Beat It, Thriller — **Michael Jackson, Thriller**
-2. Rolling in the Deep, Someone Like You, Set Fire to the Rain — **Adele, 21**
-3. Wonderwall, Don't Look Back in Anger, Champagne Supernova — **Oasis, (What's the Story) Morning Glory?**
-4. Go Your Own Way, Dreams, Don't Stop — **Fleetwood Mac, Rumours**
-5. Rehab, You Know I'm No Good, Tears Dry on Their Own — **Amy Winehouse, Back to Black**
-6. Come Together, Something, Here Comes the Sun — **The Beatles, Abbey Road**
-7. Bohemian Rhapsody, You're My Best Friend, Love of My Life — **Queen, A Night at the Opera**
-8. Do I Wanna Know?, R U Mine?, Why'd You Only Call Me When You're High? — **Arctic Monkeys, AM**
-9. Girls & Boys, End of a Century, This Is a Low — **Blur, Parklife**
-10. Once in a Lifetime, Born Under Punches, Crosseyed and Painless — **Talking Heads, Remain in Light**
-```
-
-Sources:
-
-- Thriller: https://www.michaeljackson.com/albums/thriller/
-- 21: https://en.wikipedia.org/wiki/21_(Adele_album)
-- (What's the Story) Morning Glory?: https://en.wikipedia.org/wiki/(What%27s_the_Story)_Morning_Glory%3F
-- Rumours: https://en.wikipedia.org/wiki/Rumours_(album)
-- Back to Black: https://www.discogs.com/release/1236121-Amy-Winehouse-Back-To-Black
-- Abbey Road: https://www.beatlesbible.com/albums/abbey-road/
-- A Night at the Opera: https://queen.fandom.com/wiki/A_Night_At_The_Opera
-- AM: https://en.wikipedia.org/wiki/AM_(Arctic_Monkeys_album)
-- Parklife: https://en.wikipedia.org/wiki/Parklife, https://en.wikipedia.org/wiki/This_Is_a_Low
-- Remain in Light: https://en.wikipedia.org/wiki/Remain_in_Light
-
-Before reuse:
-
-- Q1 gives its album away: Thriller is a listed track. Swap it for Wanna Be
-  Startin' Somethin'.
-- Read out "original studio album". Every song here is also on compilations
-  or live albums (Queen's Greatest Hits, the Beatles' 1, Stop the Clocks,
-  Rumours Live); none of those scores.
-- Pink Floyd's The Dark Side of the Moon was dropped: Roger Waters re-recorded
-  it as The Dark Side of the Moon Redux in 2023, a second possible answer.
-- Marking: accept "Morning Glory" and "Rumors". Refuse "David Byrne" for
-  Talking Heads.
-- Q7: some teams will say A Day at the Races.
-- Unverified mid-difficulty swaps: Nevermind (Nirvana), The Joshua Tree (U2),
-  Parallel Lines (Blondie), Urban Hymns (The Verve).
-- An earlier quiz asked for the artist only from three songs (Simply Red,
-  2024-07-28, OLD-QUIZZES.md:1105).
-- Standalone: "Bohemian Rhapsody first appeared on which Queen album?" as
-  multiple choice against A Day at the Races and News of the World.
-
 ### TLAs
 
 Vetted from SUGGESTIONS.md on 2026-09-23.
@@ -474,11 +337,10 @@ Instructions: Three-letter abbreviations. Say what the letters stand for.
 3. In home improvement, what does DIY stand for? — **Do It Yourself**
 4. The tax on your shopping receipt, VAT: what does it stand for? — **Value Added Tax**
 5. On a lorry driver's licence, what does HGV stand for? — **Heavy Goods Vehicle**
-6. In your car's satnav, what does GPS stand for? — **Global Positioning System**
-7. The yearly car test, the MOT: what does MOT stand for? — **Ministry of Transport**
-8. The music and film shop HMV: what does HMV stand for? — **His Master's Voice**
-9. In an LED light bulb, what does LED stand for? — **Light-Emitting Diode**
-10. In a mobile phone's SIM card, what does SIM stand for? — **Subscriber Identity Module**
+6. The yearly car test, the MOT: what does MOT stand for? — **Ministry of Transport**
+7. The music and film shop HMV: what does HMV stand for? — **His Master's Voice**
+8. In an LED light bulb, what does LED stand for? — **Light-Emitting Diode**
+9. In a mobile phone's SIM card, what does SIM stand for? — **Subscriber Identity Module**
 ```
 
 Sources:
@@ -488,7 +350,6 @@ Sources:
 - DIY: https://dictionary.cambridge.org/dictionary/english/do-it-yourself
 - VAT: https://gov.uk/hmrc-internal-manuals/business-income-manual/bim31505
 - HGV: https://en.wikipedia.org/wiki/Large_goods_vehicle
-- GPS: https://www.gps.gov/gps
 - MOT: https://en.wikipedia.org/wiki/MOT_test
 - HMV: https://en.wikipedia.org/wiki/HMV
 - LED: https://www.britannica.com/technology/LED
@@ -499,11 +360,11 @@ Before reuse:
 - Q1 and Q4 give away a word of the answer ("broadcaster", "tax"). Ask "What
   does BBC stand for?" and "What does VAT stand for?"; both stay easy.
 - Q1: refuse "British Broadcasting Company", its name from 1922 to 1927.
-- Q6: refuse "Global Positioning Satellite", the common wrong answer.
 - Q5: the official licence term is now LGV; HGV still stands for Heavy Goods
   Vehicle.
-- Q7: the Ministry of Transport no longer exists; the answer holds.
-- Q10: accept "Subscriber Identification Module".
+- Q6: the Ministry of Transport no longer exists; the answer holds.
+- Q9: accept "Subscriber Identification Module".
+- GPS, the tenth question, was used on 2026-09-24.
 - Decide partial answers ("Light Emitting D…") in advance.
 - SOS was left out: it stands for nothing, and teams can't reason their way
   to that.
@@ -540,8 +401,7 @@ Format: open
 6. Which instrument measures air pressure? — **A barometer**
 7. Frequency is measured in which unit, named after a German physicist? — **The hertz**
 8. What is the largest living species of penguin? — **The emperor penguin**
-9. Which gas makes up most of the Earth's atmosphere? — **Nitrogen (about 78%; oxygen is about 21%)**
-10. Which planet spins on its side, tilted at about 98 degrees? — **Uranus**
+9. Which planet spins on its side, tilted at about 98 degrees? — **Uranus**
 ```
 
 Sources:
@@ -554,26 +414,24 @@ Sources:
 - Barometer: https://weather.metoffice.gov.uk/guides/observations/how-we-measure-atmospheric-pressure
 - Hertz: https://en.wikipedia.org/wiki/Hertz
 - Emperor penguin: https://www.guinnessworldrecords.com/world-records/382130-largest-living-penguin-species
-- Nitrogen: https://scied.ucar.edu/learning-zone/air-quality/whats-in-the-air
 - Uranus: https://www.ebsco.com/research-starters/astronomy-and-astrophysics/uranuss-tilt/
 
 Before reuse:
 
 - Replace Q1 or Q3 with a question at about 50%, and add one at about 20%.
-- Q9 is a trick question: oxygen is the reflex answer. "Which element makes
-  up most of the air we breathe?" keeps the pull.
 - Q8: keep "living"; extinct penguins were larger. King penguin is the
   common wrong answer.
-- Q10: keep "on its side"; Venus's 177° tilt makes it upside down, not on its
+- Q9: keep "on its side"; Venus's 177° tilt makes it upside down, not on its
   side.
+- The nitrogen question, the round's trick, was used on 2026-09-24; add a
+  new one to take its place.
 - Q2 shares its answer with an old koala question (OLD-QUIZZES.md:426); not a
   repeat, but close.
 - Dropped as repeats: the ohm (OLD-QUIZZES.md:779), the octopus's three
   hearts (OLD-QUIZZES.md:1286), tungsten's symbol W and insulin from the
   pancreas (quizzes/2026-09-01).
 - Chemistry has two questions and physics one.
-- Standalone: nitrogen as a general-knowledge trick; "Uranus spins on its
-  side" as true/false; emperor penguin as multiple choice against king and
+- Standalone: "Uranus spins on its side" as true/false; emperor penguin as multiple choice against king and
   Adélie.
 
 ### Spoken Lyrics
@@ -647,18 +505,6 @@ Before reuse:
 Single questions, for whichever round they fit. Each entry records a fact, a
 baseline wording, and how to make it easier or harder.
 
-### J. M. Barrie and Quality Street
-
-Quality Street chocolates, launched by Mackintosh's in 1936, are named after J. M. Barrie's 1901 play *Quality Street*. — **J. M. Barrie**
-
-- Asked as: "Quality Street chocolates are named after a play by which author?"
-- Explained: Mackintosh's of Halifax launched Quality Street in 1936 and named it after Barrie's play, first staged in 1901 and set in the Napoleonic era. The soldier and lady on the tin, "Major Quality" and "Miss Sweetly", were based on the play's Valentine Brown and Phoebe Throssel, and were on every tin until 2000. Nestlé has made them since 1988.
-- Easier: add "better known for Peter Pan".
-- Harder: "Which author links Peter Pan and Quality Street?"
-- Accuracy: Barrie wrote the play, not the chocolates. "What links Peter Pan and Quality Street?" has other answers: both are plays, and both are films.
-- Why: a household tin with a literary origin few know.
-- Vetted 2026-09-23.
-
 ### Most streamed song by a Welsh artist
 
 Total Eclipse of the Heart by Bonnie Tyler has passed a billion Spotify streams, the most for any song by a Welsh artist. — **Total Eclipse of the Heart (Bonnie Tyler)**
@@ -671,50 +517,14 @@ Total Eclipse of the Heart by Bonnie Tyler has passed a billion Spotify streams,
 - Why: teams can reason through the Welsh singers they know.
 - Vetted 2026-09-23.
 
-### Gala pie
+### Kenya
 
-A gala pie is a long, loaf-shaped pork pie with hard-boiled egg running through its centre. — **Hard-boiled egg**
+Kenya is named after Mount Kenya, Africa's second-highest mountain. — **Kenya**
 
-- Asked as: "What runs through the middle of a gala pie?"
-- Explained: a gala pie is a raised pork pie baked in a loaf tin, with hard-boiled eggs laid end to end down the middle, so every slice has a ring of egg. Some factory pies use one "long egg", yolk set in a tube inside a tube of white, so every slice matches. Many include chicken as well as pork; it is also called a Grosvenor pie.
-- Easier: "What is a gala pie?" as multiple choice against a steak and ale pie and a fish pie.
-- Marking: accept "egg" alone.
-- Why: a British buffet staple most teams have eaten.
-- Vetted 2026-09-23.
-
-### Montenegro and Kenya
-
-Montenegro means "black mountain", after Mount Lovćen; Kenya is named after Mount Kenya, Africa's second-highest mountain. — **Montenegro**, **Kenya**
-
-- Asked as: "Which European country's name means 'black mountain'?"
-- Also: "Which African country is named after Africa's second-highest mountain?"
-- Explained: Montenegro is the Venetian Italian form of the local name Crna Gora, "Black Mountain", after Mount Lovćen, whose dense forests make it look dark. Kenya is named after Mount Kenya (5,199 m), second only to Kilimanjaro in Africa. In 1849 the missionary Johann Ludwig Krapf wrote its name down as "Kenia", probably from the Kamba name Kĩ-Nyaa; the name passed from the mountain to the Colony of Kenya in 1920, and then to the country.
-- Harder: drop "European".
-- Accuracy: never "the only country named after a mountain"; both qualify.
-- Marking: accept "Crna Gora".
-- Why: teams can work Montenegro out from "monte" and "negro".
-- Vetted 2026-09-23.
-
-### Paul McCartney's instrument
-
-Paul McCartney played bass guitar in The Beatles, taking over from Stuart Sutcliffe in 1961. — **Bass guitar**
-
-- Asked as: "What was Paul McCartney's main instrument in The Beatles?"
-- Explained: in 1961 in Hamburg, bassist Stuart Sutcliffe left to study art and McCartney took over the bass. He bought a Höfner 500/1 "violin" bass in Hamburg for about £30, because its symmetrical shape looked less awkward played left-handed. He also played piano, guitar and sometimes drums on Beatles records, but bass was his instrument on stage and on most recordings. That first Höfner was stolen from a van in 1972 and not recovered until 2024.
-- Accuracy: keep "main"; he also played piano, lead guitar and drums on some tracks.
-- Marking: accept "bass"; refuse "guitar" on its own.
-- Why: a Beatles fact most of the room knows.
-- Vetted 2026-09-23.
-
-### The Men in Black Neuralyzer
-
-The flashing memory-wiping device in the Men in Black films is the Neuralyzer. — **The Neuralyzer**
-
-- Asked as: "In Men in Black, what is the memory-wiping device called?"
-- Explained: in Men in Black (1997) and its sequels, agents use the Neuralyzer to wipe a witness's memory with a bright flash. They wear black Ray-Ban sunglasses to shield themselves from it, then give the dazed witness a cover story, such as swamp gas from a weather balloon.
-- Marking: spellings vary ("Neuralizer"); mark on sound.
-- Why: most people remember the prop; fewer know its name.
-- Vetted 2026-09-23.
+- Asked as: "Which African country is named after Africa's second-highest mountain?"
+- Explained: Kenya is named after Mount Kenya (5,199 m), second only to Kilimanjaro in Africa. In 1849 the missionary Johann Ludwig Krapf wrote its name down as "Kenia", probably from the Kamba name Kĩ-Nyaa; the name passed from the mountain to the Colony of Kenya in 1920, and then to the country.
+- Accuracy: never "the only country named after a mountain"; Montenegro, "black mountain", qualifies too.
+- Vetted 2026-09-23. Its companion Montenegro question was used on 2026-09-24.
 
 ### Stopping distance at 70 mph
 
@@ -736,16 +546,6 @@ The effect of noticing something everywhere just after learning about it is the 
 - Easier: multiple choice against the Mandela effect and the Dunning-Kruger effect.
 - Marking: accept both names; "confirmation bias", "selective attention" and "recency illusion" are wrong.
 - Why: everyone has experienced it; few know its name.
-- Vetted 2026-09-23.
-
-### The angels' share
-
-The spirit lost to evaporation from the cask as whisky matures is the angels' share. — **The angels' share**
-
-- Asked as: "What is the whisky lost to evaporation from the cask called?"
-- Explained: oak casks breathe, so some whisky evaporates every year as it matures, and more in hot climates. The whisky that is lost is called the angels' share. The "devil's cut" is the whisky soaked into the wood; Jim Beam has sold a bourbon called Devil's Cut since 2011.
-- Marking: "the devil's cut" is wrong.
-- Why: a well-known phrase many teams can work out.
 - Vetted 2026-09-23.
 
 ### Marriage is a wonderful institution
@@ -785,31 +585,6 @@ The Beatles grew out of The Quarrymen, the skiffle group John Lennon formed in L
 - Accuracy: never "first called" or "started out as"; the group was very briefly the Blackjacks before any public performance.
 - Marking: accept "Quarry Men", with or without "The"; refuse Johnny and the Moondogs and the Silver Beetles, which came later.
 - Why: everyone knows the Beatles, and many have half-heard the name.
-- Vetted 2026-09-23.
-
-### U2 and Feedback
-
-U2 formed in Dublin in 1976 as Feedback, became The Hype in 1977, and U2 in 1978. — **Feedback**
-
-- Asked as: "U2 formed in 1976. What were they first called?"
-- Explained: Larry Mullen Jr. put up a notice at Mount Temple Comprehensive School, and the first practice was in September 1976. They chose Feedback as one of the few technical terms they knew. After their first paid gig in 1977 they became The Hype, and in March 1978 they took U2 from a list of names suggested by Steve Averill, as the one they disliked least.
-- Easier: true or false, "U2 were once called Feedback"; or add the clue "a technical term".
-- Harder: multiple choice against The Hype, with the 1976 wording.
-- Accuracy: ask for the first name, or date it to 1976; "What were U2 called before they were U2?" is The Hype.
-- Marking: refuse The Hype.
-- Why: U2 is universally known, and the story behind the name is a good reveal.
-- Vetted 2026-09-23.
-
-### Simon & Garfunkel and Tom and Jerry
-
-Simon & Garfunkel made their first record, Hey Schoolgirl, in 1957 as Tom & Jerry. — **Tom and Jerry**
-
-- Asked as: "Simon & Garfunkel made their first record, in 1957, under what name?"
-- Explained: Paul Simon and Art Garfunkel met at school in New York in 1953. In 1957 they released Hey Schoolgirl as Tom & Jerry; it reached No. 49 on the Billboard chart, and they played it on American Bandstand. Garfunkel was "Tom Graph", because he liked maths, and Simon was "Jerry Landis".
-- Easier: true or false, "Simon & Garfunkel first recorded as Tom and Jerry"; or multiple choice against Bert and Ernie and Laurel and Hardy.
-- Accuracy: keep "recorded" or "made their first record", not "were first called"; they sang earlier in a doo-wop group, the Peptones, which made no record.
-- Marking: refuse the Peptones.
-- Why: everyone knows the duo, and the old name surprises.
 - Vetted 2026-09-23.
 
 ### Black Sabbath and Earth
