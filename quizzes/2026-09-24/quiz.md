@@ -57,3 +57,18 @@ Instructions: Name the artist and the original studio album all three songs come
 8. Shake It Off, Blank Space, Bad Blood — **Taylor Swift, 1989**
 9. Once in a Lifetime, Born Under Punches, Crosseyed and Painless — **Talking Heads, Remain in Light**
 10. Rehab, You Know I'm No Good, Tears Dry on Their Own — **Amy Winehouse, Back to Black**
+
+## Round 4: Around the World (/ 10)
+
+Format: open
+
+1. Which Asian country is the world's largest landlocked country? — **Kazakhstan (2.72 million km²; its Caspian coast doesn't count, because the Caspian is a lake)**
+2. Which river flows through Belgrade and Bratislava? — **The Danube (it also flows through Vienna and Budapest)**
+3. What is the smallest country in the world? — **Vatican City (0.49 km²)**
+4. What is the capital of Australia? — **Canberra**
+5. Lake Titicaca lies on the border of Peru and which other South American country? — **Bolivia**
+6. What is the highest mountain in Africa? — **Kilimanjaro (5,895 m, in Tanzania)**
+7. The world's longest international border is between which two countries? — **Canada and the United States (8,891 km)**
+8. Which mountain kingdom is completely surrounded by South Africa? — **Lesotho**
+9. Which Himalayan country has the only national flag that is not four-sided? — **Nepal**
+10. Which US state is closest to Africa? — **Maine (Quoddy Head to El Beddouza, Morocco)**
