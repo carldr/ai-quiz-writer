@@ -157,6 +157,9 @@ rather than caught out. Drop the question.
    report covers every question: the confirmed answer, the source, and any
    answer that could not be confirmed or that is wrong. Act on the report before
    moving to the next round.
+10. Delete from CORPUS.md every entry the approved round used: a whole round
+    entry, or a single question. CORPUS.md then never offers anything this
+    quiz has already used.
 
 ## Picture round
 
@@ -221,7 +224,8 @@ Affleck or Tony Blair Witch Project.
    target of about 52 of 75.
 5. Add the new quiz's rounds to the top of the ROUND-HISTORY.md table, which
    runs newest first.
-6. Delete from CORPUS.md anything this quiz used. A round the user passed over
+6. Check that CORPUS.md holds nothing this quiz used; each round's entries
+   were deleted when it was approved. A CORPUS.md round the user passed over
    is dropped. Only when the user asks to keep one, add its theme to the Round
    ideas in SUGGESTIONS.md as a one-line idea, without its drafted questions,
    so that `/vet-suggestions` vets it like any other suggestion.
