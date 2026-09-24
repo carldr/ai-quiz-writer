@@ -132,7 +132,10 @@ rather than caught out. Drop the question.
    may appear twice — check the round against the rounds already approved.
 8. Show the round to the user, with each question's estimated chance of being
    answered and the round's expected average against 70%. Apply requested
-   swaps (re-verify and re-dedupe replacements) until approved.
+   swaps (re-verify and re-dedupe replacements) until approved. Throughout
+   review, whenever a question is changed, suggested, queried or clarified,
+   repeat that question and its answer in full, never by number or
+   description alone.
 9. Once the user approves the round, start a fresh sub-agent to verify the final
    text of every question, from the round as it now reads rather than as it was
    drafted. The sub-agent in step 4 reviewed an earlier version of the round,
