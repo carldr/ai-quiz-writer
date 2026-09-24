@@ -124,9 +124,14 @@ rather than caught out. Drop the question.
    team, and flags a round whose average misses 70% or whose ratings do not
    follow the curve.
 5. Draft the full round in the quiz file format (see docs/quiz-format.md).
-6. Verify EVERY answer with web search. Correct or replace any question whose
-   answer cannot be confirmed or could be argued; if in doubt, replace it.
-7. Dedupe: grep OLD-QUIZZES.md and every quizzes/*/quiz.md for each question's
+6. Verify EVERY answer with web search, for the spares as well as the main
+   questions, before the list is first shown to the user. Check that each
+   clue is still true today and that no other answer fits it. A question the
+   user has kept while the list was cut down must never be rejected
+   afterwards. Correct or replace any question whose answer cannot be
+   confirmed or could be argued; if in doubt, replace it.
+7. Dedupe, for the spares as well as the main questions and before the list
+   is first shown: grep OLD-QUIZZES.md and every quizzes/*/quiz.md for each question's
    key fact (search for the answer and for distinctive question words, not the
    whole sentence). The grep only finds candidates. A question is a repeat
    only if it asks for the same fact as an old one, even worded differently.
