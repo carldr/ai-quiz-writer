@@ -6,7 +6,9 @@ Total: / 75
 
 Format: picture
 
-Instructions: Jim Henson, creator of the Muppets, was born 90 years ago today. Name each character.
+```
+Jim Henson, creator of the Muppets, was born 90 years ago today. Name each character.
+```
 
 1. **Kermit the Frog** — images/r1-01.jpg
 2. **The Swedish Chef (accept Swedish Chef)** — images/r1-02.jpg
@@ -28,7 +30,9 @@ Instructions: Jim Henson, creator of the Muppets, was born 90 years ago today. N
 
 Format: multiple-choice
 
-Instructions: Which film had this tagline on its poster?
+```
+Which film had this tagline on its poster?
+```
 
 1. "You'll believe a man can fly." a) Flash Gordon b) Driving Miss Daisy c) Superman — **c) Superman (1978)**
 2. "You don't get to 500 million friends without making a few enemies." a) The Social Network b) Cast Away c) The Wolf of Wall Street — **a) The Social Network (2010)**
@@ -45,7 +49,12 @@ Instructions: Which film had this tagline on its poster?
 
 Format: open
 
-Instructions: You’ll get two clues for each question, they “smash” together to give you your answer.  Here’s a couple of examples : Singer of "Rocket Man” and A department store smash together to give you Elton John Lewis. Capital of Hungary and Italian sauce made of nuts, basil and olive oil?  Buda-pesto
+```
+You’ll get two clues for each question, they “smash” together to give you your answer.  Here’s a couple of examples :
+
+Singer of "Rocket Man” and A department store smash together to give you Elton John Lewis.
+Capital of Hungary and Italian sauce made of nuts, basil and olive oil?  Buda-pesto
+```
 
 1. The boy who never grew up / Eaten on Shrove Tuesday? — **Peter Pan-cake**
 2. Rowan Atkinson character / Squashy seat? — **Mr Bean Bag**
@@ -62,7 +71,9 @@ Instructions: You’ll get two clues for each question, they “smash” togethe
 
 Format: open
 
-Instructions: Name the artist and the original studio album all three songs come from. Half a point for the artist, half a point for the album.
+```
+Name the artist and the original studio album all three songs come from. Half a point for the artist, half a point for the album.
+```
 
 1. Wanna Be Startin' Somethin', Billie Jean, Beat It — **Michael Jackson, Thriller**
 2. Go Your Own Way, Dreams, The Chain — **Fleetwood Mac, Rumours**

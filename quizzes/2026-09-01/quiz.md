@@ -6,7 +6,9 @@ Total: / 75
 
 Format: picture
 
-Instructions: Name the show, the film, or the film series each teacher is from. One point each.
+```
+Name the show, the film, or the film series each teacher is from. One point each.
+```
 
 1. **Harry Potter (Severus Snape)** — images/r1-01.jpg
 2. **Derry Girls (Sister Michael)** — images/r1-02.jpg
@@ -28,7 +30,9 @@ Instructions: Name the show, the film, or the film series each teacher is from. 
 
 Format: multiple-choice
 
-Instructions: Circle the option that came FIRST. One point each.
+```
+Circle the option that came FIRST. One point each.
+```
 
 1. Which came first? a) Doctor Who b) Blue Peter c) Coronation Street — **b) Blue Peter (16 October 1958; Coronation Street December 1960; Doctor Who November 1963)**
 2. Which came first? a) Decimal Day b) The first Moon landing c) The first colour TV broadcast in Britain — **c) The first colour TV broadcast in Britain (BBC2, 1 July 1967, with Wimbledon; Moon landing 20 July 1969; Decimal Day 15 February 1971)**
@@ -45,7 +49,9 @@ Instructions: Circle the option that came FIRST. One point each.
 
 Format: open
 
-Instructions: Every answer hides the name of a body part inside a longer word or phrase — CHINa, EARwig, KNEEcap, GUMboot. The questions are ordinary general knowledge. Ten different body parts. You score for the answer, not for spotting the body part.
+```
+Every answer hides the name of a body part inside a longer word or phrase — CHINa, EARwig, KNEEcap, GUMboot. The questions are ordinary general knowledge. Ten different body parts. You score for the answer, not for spotting the body part.
+```
 
 1. What is the name of the giant SpaceX rocket designed to carry people to Mars? — **Starship (starsHIP; its Super Heavy booster was first caught in mid-air by the launch tower's arms in October 2024)**
 2. Which punctuation mark is written as a dot above a comma, and joins two sentences that could each stand alone? — **Semicolon (semiCOLON)**
@@ -62,7 +68,9 @@ Instructions: Every answer hides the name of a body part inside a longer word or
 
 Format: open
 
-Instructions: Each question gives a nickname. Name the person, place, building or thing. One point each.
+```
+Each question gives a nickname. Name the person, place, building or thing. One point each.
+```
 
 1. Which northern English city, the world's first industrialised city, was known in the 19th century as Cottonopolis? — **Manchester**
 2. Which British king was mocked as Farmer George for his homely tastes and his interest in farming? — **George III (he founded a royal merino flock at Kew in 1792)**
@@ -79,7 +87,9 @@ Instructions: Each question gives a nickname. Name the person, place, building o
 
 Format: open
 
-Instructions: One point per question.
+```
+One point per question.
+```
 
 1. The name of which Italian dessert translates as "pick me up"? — **Tiramisu**
 2. Protected status for the Cornish pasty specifies four filling ingredients: beef, potato, onion and which root vegetable? — **Swede (called turnip in Cornwall; accept either)**
@@ -96,7 +106,9 @@ Instructions: One point per question.
 
 Format: open
 
-Instructions: One point per question.
+```
+One point per question.
+```
 
 1. The Great Fire of London started on 2 September. In which year? — **1666 (it began shortly after midnight at Thomas Farriner's bakery in Pudding Lane)**
 2. Star Trek was pitched to NBC by its creator as "Wagon Train to the stars". Name him. — **Gene Roddenberry (first broadcast 8 September 1966)**
