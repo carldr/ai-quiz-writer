@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Pub Quiz — 2026-09-24 — Answers</title>
+<style>/* Shared, and inlined ahead of the sheet's own stylesheet. Anything used by more
+   than one sheet belongs here; anything used by only one belongs in that
+   sheet's file.
+
+   Three type sizes: 24pt sheet title, 16pt round title, 10.5pt for everything
+   else. The answer sheet sets its questions smaller again, which is the only
+   exception, and is what holds its longest round to one page. */
+
+@page {
+  size: A4;
+  margin: 20mm;
+}
+
+body {
+  font-family: -apple-system, 'SF Pro Text', Helvetica, Arial, sans-serif;
+  font-size: 10.5pt;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* The title line: what the sheet is on the left, the total on the right. */
+.sheet-header {
+  font-size: 24pt;
+  font-weight: 700;
+  margin: 0 0 9mm;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+/* Each round starts a new page on the answer sheet and the team sheet, so a
+   round title needs no space above it. The picture sheet, which is the one sheet
+   that runs its rounds on down the page, adds its own. A round title never sits
+   at the foot of a page with its questions overleaf. */
+.round-header {
+  font-size: 16pt;
+  font-weight: 700;
+  margin: 0 0 2mm;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+.instructions {
+  /* font-size: 10pt; */
+  margin: 0 0 5mm;
+}
+
+/* Carried by every round but the last, on the two sheets that give a round a
+   page each. */
+.page-break {
+  break-after: page;
+  page-break-after: always;
+}
+
+/* A picture round is laid out identically on all three sheets: the same grid, the
+   same 4:3 cells, the same label in the same corner. Only what fills a cell
+   differs — the image on the picture sheet, the image with its answer on the
+   answer sheet, nothing on the team sheet. A team's box therefore sits exactly
+   where its picture was.
+
+   The width is what lets five rows of a 15-image round clear the page depth. */
+.picture-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5mm 3mm;
+  max-width: 182mm;
+}
+.picture {
+  position: relative;
+  margin: 0;
+  aspect-ratio: 4 / 3;
+  border: 1px solid #333;
+}
+.picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Labels sit in boxes over the cell, white on a dark panel because on two of the
+   three sheets there is a photograph behind them, of any colour. Every cell is
+   numbered in its top corner. Only the answer sheet carries the second box, and
+   that one sits on the bottom edge of the picture. */
+.picture-number,
+.picture-answer {
+  position: absolute;
+  left: 1.5mm;
+  max-width: calc(100% - 3mm);
+  /* font-size: 9pt; */
+  line-height: 1.25;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.55);
+  padding: 0.6mm 1.5mm;
+  border-radius: 1mm;
+}
+.picture-number {
+  top: 1.5mm;
+}
+.picture-answer {
+  bottom: 1.5mm;
+}
+
+/* Both numbered lists count with a CSS counter rather than the browser's own
+   numbering, so the number sits in a fixed-width column. */
+.question-list,
+.answer-lines {
+  list-style: none;
+  counter-reset: question;
+  padding: 0;
+}
+.question-list > li,
+.answer-lines li {
+  counter-increment: question;
+}
+.question-list > li::before,
+.answer-lines li::before {
+  content: counter(question) '.';
+  text-align: right;
+}
+/* Quizmaster sheet. Every question with its answer in bold, a round to a page,
+   matching the team sheet a table is filling in. Loaded after common.css. */
+
+/* Questions are numbered with a hanging indent, and set tighter than the rest of
+   the quiz: this is the one sheet nobody writes on, and the twenty-question
+   general knowledge round has to hold its page. */
+body {
+  font-size:9.75pt;
+}
+
+.question-list {
+  margin: 0;
+}
+.question-list > li {
+  position: relative;
+  padding-left: 9mm;
+  margin: 0 0 0.5mm;
+}
+.question-list > li::before {
+  position: absolute;
+  left: 0;
+  width: 7mm;
+}
+
+/* Multiple-choice options sit under their question. The correct one is bold. */
+.options span {
+  margin-right: 5mm;
+}
+
+/* What the answer adds to the correct option, on its own line under the options
+   and smaller again, because it is read out rather than scanned. */
+.answer-note {
+  font-size: 7.5pt;
+  font-weight: 700;
+  margin: 0;
+}
+
+</style></head>
+<body><h1 class="sheet-header"><span>Pub Quiz — 2026-09-24</span><span>____ / 75</span></h1><section class="page-break"><h2 class="round-header"><span>Round 1 - Henson&#39;s Creatures</span><span>__ / 15</span></h2><p class="instructions">Jim Henson, creator of the Muppets, was born 90 years ago today. Name each character.</p><div class="picture-grid"><figure class="picture"><img src="../images/r1-01.jpg"><span class="picture-number">1</span><span class="picture-answer">Kermit the Frog</span></figure><figure class="picture"><img src="../images/r1-02.jpg"><span class="picture-number">2</span><span class="picture-answer">The Swedish Chef (accept Swedish Chef)</span></figure><figure class="picture"><img src="../images/r1-03.jpg"><span class="picture-number">3</span><span class="picture-answer">Rowlf the Dog (accept Rolf)</span></figure><figure class="picture"><img src="../images/r1-04.png"><span class="picture-number">4</span><span class="picture-answer">Cookie Monster</span></figure><figure class="picture"><img src="../images/r1-05.jpg"><span class="picture-number">5</span><span class="picture-answer">Beaker</span></figure><figure class="picture"><img src="../images/r1-06.jpg"><span class="picture-number">6</span><span class="picture-answer">Bert</span></figure><figure class="picture"><img src="../images/r1-07.jpg"><span class="picture-number">7</span><span class="picture-answer">Gonzo (accept The Great Gonzo)</span></figure><figure class="picture"><img src="../images/r1-08.jpg"><span class="picture-number">8</span><span class="picture-answer">Count von Count (accept the Count)</span></figure><figure class="picture"><img src="../images/r1-09.jpg"><span class="picture-number">9</span><span class="picture-answer">Elmo</span></figure><figure class="picture"><img src="../images/r1-10.jpg"><span class="picture-number">10</span><span class="picture-answer">Hoggle (Labyrinth)</span></figure><figure class="picture"><img src="../images/r1-11.jpg"><span class="picture-number">11</span><span class="picture-answer">Animal</span></figure><figure class="picture"><img src="../images/r1-12.jpg"><span class="picture-number">12</span><span class="picture-answer">Sam the Eagle (accept Sam Eagle)</span></figure><figure class="picture"><img src="../images/r1-13.jpg"><span class="picture-number">13</span><span class="picture-answer">Oscar the Grouch</span></figure><figure class="picture"><img src="../images/r1-14.jpg"><span class="picture-number">14</span><span class="picture-answer">Dr Bunsen Honeydew (accept Bunsen, Dr Honeydew)</span></figure><figure class="picture"><img src="../images/r1-15.jpg"><span class="picture-number">15</span><span class="picture-answer">Fozzie Bear</span></figure></div></section><section class="page-break"><h2 class="round-header"><span>Round 2 - Film Taglines</span><span>__ / 10</span></h2><p class="instructions">Which film had this tagline on its poster?</p><ol class="question-list"><li>&quot;You&#39;ll believe a man can fly.&quot;<div class="options"><span>a)&nbsp; Flash Gordon</span><span>b)&nbsp; Driving Miss Daisy</span><span>c)&nbsp; <strong>Superman</strong></span></div><p class="answer-note">1978</p></li><li>&quot;You don&#39;t get to 500 million friends without making a few enemies.&quot;<div class="options"><span>a)&nbsp; <strong>The Social Network</strong></span><span>b)&nbsp; Cast Away</span><span>c)&nbsp; The Wolf of Wall Street</span></div><p class="answer-note">2010</p></li><li>&quot;Fear can hold you prisoner. Hope can set you free.&quot;<div class="options"><span>a)&nbsp; The Green Mile</span><span>b)&nbsp; <strong>The Shawshank Redemption</strong></span><span>c)&nbsp; Mamma Mia!</span></div><p class="answer-note">1994</p></li><li>&quot;Just when you thought it was safe to go back in the water...&quot;<div class="options"><span>a)&nbsp; Jaws</span><span>b)&nbsp; <strong>Jaws 2</strong></span><span>c)&nbsp; The Little Mermaid</span></div><p class="answer-note">1978</p></li><li>&quot;He is afraid. He is totally alone. He is 3 million light years from home.&quot;<div class="options"><span>a)&nbsp; <strong>E.T. the Extra-Terrestrial</strong></span><span>b)&nbsp; Home Alone</span><span>c)&nbsp; Close Encounters of the Third Kind</span></div><p class="answer-note">1982</p></li><li>&quot;The true story of a real fake.&quot;<div class="options"><span>a)&nbsp; The Talented Mr Ripley</span><span>b)&nbsp; Chicken Run</span><span>c)&nbsp; <strong>Catch Me If You Can</strong></span></div><p class="answer-note">2002</p></li><li>&quot;Collide with destiny.&quot;<div class="options"><span>a)&nbsp; <strong>Titanic</strong></span><span>b)&nbsp; Speed</span><span>c)&nbsp; Babe</span></div><p class="answer-note">1997</p></li><li>&quot;Just because you&#39;re invited, doesn&#39;t mean you&#39;re welcome.&quot;<div class="options"><span>a)&nbsp; Meet the Parents</span><span>b)&nbsp; <strong>Get Out</strong></span><span>c)&nbsp; The Sound of Music</span></div><p class="answer-note">2017</p></li><li>&quot;He&#39;s the only kid ever to get into trouble before he was born.&quot;<div class="options"><span>a)&nbsp; Gandhi</span><span>b)&nbsp; Look Who&#39;s Talking</span><span>c)&nbsp; <strong>Back to the Future</strong></span></div><p class="answer-note">1985</p></li><li>&quot;Man is the warmest place to hide.&quot;<div class="options"><span>a)&nbsp; Alien</span><span>b)&nbsp; <strong>The Thing</strong></span><span>c)&nbsp; Frozen</span></div><p class="answer-note">1982</p></li></ol></section><section class="page-break"><h2 class="round-header"><span>Round 3 - Answer Smash</span><span>__ / 10</span></h2><p class="instructions">Two clues per question; the two answers &quot;smash&quot; together into one overlapping phrase (e.g. &quot;Elton John Lewis&quot;, &quot;Buda-pesto&quot;).</p><ol class="question-list"><li>The boy who never grew up / Eaten on Shrove Tuesday? <strong>Peter Pan-cake</strong></li><li>Rowan Atkinson character / Squashy seat? <strong>Mr Bean Bag</strong></li><li>Bear from Peru / Former Chief Scout? <strong>Paddington Bear Grylls</strong></li><li>Vodka and tomato cocktail / Former Bake Off judge? <strong>Bloody Mary Berry</strong></li><li>London bell / Batman actor? <strong>Big Ben Affleck</strong></li><li>BBC time traveller / Chris Tarrant quiz show? <strong>Doctor Who Wants to Be a Millionaire</strong></li><li>ABBA song / EastEnders pub? <strong>Dancing Queen Vic</strong></li><li>Former Prime Minister / 1999 shaky camera horror film? <strong>Tony Blair Witch Project</strong></li><li>British F1 champion / Scottish football club? <strong>Lewis Hamilton Academical (accept Damon Hill / Graham Hill of Beath Hawthorn)</strong></li><li>First Harry Potter book / Manchester band behind I Wanna Be Adored? <strong>Harry Potter and the Philosopher&#39;s Stone Roses (accept Sorcerer&#39;s Stone)</strong></li></ol></section><section class="page-break"><h2 class="round-header"><span>Round 4 - Three Songs, One Album</span><span>__ / 10</span></h2><p class="instructions">Name the artist and the original studio album all three songs come from. Half a point for the artist, half a point for the album.</p><ol class="question-list"><li>Wanna Be Startin&#39; Somethin&#39;, Billie Jean, Beat It <strong>Michael Jackson, Thriller</strong></li><li>Go Your Own Way, Dreams, The Chain <strong>Fleetwood Mac, Rumours</strong></li><li>Smells Like Teen Spirit, Come as You Are, Lithium <strong>Nirvana, Nevermind</strong></li><li>Sir Duke, I Wish, Isn&#39;t She Lovely <strong>Stevie Wonder, Songs in the Key of Life</strong></li><li>Wonderwall, Don&#39;t Look Back in Anger, Champagne Supernova <strong>Oasis, (What&#39;s the Story) Morning Glory?</strong></li><li>Come Together, Something, Here Comes the Sun <strong>The Beatles, Abbey Road</strong></li><li>Running Up That Hill, Cloudbusting, The Big Sky <strong>Kate Bush, Hounds of Love</strong></li><li>Shake It Off, Blank Space, Bad Blood <strong>Taylor Swift, 1989</strong></li><li>Once in a Lifetime, Born Under Punches, Crosseyed and Painless <strong>Talking Heads, Remain in Light</strong></li><li>Rehab, You Know I&#39;m No Good, Tears Dry on Their Own <strong>Amy Winehouse, Back to Black</strong></li></ol></section><section class="page-break"><h2 class="round-header"><span>Round 5 - Around the World</span><span>__ / 10</span></h2><ol class="question-list"><li>Which Asian country is the world&#39;s largest landlocked country? <strong>Kazakhstan (2.72 million km²; its Caspian coast doesn&#39;t count, because the Caspian is a lake)</strong></li><li>Which river flows through Belgrade and Bratislava? <strong>The Danube (it also flows through Vienna and Budapest)</strong></li><li>What is the smallest country in the world? <strong>Vatican City (about 0.44–0.49 km²)</strong></li><li>What is the capital of Australia? <strong>Canberra</strong></li><li>Lake Titicaca lies on the border of Peru and which other South American country? <strong>Bolivia</strong></li><li>What is the highest mountain in Africa? <strong>Kilimanjaro (about 5,895 m, in Tanzania)</strong></li><li>In total length, the world&#39;s longest international border is between which two countries? <strong>Canada and the United States (8,891 km, including the Alaska border; Russia–Kazakhstan is the longest continuous land border)</strong></li><li>Which mountain kingdom is completely surrounded by South Africa? <strong>Lesotho</strong></li><li>Which Himalayan country has the only national flag that is not four-sided? <strong>Nepal</strong></li><li>Which US state is closest to Africa? <strong>Maine (Quoddy Head to El Beddouza, Morocco)</strong></li></ol></section><section><h2 class="round-header"><span>Round 6 - General Knowledge</span><span>__ / 20</span></h2><ol class="question-list"><li>Which planet is closest to the Sun? <strong>Mercury</strong></li><li>Feta cheese comes from which country? <strong>Greece</strong></li><li>What was Paul McCartney&#39;s main instrument in the Beatles? <strong>Bass guitar (accept bass; refuse &quot;guitar&quot; alone)</strong></li><li>This Saturday&#39;s full moon is the one nearest the autumn equinox. What is it traditionally called? <strong>The Harvest Moon (refuse Hunter&#39;s Moon, Corn Moon)</strong></li><li>Which English king was killed at the Battle of Hastings in 1066? <strong>Harold II (accept Harold, Harold Godwinson)</strong></li><li>What runs through the middle of a gala pie? <strong>Hard-boiled egg (accept egg)</strong></li><li>Who replaced Prue Leith as a Bake Off judge when the new series began on Tuesday? <strong>Nigella Lawson</strong></li><li>Which European country&#39;s name means &quot;black mountain&quot;? <strong>Montenegro (accept Crna Gora)</strong></li><li>Which band held its first practice fifty years ago tomorrow, on 25 September 1976, in a kitchen in Ireland? <strong>U2</strong></li><li>Which element makes up most of the air we breathe? <strong>Nitrogen (about 78%; oxygen is about 21%)</strong></li><li>What is a young hare called? <strong>A leveret</strong></li><li>What is the whisky lost to evaporation from the cask called? <strong>The angels&#39; share (refuse the devil&#39;s cut)</strong></li><li>Strictly Come Dancing returned on Saturday with a new presenting team. Name any one of its three new presenters. <strong>Emma Willis, Josh Widdicombe or Johannes Radebe (refuse Tess Daly, Claudia Winkleman)</strong></li><li>Mr Blobby first appeared in 1992 on which Saturday night BBC show? <strong>Noel&#39;s House Party</strong></li><li>Which chocolates, typically bought in large tins, are named after a J. M. Barrie play? <strong>Quality Street (after his 1901 play; Mackintosh&#39;s launched them in 1936)</strong></li><li>Which country has won the men&#39;s Rugby Union World Cup the most times? <strong>South Africa (4: 1995, 2007, 2019, 2023)</strong></li><li>In Men in Black, what is the memory-wiping device called? <strong>The Neuralyzer (mark on sound)</strong></li><li>In your car&#39;s satnav, what does GPS stand for? <strong>Global Positioning System (refuse &quot;Global Positioning Satellite&quot;)</strong></li><li>Simon &amp; Garfunkel made their first record, in 1957, under what name? a) Ren and Stimpy b) Tom and Jerry c) Rocky and Bullwinkle <strong>b) Tom and Jerry (refuse the Peptones)</strong></li><li>Which English artist painted The Hay Wain? <strong>John Constable (1821; it hangs in the National Gallery)</strong></li></ol></section></body></html>

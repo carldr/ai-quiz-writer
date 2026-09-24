@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Pub Quiz — 2026-09-24 — Team Sheet</title>
+<style>/* Shared, and inlined ahead of the sheet's own stylesheet. Anything used by more
+   than one sheet belongs here; anything used by only one belongs in that
+   sheet's file.
+
+   Three type sizes: 24pt sheet title, 16pt round title, 10.5pt for everything
+   else. The answer sheet sets its questions smaller again, which is the only
+   exception, and is what holds its longest round to one page. */
+
+@page {
+  size: A4;
+  margin: 20mm;
+}
+
+body {
+  font-family: -apple-system, 'SF Pro Text', Helvetica, Arial, sans-serif;
+  font-size: 10.5pt;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* The title line: what the sheet is on the left, the total on the right. */
+.sheet-header {
+  font-size: 24pt;
+  font-weight: 700;
+  margin: 0 0 9mm;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+/* Each round starts a new page on the answer sheet and the team sheet, so a
+   round title needs no space above it. The picture sheet, which is the one sheet
+   that runs its rounds on down the page, adds its own. A round title never sits
+   at the foot of a page with its questions overleaf. */
+.round-header {
+  font-size: 16pt;
+  font-weight: 700;
+  margin: 0 0 2mm;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+.instructions {
+  /* font-size: 10pt; */
+  margin: 0 0 5mm;
+}
+
+/* Carried by every round but the last, on the two sheets that give a round a
+   page each. */
+.page-break {
+  break-after: page;
+  page-break-after: always;
+}
+
+/* A picture round is laid out identically on all three sheets: the same grid, the
+   same 4:3 cells, the same label in the same corner. Only what fills a cell
+   differs — the image on the picture sheet, the image with its answer on the
+   answer sheet, nothing on the team sheet. A team's box therefore sits exactly
+   where its picture was.
+
+   The width is what lets five rows of a 15-image round clear the page depth. */
+.picture-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5mm 3mm;
+  max-width: 182mm;
+}
+.picture {
+  position: relative;
+  margin: 0;
+  aspect-ratio: 4 / 3;
+  border: 1px solid #333;
+}
+.picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Labels sit in boxes over the cell, white on a dark panel because on two of the
+   three sheets there is a photograph behind them, of any colour. Every cell is
+   numbered in its top corner. Only the answer sheet carries the second box, and
+   that one sits on the bottom edge of the picture. */
+.picture-number,
+.picture-answer {
+  position: absolute;
+  left: 1.5mm;
+  max-width: calc(100% - 3mm);
+  /* font-size: 9pt; */
+  line-height: 1.25;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.55);
+  padding: 0.6mm 1.5mm;
+  border-radius: 1mm;
+}
+.picture-number {
+  top: 1.5mm;
+}
+.picture-answer {
+  bottom: 1.5mm;
+}
+
+/* Both numbered lists count with a CSS counter rather than the browser's own
+   numbering, so the number sits in a fixed-width column. */
+.question-list,
+.answer-lines {
+  list-style: none;
+  counter-reset: question;
+  padding: 0;
+}
+.question-list > li,
+.answer-lines li {
+  counter-increment: question;
+}
+.question-list > li::before,
+.answer-lines li::before {
+  content: counter(question) '.';
+  text-align: right;
+}
+/* Team sheet. Carries no question text, and gives each round a page. Loaded
+   after common.css. */
+
+.write-in {
+  border-bottom: 1px solid #333;
+  display: inline-block;
+  height: 1.1em;
+}
+.team-name {
+  width: 85mm;
+}
+
+/* Multiple-choice round: the options with no question, for teams to circle.
+   Alternate rows are shaded so the eye keeps its place across the width. */
+.options-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2mm;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+.options-table td {
+  padding: 3.2mm 2mm;
+  text-align: center;
+}
+.options-table td.number {
+  width: 9mm;
+  text-align: left;
+  /* font-size: 9pt; */
+}
+.options-table tr:nth-child(even) td {
+  background: #f2f2f2;
+}
+
+/* Open and true-false rounds: a numbered ruled line each. The 4.2mm gap is what
+   fits twenty lines of a general knowledge round on one page. */
+.answer-lines {
+  margin: 4mm 0 0;
+}
+.answer-lines li {
+  display: flex;
+  align-items: baseline;
+  gap: 3mm;
+  margin: 0 0 4.2mm;
+  line-height: 1.3;
+}
+.answer-lines li::before {
+  width: 8mm;
+}
+.answer-lines .answer-line {
+  flex: 1;
+  border-bottom: 1px solid #333;
+  height: 1.3em;
+}
+.answer-lines .true-false {
+  white-space: nowrap;
+}
+</style></head>
+<body><h1 class="sheet-header"><span>Team <span class="write-in team-name"></span></span><span>____ / 75</span></h1><section class="page-break"><h2 class="round-header"><span>Round 1 - Henson&#39;s Creatures</span><span>__ / 15</span></h2><p class="instructions">Jim Henson, creator of the Muppets, was born 90 years ago today. Name each character.</p><div class="picture-grid"><figure class="picture"><span class="picture-number">1</span></figure><figure class="picture"><span class="picture-number">2</span></figure><figure class="picture"><span class="picture-number">3</span></figure><figure class="picture"><span class="picture-number">4</span></figure><figure class="picture"><span class="picture-number">5</span></figure><figure class="picture"><span class="picture-number">6</span></figure><figure class="picture"><span class="picture-number">7</span></figure><figure class="picture"><span class="picture-number">8</span></figure><figure class="picture"><span class="picture-number">9</span></figure><figure class="picture"><span class="picture-number">10</span></figure><figure class="picture"><span class="picture-number">11</span></figure><figure class="picture"><span class="picture-number">12</span></figure><figure class="picture"><span class="picture-number">13</span></figure><figure class="picture"><span class="picture-number">14</span></figure><figure class="picture"><span class="picture-number">15</span></figure></div></section><section class="page-break"><h2 class="round-header"><span>Round 2 - Film Taglines</span><span>__ / 10</span></h2><p class="instructions">Which film had this tagline on its poster?</p><table class="options-table"><tr><td class="number">1</td><td>Flash Gordon</td><td>Driving Miss Daisy</td><td>Superman</td></tr><tr><td class="number">2</td><td>The Social Network</td><td>Cast Away</td><td>The Wolf of Wall Street</td></tr><tr><td class="number">3</td><td>The Green Mile</td><td>The Shawshank Redemption</td><td>Mamma Mia!</td></tr><tr><td class="number">4</td><td>Jaws</td><td>Jaws 2</td><td>The Little Mermaid</td></tr><tr><td class="number">5</td><td>E.T. the Extra-Terrestrial</td><td>Home Alone</td><td>Close Encounters of the Third Kind</td></tr><tr><td class="number">6</td><td>The Talented Mr Ripley</td><td>Chicken Run</td><td>Catch Me If You Can</td></tr><tr><td class="number">7</td><td>Titanic</td><td>Speed</td><td>Babe</td></tr><tr><td class="number">8</td><td>Meet the Parents</td><td>Get Out</td><td>The Sound of Music</td></tr><tr><td class="number">9</td><td>Gandhi</td><td>Look Who&#39;s Talking</td><td>Back to the Future</td></tr><tr><td class="number">10</td><td>Alien</td><td>The Thing</td><td>Frozen</td></tr></table></section><section class="page-break"><h2 class="round-header"><span>Round 3 - Answer Smash</span><span>__ / 10</span></h2><p class="instructions">Two clues per question; the two answers &quot;smash&quot; together into one overlapping phrase (e.g. &quot;Elton John Lewis&quot;, &quot;Buda-pesto&quot;).</p><ol class="answer-lines"><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li></ol></section><section class="page-break"><h2 class="round-header"><span>Round 4 - Three Songs, One Album</span><span>__ / 10</span></h2><p class="instructions">Name the artist and the original studio album all three songs come from. Half a point for the artist, half a point for the album.</p><ol class="answer-lines"><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li></ol></section><section class="page-break"><h2 class="round-header"><span>Round 5 - Around the World</span><span>__ / 10</span></h2><ol class="answer-lines"><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li></ol></section><section><h2 class="round-header"><span>Round 6 - General Knowledge</span><span>__ / 20</span></h2><ol class="answer-lines"><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li><li><span class="answer-line"></span></li></ol></section></body></html>

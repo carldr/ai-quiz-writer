@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Pub Quiz — 2026-09-24 — Pictures</title>
+<style>/* Shared, and inlined ahead of the sheet's own stylesheet. Anything used by more
+   than one sheet belongs here; anything used by only one belongs in that
+   sheet's file.
+
+   Three type sizes: 24pt sheet title, 16pt round title, 10.5pt for everything
+   else. The answer sheet sets its questions smaller again, which is the only
+   exception, and is what holds its longest round to one page. */
+
+@page {
+  size: A4;
+  margin: 20mm;
+}
+
+body {
+  font-family: -apple-system, 'SF Pro Text', Helvetica, Arial, sans-serif;
+  font-size: 10.5pt;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* The title line: what the sheet is on the left, the total on the right. */
+.sheet-header {
+  font-size: 24pt;
+  font-weight: 700;
+  margin: 0 0 9mm;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+/* Each round starts a new page on the answer sheet and the team sheet, so a
+   round title needs no space above it. The picture sheet, which is the one sheet
+   that runs its rounds on down the page, adds its own. A round title never sits
+   at the foot of a page with its questions overleaf. */
+.round-header {
+  font-size: 16pt;
+  font-weight: 700;
+  margin: 0 0 2mm;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+.instructions {
+  /* font-size: 10pt; */
+  margin: 0 0 5mm;
+}
+
+/* Carried by every round but the last, on the two sheets that give a round a
+   page each. */
+.page-break {
+  break-after: page;
+  page-break-after: always;
+}
+
+/* A picture round is laid out identically on all three sheets: the same grid, the
+   same 4:3 cells, the same label in the same corner. Only what fills a cell
+   differs — the image on the picture sheet, the image with its answer on the
+   answer sheet, nothing on the team sheet. A team's box therefore sits exactly
+   where its picture was.
+
+   The width is what lets five rows of a 15-image round clear the page depth. */
+.picture-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5mm 3mm;
+  max-width: 182mm;
+}
+.picture {
+  position: relative;
+  margin: 0;
+  aspect-ratio: 4 / 3;
+  border: 1px solid #333;
+}
+.picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Labels sit in boxes over the cell, white on a dark panel because on two of the
+   three sheets there is a photograph behind them, of any colour. Every cell is
+   numbered in its top corner. Only the answer sheet carries the second box, and
+   that one sits on the bottom edge of the picture. */
+.picture-number,
+.picture-answer {
+  position: absolute;
+  left: 1.5mm;
+  max-width: calc(100% - 3mm);
+  /* font-size: 9pt; */
+  line-height: 1.25;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.55);
+  padding: 0.6mm 1.5mm;
+  border-radius: 1mm;
+}
+.picture-number {
+  top: 1.5mm;
+}
+.picture-answer {
+  bottom: 1.5mm;
+}
+
+/* Both numbered lists count with a CSS counter rather than the browser's own
+   numbering, so the number sits in a fixed-width column. */
+.question-list,
+.answer-lines {
+  list-style: none;
+  counter-reset: question;
+  padding: 0;
+}
+.question-list > li,
+.answer-lines li {
+  counter-increment: question;
+}
+.question-list > li::before,
+.answer-lines li::before {
+  content: counter(question) '.';
+  text-align: right;
+}
+/* Picture sheet. The numbered grid teams look at, with no answers and no sheet
+   title. A 15-image round fits one A4 page. Loaded after common.css. */
+
+/* This is the one sheet whose rounds run on down the page rather than taking one
+   each, so a second picture round's title needs space above it. */
+.round-header {
+  margin-top: 9mm;
+}
+.round-header:first-child {
+  margin-top: 0;
+}
+
+</style></head>
+<body><h2 class="round-header"><span>Round 1 - Henson&#39;s Creatures</span><span>__ / 15</span></h2><p class="instructions">Jim Henson, creator of the Muppets, was born 90 years ago today. Name each character.</p><div class="picture-grid"><figure class="picture"><img src="../images/r1-01.jpg"><span class="picture-number">1</span></figure><figure class="picture"><img src="../images/r1-02.jpg"><span class="picture-number">2</span></figure><figure class="picture"><img src="../images/r1-03.jpg"><span class="picture-number">3</span></figure><figure class="picture"><img src="../images/r1-04.png"><span class="picture-number">4</span></figure><figure class="picture"><img src="../images/r1-05.jpg"><span class="picture-number">5</span></figure><figure class="picture"><img src="../images/r1-06.jpg"><span class="picture-number">6</span></figure><figure class="picture"><img src="../images/r1-07.jpg"><span class="picture-number">7</span></figure><figure class="picture"><img src="../images/r1-08.jpg"><span class="picture-number">8</span></figure><figure class="picture"><img src="../images/r1-09.jpg"><span class="picture-number">9</span></figure><figure class="picture"><img src="../images/r1-10.jpg"><span class="picture-number">10</span></figure><figure class="picture"><img src="../images/r1-11.jpg"><span class="picture-number">11</span></figure><figure class="picture"><img src="../images/r1-12.jpg"><span class="picture-number">12</span></figure><figure class="picture"><img src="../images/r1-13.jpg"><span class="picture-number">13</span></figure><figure class="picture"><img src="../images/r1-14.jpg"><span class="picture-number">14</span></figure><figure class="picture"><img src="../images/r1-15.jpg"><span class="picture-number">15</span></figure></div></body></html>
