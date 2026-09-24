@@ -364,7 +364,7 @@ Before reuse:
   Vehicle.
 - Q6: the Ministry of Transport no longer exists; the answer holds.
 - Q9: accept "Subscriber Identification Module".
-- GPS, the tenth question, was used on 2026-09-24.
+- The GPS question was used on 2026-09-24.
 - Decide partial answers ("Light Emitting D…") in advance.
 - SOS was left out: it stands for nothing, and teams can't reason their way
   to that.
